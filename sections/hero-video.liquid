@@ -62,9 +62,9 @@
         <div class="Emark-wrapper">{%- render 'icon' with 'emark' -%}</div>
     </div>
   {%- endif -%}
-      {% if section.settings.show_bottom_counter %}
+      {%- comment -%} {% if section.settings.show_bottom_counter %}
           {%- render 'flip-clock' -%}
-    {% endif %}
+    {% endif %} {%- endcomment -%}
 		</div>
 
 	{%- if section.settings.page_width == 'fixed_width' -%}
