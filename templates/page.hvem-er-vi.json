@@ -1,0 +1,139 @@
+{
+  "sections": {
+    "1663671498de906cb4": {
+      "type": "featured-video",
+      "blocks": {
+        "1663671498ef4ddda6-0": {
+          "type": "video",
+          "settings": {
+            "video_cover_image": "shopify:\/\/shop_images\/cover_about.jpg",
+            "title": "",
+            "video_url": "https:\/\/youtu.be\/c3tAK7gGKbo",
+            "animated_button": true
+          }
+        }
+      },
+      "block_order": [
+        "1663671498ef4ddda6-0"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "full_width": false,
+        "title": "Om Anodyne",
+        "subtitle": "",
+        "section_style": "section-blank"
+      }
+    },
+    "166367170598a35a6a": {
+      "type": "featured-row",
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "image": "shopify:\/\/shop_images\/MK.jpg",
+        "image_link": "",
+        "section_style": "section-blank",
+        "text_size": "medium",
+        "image_alignement": "left",
+        "text_alignment": "",
+        "title": "Hvem er vi?",
+        "text": "<p>Anodyne® er den officielle europæiske forhandler af holdningskorrigerende tøj fra amerikanske AlignMed, som står bag den patenterede og medicinsk registrerede Posture Shirt™. Anodyne® har eksisteret siden 2014, hvor ægteparret Mia og Kenneth sendte den allerførste Posture Shirt™ afsted fra deres hjem i Solbjerg ved Aarhus. Sidenhen er flere end 300.000 produkter blevet sendt fra vores lager, og sortimentet er udvidet, så det i dag tæller en lang række produkter, der forbedrer kropsholdningen, øger dagligt velvære samt bidrager til lindring af smerter og spændinger. For os er det vigtigste, at vores produkter kan gøre en reel forskel for vores kunder, og derfor er produkterne også udviklet til helt almindelige mennesker, som døjer med smerter eller generelt er opmærksomme på deres krop og kropssundhed.<\/p>",
+        "button_style": "btn--primary",
+        "button_label": "Se vores ambitioner og værdier",
+        "button_link": "shopify:\/\/pages\/vision"
+      }
+    },
+    "166367170995a66948": {
+      "type": "featured-colleagues",
+      "blocks": {
+        "1663671709dce274f6-0": {
+          "type": "featured_colleagues",
+          "settings": {
+            "colleague_image": "shopify:\/\/shop_images\/DSC08002-min_6be6b96c-49e6-4b40-94aa-2e8c19f73045.jpg",
+            "colleague_desc": "<h2>Kenneth Avnsted<\/h2><p>Direktør \/ Grundlægger<\/p>",
+            "text_alignment": "text-left"
+          }
+        },
+        "2c1956c9-0578-4db3-a0df-7ee9b3100a59": {
+          "type": "featured_colleagues",
+          "settings": {
+            "colleague_image": "shopify:\/\/shop_images\/DSC08146-min.jpg",
+            "colleague_desc": "<h2>Mia Avnsted<\/h2><p>Driftschef \/ Medstifter<\/p>",
+            "text_alignment": "text-left"
+          }
+        },
+        "29e3b0a5-8f12-4133-91c1-882820055b36": {
+          "type": "featured_colleagues",
+          "settings": {
+            "colleague_image": "shopify:\/\/shop_images\/DSC08191-min_58075a74-03fb-4ddc-9ff7-e2d1bdeeefb8.jpg",
+            "colleague_desc": "<h2>Anne Hill<\/h2><p>Marketing Manager<\/p>",
+            "text_alignment": "text-left"
+          }
+        },
+        "4205fd47-45c9-4999-acd3-167baa12934d": {
+          "type": "featured_colleagues",
+          "settings": {
+            "colleague_image": "shopify:\/\/shop_images\/bpv.jpg",
+            "colleague_desc": "<h2>Munir Younosi<\/h2><p>Web Developer<\/p>",
+            "text_alignment": "text-left"
+          }
+        },
+        "a61cc416-8dd9-4346-bc44-61ba5d256fdd": {
+          "type": "featured_colleagues",
+          "settings": {
+            "colleague_image": "shopify:\/\/shop_images\/bpv.jpg",
+            "colleague_desc": "<h2>Jan Christiansen<\/h2><p>Office Manager<\/p>",
+            "text_alignment": "text-left"
+          }
+        },
+        "ef88eb5d-851d-43f4-8601-2a0785527034": {
+          "type": "featured_colleagues",
+          "settings": {
+            "colleague_image": "shopify:\/\/shop_images\/bpv.jpg",
+            "colleague_desc": "<h2>Medita Tiara Wendling<\/h2><p>Kundeserviceansvarlig<\/p>",
+            "text_alignment": "text-left"
+          }
+        },
+        "0b8c92b9-ff7f-442c-8680-f549ba066ea5": {
+          "type": "featured_colleagues",
+          "settings": {
+            "colleague_image": "shopify:\/\/shop_images\/bpv.jpg",
+            "colleague_desc": "<h2>Jengin Sulaiman<\/h2><p>Amazon Specialist<\/p>",
+            "text_alignment": "text-left"
+          }
+        },
+        "593d64b6-560f-4407-bcc5-2d98d2c33fcf": {
+          "type": "featured_colleagues",
+          "settings": {
+            "colleague_image": "shopify:\/\/shop_images\/bpv.jpg",
+            "colleague_desc": "<h2>Fabian Hofmann<\/h2><p>Direktør (Schweiz)<\/p>",
+            "text_alignment": "text-left"
+          }
+        }
+      },
+      "block_order": [
+        "1663671709dce274f6-0",
+        "2c1956c9-0578-4db3-a0df-7ee9b3100a59",
+        "29e3b0a5-8f12-4133-91c1-882820055b36",
+        "4205fd47-45c9-4999-acd3-167baa12934d",
+        "a61cc416-8dd9-4346-bc44-61ba5d256fdd",
+        "ef88eb5d-851d-43f4-8601-2a0785527034",
+        "0b8c92b9-ff7f-442c-8680-f549ba066ea5",
+        "593d64b6-560f-4407-bcc5-2d98d2c33fcf"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "title": "Mød teamet",
+        "subtitle": "",
+        "section_style": "section-blank",
+        "wrapper_size": ""
+      }
+    }
+  },
+  "order": [
+    "1663671498de906cb4",
+    "166367170598a35a6a",
+    "166367170995a66948"
+  ]
+}

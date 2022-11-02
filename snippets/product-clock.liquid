@@ -1,0 +1,79 @@
+{% unless section.settings.date__selector == "none" %}
+	<div id="flipFlop" class="flip-container product-bottom {% unless section.settings.style__selector == 'none' %}{{section.settings.style__selector}}__days {% endunless %}" data-collect-date="{{section.settings.date__selector}}">
+		 <span class="flip-outer-text">{%- if section.settings.product_counter_text != blank -%}
+		  {{section.settings.product_counter_text -}}
+		{%- endif -%}</span> 
+			<div class="flip-container-inner">
+			
+	
+				<div class="flip-box" data-days>
+					<div class="flip-group" >
+							<div class="flip-wrapper">
+								<div class="flip-card" data-days-tens >
+									<div class="top">0</div>
+									<div class="bottom">0</div>
+								</div>
+								<div class="flip-card" data-days-ones>
+									<div class="top">0</div>
+									<div class="bottom">0</div>
+								</div>
+							</div>
+					
+						</div>
+							<div class="flip-group-title">{{ 'products.counter.days' | t }}</div> 
+				{% comment %} <div class="dots" data-dots>:</div> {% endcomment %}
+			   </div>
+			<div class="flip-box" data-hours>
+		
+				<div class="flip-group">
+					<div class="flip-wrapper">
+						<div class="flip-card" data-hour-tens >
+							<div class="top">0</div>
+							<div class="bottom">0</div>
+						</div>
+						<div class="flip-card" data-hour-ones>
+							<div class="top">0</div>
+							<div class="bottom">0</div>
+						</div>
+					</div>
+				</div>
+					 <div class="flip-group-title">{{ 'products.counter.hours' | t }}</div> 
+				{% comment %} <div class="dots">:</div> {% endcomment %}
+				</div>
+		
+				<div class="flip-box" data-minutes>
+				
+				<div class="flip-group">
+					<div class="flip-wrapper">
+						<div class="flip-card" data-minute-tens>
+							<div class="top">0</div>
+							<div class="bottom">0</div>
+						</div>
+						<div class="flip-card" data-minute-ones>
+							<div class="top">0</div>
+							<div class="bottom">0</div>
+						</div>
+					</div>
+				</div>
+			 <div class="flip-group-title">{{ 'products.counter.minutes' | t }}</div> 
+				</div>
+				<div class="flip-box" data-seconds>
+				
+					<div class="flip-group">
+					<div class="flip-wrapper">
+						<div class="flip-card" data-second-tens>
+							<div class="top">0</div>
+							<div class="bottom">0</div>
+						</div>
+						<div class="flip-card" data-second-ones>
+							<div class="top">0</div>
+							<div class="bottom">0</div>
+						</div>
+					</div>
+				</div>
+					 <div class="flip-group-title">{{ 'products.counter.seconds' | t }}</div>
+			</div>
+				<span class="close__btn"></span>
+			</div>
+	</div>
+	{% endunless%}

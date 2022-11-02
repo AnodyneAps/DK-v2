@@ -1,0 +1,249 @@
+<div id="section-{{ section.id }}" class="{% unless section.settings.show_on_desktop %} medium--hide large--hide{% endunless %} {{ section.settings.section_style }}{% unless section.settings.show_on_mobile %} small--hide{% endunless %}" data-section-id="{{ section.id }}" data-section-type="custom-html-section">
+  <div class="box-mission landing-mission-{{ section.id }}" style="margin-bottom:{{ section.settings.margin__bottom}}px;">
+    <div class="wrapper{{ section.settings.wrapper_size }}">
+      {%- if section.blocks.size > 0 -%}
+        <div class="grid grid-spacer mission__grid">
+          <!-- Blocks -->
+          {%- for block in section.blocks -%}
+
+            {%- case block.settings.column_width -%}
+              {%- when 1 -%}
+                {%- assign block_width = 'large--one-twelfth medium--one-twelfth' -%}
+              {%- when 2 -%}
+                {%- assign block_width = 'large--two-twelfths medium--two-twelfths' -%}
+              {%- when 3 -%}
+                {%- assign block_width = 'large--three-twelfths medium--three-twelfths' -%}
+              {%- when 4 -%}
+                {%- assign block_width = 'large--four-twelfths medium--four-twelfths' -%}
+              {%- when 5 -%}
+                {%- assign block_width = 'large--five-twelfths medium--five-twelfths' -%}
+              {%- when 6 -%}
+                {%- assign block_width = 'large--six-twelfths medium--six-twelfths' -%}
+              {%- when 7 -%}
+                {%- assign block_width = 'large--seven-twelfths medium--seven-twelfths' -%}
+              {%- when 8 -%}
+                {%- assign block_width = 'large--eight-twelfths medium--eight-twelfths' -%}
+              {%- when 9 -%}
+                {%- assign block_width = 'large--nine-twelfths medium--nine-twelfths' -%}
+              {%- when 10 -%}
+                {%- assign block_width = 'large--ten-twelfths medium--ten-twelfths' -%}
+              {%- when 11 -%}
+                {%- assign block_width = 'large--eleven-twelfths medium--eleven-twelfths' -%}
+              {%- when 12 -%}
+                {%- assign block_width = 'large--twelfth-twelfths medium--twelfth-twelfths' -%}
+            {%- endcase -%}
+
+            {%- case block.settings.column_width_mobile -%}
+              {%- when 1 -%}
+                {%- assign block_width_mobile = 'small--one-twelfth' -%}
+              {%- when 2 -%}
+                {%- assign block_width_mobile = 'small--two-twelfths' -%}
+              {%- when 3 -%}
+                {%- assign block_width_mobile = 'asmall--three-twelfths' -%}
+              {%- when 4 -%}
+                {%- assign block_width_mobile = 'small--four-twelfths' -%}
+              {%- when 5 -%}
+                {%- assign block_width_mobile = 'small--five-twelfths' -%}
+              {%- when 6 -%}
+                {%- assign block_width_mobile = 'small--six-twelfths' -%}
+              {%- when 7 -%}
+                {%- assign block_width_mobile = 'small--seven-twelfths' -%}
+              {%- when 8 -%}
+                {%- assign block_width_mobile = 'small--eight-twelfths' -%}
+              {%- when 9 -%}
+                {%- assign block_width_mobile = 'mall--nine-twelfths' -%}
+              {%- when 10 -%}
+                {%- assign block_width_mobile = 'small--ten-twelfths' -%}
+              {%- when 11 -%}
+                {%- assign block_width_mobile = 'small--eleven-twelfths' -%}
+              {%- when 12 -%}
+                {%- assign block_width_mobile = 'small--twelfth-twelfths' -%}
+            {%- endcase -%}
+
+            <div class="grid__item {{ block_width }} {{ block_width_mobile }}" {{ block.shopify_attributes }}>
+
+                <div class="{{ block.settings.text_alignment }}">
+                  {%- if block.settings.image != blank -%}
+                  <img src="{{ block.settings.image | img_url: '300x300'}}">
+                  {%- endif -%}
+                  <h2 class="h2">{{block.settings.mission_title}}</h2>
+                  <p class="section-mission__description">{{block.settings.mission_description}}</p>
+                  {%-if block.settings.btn_text !=blank -%}
+                    <a href="{{block.settings.btn_url}}"class="btn-mission">{{block.settings.btn_text}}</a>
+                  {%- endif -%}
+                </div>
+            </div>
+          {%- endfor -%}
+         </div>
+          {%- else -%}
+          <div class="text-center">
+            {{ 'home_page.onboarding.no_content' | t }}
+          </div>
+      {%- endif -%}
+      
+      {%- if section.blocks.size == 0 -%}
+        {%- render 'no-blocks' -%}
+      {%- endif -%}
+      
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Mission",
+	  "class": "section__mission",
+    "max_blocks": 3,
+	  "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_on_desktop",
+        "label": "Show on desktop",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_on_mobile",
+        "label": "Show on mobile",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "margin__bottom",
+        "min": -30,
+        "max": 90,
+        "step": 2,
+        "label": "Add margin bottom",
+        "default": 0
+      },
+      {
+        "type": "select",
+        "id": "section_style",
+        "label": "Section style",
+        "default": "section-blank",
+        "options": [
+          {
+            "value": "section-blank",
+            "label": "Blank background"
+          },
+		      {
+            "value": "section-default",
+            "label": "Accent background"
+          },
+          {
+            "value": "section-border",
+            "label": "Border top"
+          }
+        ]
+      },
+	    {
+        "type": "select",
+        "id": "wrapper_size",
+        "label": "Wrapper size",
+		    "default": "",
+        "options": [
+		      {
+            "value": "",
+            "label": "Default"
+          },
+	        {
+            "value": "-fluid",
+            "label": "Fluid"
+          },
+		      {
+            "value": "-full",
+            "label": "Full"
+          },
+          {
+            "value": "-small",
+            "label": "small"
+          }
+        ]
+      }
+	  ],
+    "blocks": [
+      {
+        "type": "html",
+        "name": "Mission",
+        "settings": [
+        {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "mission_title",
+            "label": "Heading",
+            "default": "Our Missin"
+          },
+          {
+            "type": "html",
+            "id": "mission_description",
+            "label": "HTML",
+			      "default": "<h2>Custom HTML!</h2><p>This section can be used to code your own custom layout.</p>"
+          },
+          {
+            "type": "range",
+            "id": "column_width",
+            "min": 1,
+            "max": 12,
+            "step": 1,
+            "label": "Column width (desktop)",
+            "default": 4
+          },
+          {
+            "type": "range",
+            "id": "column_width_mobile",
+            "min": 1,
+            "max": 12,
+            "step": 1,
+            "label": "Column width (mobile)",
+            "default": 12
+          },
+		      {
+            "type": "select",
+            "id": "text_alignment",
+            "label": "Text alignment",
+            "default": "text-center",
+            "options": [
+              {
+                "value": "text-left",
+                "label": "Left"
+              },
+              {
+                "value": "text-center",
+                "label": "Center"
+              },
+              {
+                "value": "text-right",
+                "label": "Right"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Button label"
+          },
+          {
+            "type": "url",
+            "id": "btn_url",
+            "label": "Button link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Mission",
+        "category": "Advanced layout",
+        "blocks": [
+          {
+            "type": "html"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

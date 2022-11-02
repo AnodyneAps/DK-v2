@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-not-found-content",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -1,0 +1,1218 @@
+{
+  "current": {
+    "sticky_header": true,
+    "sticky_announcement_bar": true,
+    "height_header": 100,
+    "height_header_mobile": 70,
+    "icon": "material-icons-outlined",
+    "grid_product_truncate": false,
+    "collection_grid_card": false,
+    "collection_grid_products_count": false,
+    "collection_grid_animation": true,
+    "collection_grid_button_style": "",
+    "word_count": 33,
+    "show_currency_selector": false,
+    "localization_position": "header",
+    "newsletter_name": false,
+    "newsletter_optin": false,
+    "section_height": "small",
+    "section_height_mobile": "small",
+    "border_radius": 1,
+    "button_padding_x": 30,
+    "button_padding_y": 15,
+    "show_top_button": false,
+    "top_button_mobile": false,
+    "top_button_position": "right",
+    "page_wrapper": "1248",
+    "payment_icon_size": 24,
+    "sale_type": "percentage",
+    "browsing_link": "shopify:\/\/collections\/alle-produkte",
+    "zindex_drawer": "999",
+    "cart_message_enable": false,
+    "textbox_cart_notification": "<strong>Din garanti:<\/strong> Hos Anodyne® har du altid 30 dages fuld returret og 100% gratis ombytning.",
+    "textbox_custom_drawer_icon": "",
+    "cart_notes_enable": false,
+    "color_announcement_bg": "#353535",
+    "color_nav_border": "#f4f4f4",
+    "color_nav_text": "#252525",
+    "color_default": "#f7f7f7",
+    "color_border": "#f4f4f4",
+    "color_headings": "#252525",
+    "color_body_text": "#353535",
+    "color_primary": "#398e82",
+    "color_secondary": "#398e82",
+    "color_input": "#f1f1f1",
+    "color_drawer_bg": "#f7f7f7",
+    "color_drawer_default": "#eaeaea",
+    "color_drawer_border": "#f4f4f4",
+    "color_drawer_text": "#252525",
+    "color_drawer_primary": "#398e82",
+    "color_drawer_button_text": "#eaeaea",
+    "color_drawer_secondary": "#398e82",
+    "color_drawer_input": "#ffffff",
+    "color_drawer_errors": "#FF0000",
+    "color_drawer_sales_price": "#f48400",
+    "color_drawer_overlay": "#202020",
+    "color_drawer_overlay_opacity": 50,
+    "color_footer_bg": "#252525",
+    "color_footer_default": "#bbe4e1",
+    "color_footer_border": "#444444",
+    "color_footer_primary": "#398e82",
+    "color_footer_button_text": "#ff8900",
+    "color_footer_secondary": "#398e82",
+    "color_footer_input": "#398e82",
+    "color_footer_errors": "#FF0000",
+    "color_footer_sales_price": "#398e82",
+    "color_overlay": "#252525",
+    "color_transparent_nav_text": "#f7f7f7",
+    "opacity_overlay": 16,
+    "favicon": "shopify:\/\/shop_images\/Favicon.png",
+    "share_facebook": false,
+    "share_twitter": false,
+    "share_pinterest": false,
+    "share_whatsapp": false,
+    "share_email": false,
+    "share_messenger": false,
+    "social_facebook_link": "https:\/\/www.facebook.com\/anodyne.dk",
+    "social_instagram_link": "https:\/\/www.instagram.com\/anodyne.dk",
+    "header_family": "poppins_n4",
+    "header_font_size": 32,
+    "header_font_size_big": 50,
+    "header_spacing": 0.1,
+    "accent_family": "avenir_next_n4",
+    "accent_spacing": 0.1,
+    "button_uppercase": true,
+    "base_family": "avenir_next_n4",
+    "base_font_size": 15,
+    "dbtfy_cart_reminder": false,
+    "dbtfy_quantity_breaks": false,
+    "dbtfy_upsell_bundles": false,
+    "dbtfy_cart_discount": false,
+    "dbtfy_cart_favicon": false,
+    "dbtfy_delivery_time": false,
+    "dbtfy_discount_saved": true,
+    "dbtfy_inactive_tab_message": false,
+    "dbtfy_inventory_quantity": false,
+    "dbtfy_sales_countdown": false,
+    "dbtfy_skip_cart": false,
+    "dbtfy_sticky_addtocart": false,
+    "dbtfy_back_in_stock": true,
+    "dbtfy_instagram_feed": false,
+    "dbtfy_newsletter_popup": false,
+    "dbtfy_order_feedback": false,
+    "dbtfy_social_discount": false,
+    "dbtfy_wish_list": false,
+    "dbtfy_collection_addtocart": false,
+    "dbtfy_collection_filters": false,
+    "dbtfy_color_swatches": false,
+    "dbtfy_custom_currencies": false,
+    "dbtfy_delivery_date": false,
+    "dbtfy_mega_menu": true,
+    "dbtfy_order_tracking": false,
+    "dbtfy_product_tabs": true,
+    "dbtfy_quick_compare": false,
+    "dbtfy_quick_view": false,
+    "dbtfy_recently_viewed": false,
+    "dbtfy_size_chart": false,
+    "dbtfy_agree_to_terms": true,
+    "agree_to_terms_text": "<p>Jeg accepterer <a href=\"https:\/\/www.anodyne.dk\/policies\/terms-of-service\" title=\"https:\/\/www.anodyne.dk\/policies\/terms-of-service\">handelsbetingelserne<\/a><\/p>",
+    "dbtfy_cookie_box": false,
+    "dbtfy_shop_protect": false,
+    "dbtfy_addtocart_animation_type": "shakeX",
+    "dbtfy_addtocart_animation_interval": 10,
+    "dbtfy_back_in_stock_btn_animation": true,
+    "dbtfy_infinite_scroll_options": "scroll",
+    "dbtfy_inventory_quantity_threshold": 20,
+    "dbtfy_menu_bar_link_list": "main-menu",
+    "dbtfy_menu_bar_desktop": false,
+    "dbtfy_menu_bar_mobile": false,
+    "dbtfy_newsletter_floating_bar": false,
+    "dbtfy_newsletter_popup_image_whole": false,
+    "dbtfy_newsletter_popup_exit_intent": true,
+    "dbtfy_newsletter_popup_discount_name": "R6QG34",
+    "dbtfy_newsletter_popup_discount_amount": "10",
+    "dbtfy_social_discount_reward_code": "20GWS15",
+    "dbtfy_social_discount_reward_amount": "10",
+    "dbtfy_trust_badge_cart": false,
+    "dbtfy_trust_badge_text_small": true,
+    "dbtfy_trust_badge_image": "shopify:\/\/shop_images\/dk_betaling.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Anodyne_black_medium_6728745e-a674-486e-8077-9faaf5a75715.png",
+    "checkout_accent_color": "#398e82",
+    "checkout_button_color": "#398e82",
+    "hero_header": false,
+    "color_accent": "#f48400",
+    "color_drawer_error_text": "#f48400",
+    "custom_quantity_breaks": true,
+    "dbtfy_cart_countdown": true,
+    "dbtfy_live_view": false,
+    "dbtfy_sales_pop": false,
+    "synced_variant_image": false,
+    "dbtfy_agree_text": "<p>Ich akzeptiere die <a href=\"https:\/\/www.anodyne-shop.de\/policies\/terms-of-service\" title=\"https:\/\/www.anodyne-shop.de\/policies\/terms-of-service\">Geschäftsbedingungen<\/a><\/p>",
+    "dbtfy_agree_warning_text": "<p>Sie müssen die Geschäftsbedingungen akzeptieren<\/p>",
+    "dbtfy_agree_order_title": "Ich akzeptiere die Geschäftsbedingungen",
+    "dbtfy_agree_order_yes_answer": "Ja",
+    "dbtfy_back_in_stock_richtext": "<p>Benachrichtigung erhalten, sobald das Produkt auf Lager ist<\/p>",
+    "dbtfy_back_in_stock_btn": "Bitte benachrichtigen",
+    "dbtfy_back_in_stock_success": "<p>Wir benachrichtigen Sie, sobald das Produkt auf Lager ist.<\/p>",
+    "dbtfy_back_in_stock_body_prefix": "Benachrichtigung erhalten, sobald",
+    "dbtfy_back_in_stock_body_suffix": "auf Lager ist",
+    "dbtfy_cart_countdown_time_mins": 20,
+    "dbtfy_cart_countdown_prefix": "Ihre Produkte sind für",
+    "dbtfy_cart_countdown_suffix": "reserviert. Bestellen Sie jetzt!",
+    "dbtfy_cart_countdown_icon_over": "update",
+    "dbtfy_cart_countdown_msg_over": "Bestellen Sie bevor Ihre Produkte ausverkauft sind",
+    "dbtfy_cart_discount_label": "Rabattcode",
+    "dbtfy_cart_discount_placeholder": "Geben Sie hier Ihren Rabattcode ein",
+    "dbtfy_cart_discount_apply_button_label": "Rabattcode verwenden",
+    "nlify_cart_notification": "<strong>Unsere Garantie: <\/strong>Testen Sie unsere Produkte in aller Ruhe während 30 Tagen. Der Rückversand bei Anodyne® ist kostenfrei.",
+    "nlify_custom_drawer_icon": "",
+    "dbtfy_cart_goal_before_text": "Noch",
+    "dbtfy_cart_goal_amount": "59",
+    "dbtfy_cart_goal_after_text": "bis gratis Versand",
+    "dbtfy_cart_goal_reached_text": "Gratis Versand!",
+    "dbtfy_cart_discount_savings_label": "Gesamtersparnis",
+    "dbtfy_inactive_tab_message_text_first": "👕 up to 50% off",
+    "dbtfy_inactive_tab_message_text_second": "👕 Anodyne discounts",
+    "dbtfy_floating_bar_text": "",
+    "dbtfy_newsletter_popup_title": "Erhalten Sie einen 10% Rabattcode",
+    "dbtfy_newsletter_popup_text": "<p>Melden Sie sich unseren Newsletter an und erhalten Sie einen <strong>10% Rabattcode<\/strong> für <strong>ALLE <\/strong>Produkte!<\/p>",
+    "dbtfy_newsletter_popup_close": "Nein, danke",
+    "dbtfy_newsletter_popup_title_success": "Vielen Dank für Ihre Anmeldung",
+    "dbtfy_newsletter_popup_text_success": "<p>Geben Sie den Rabattcode im Warenkorb ein, und erhalten Sie 10% auf ALLE Produkte.<\/p>",
+    "dbtfy_newsletter_popup_reward_button": "Rabattcode verwenden",
+    "dbtfy_order_feedback_select_title": "Wie haben Sie uns gefunden?",
+    "dbtfy_order_feedback_default_options": "Bitte wählen Sie eine",
+    "dbtfy_order_feedback_select_options": "Physiotherapeut\/in, Social Media, Google, Amazon",
+    "dbtfy_order_feedback_error_message": "Bitte wählen Sie unten eine Option",
+    "dbtfy_order_feedback_other_option": "Andere",
+    "dbtfy_order_feedback_other_placeholder": "Andernfalls, nämlich",
+    "dbtfy_order_feedback_error_message_other": "Bitte füllen Sie das folgende Textfeld aus",
+    "dbtfy_order_feedback_title": "Wie haben Sie uns gefunden?",
+    "dbtfy_order_feedback_other_title": "Wie haben Sie uns gefunden?",
+    "dbtfy_recently_viewed_title": "Zuletzt gesehen",
+    "dbtfy_smart_search_products": "Producten",
+    "dbtfy_smart_search_collections": "Collecties",
+    "dbtfy_smart_search_articles": "Artikelen",
+    "dbtfy_smart_search_pages": "Pagina's",
+    "dbtfy_smart_search_all": "Laat alle resultaten zien",
+    "dbtfy_social_discount_link": "Teilen und 10% Rabatt erhalten",
+    "dbtfy_social_discount_popup_title": "Teilen und 10% Rabatt erhalten",
+    "dbtfy_social_discount_popup_text": "Teilen Sie dies mit Ihren Freunden und erhalten Sie 10% Rabatt",
+    "dbtfy_social_discount_reward_title": "Vielen Dank für das Teilen",
+    "dbtfy_social_discount_reward_text": "<p>Kopieren Sie den untenstehenden Rabattcode und fügen Sie ihn in Ihren Warenkorb ein, um Ihren Rabatt zu erhalten<\/p>",
+    "dbtfy_social_discount_reward_button": "Rabattcode verwenden",
+    "dbtfy_trust_badge_text": "Garantiert sicherer und zuverlässiger Checkout",
+    "dbtfy_wish_list_add_text": "Zur Wunschzettel hinzufügen",
+    "dbtfy_wish_list_remove_text": "Von Wunschzettel entfernen",
+    "dbtfy_wish_list_empty_text": "Ihr Wunschzettel ist derzeit leer.",
+    "dbtfy_wish_list_share_label": "Wunschzettel teilen",
+    "custom_inventory_quantity": true,
+    "sections": {
+      "dbtfy-upsell-popup": {
+        "type": "dbtfy-upsell-popup",
+        "blocks": {
+          "957fd032-c4db-4944-841e-3e355f2fbce4": {
+            "type": "upsell",
+            "disabled": true,
+            "settings": {
+              "heading": "",
+              "title_1": "Spar 25%",
+              "text_1": "<p>Lige nu kan du <strong>sparer 25%<\/strong> på hele din ordre! <\/p>",
+              "collection_trigger_1": "bedst-solgte",
+              "product_trigger_1": "",
+              "product_offer_1": "rabat25",
+              "icons_1": "card_giftcard",
+              "button_label_1": "Tilføj 25% rabat til min ordre",
+              "discount_name_1": "Rabat25",
+              "discount_amount_1": "25",
+              "discount_type_1": "%",
+              "title_2": "",
+              "text_2": "",
+              "collection_trigger_2": "",
+              "product_trigger_2": "",
+              "product_offer_2": "",
+              "icons_2": "card_giftcard",
+              "button_label_2": "",
+              "discount_name_2": "",
+              "discount_amount_2": "",
+              "discount_type_2": "%",
+              "title_3": "Special Offer!",
+              "text_3": "<p>Add this product to your cart and get 20% OFF your entire order.<\/p>",
+              "collection_trigger_3": "",
+              "product_trigger_3": "",
+              "product_offer_3": "",
+              "icons_3": "card_giftcard",
+              "button_label_3": "Claim offer!",
+              "discount_name_3": "",
+              "discount_amount_3": "",
+              "discount_type_3": "%",
+              "title_4": "Special Offer!",
+              "text_4": "<p>Add this product to your cart and get 20% OFF your entire order.<\/p>",
+              "collection_trigger_4": "",
+              "product_trigger_4": "",
+              "product_offer_4": "",
+              "icons_4": "card_giftcard",
+              "button_label_4": "Claim offer!",
+              "discount_name_4": "",
+              "discount_amount_4": "",
+              "discount_type_4": "%",
+              "title_5": "Special Offer!",
+              "text_5": "<p>Add this product to your cart and get 20% OFF your entire order.<\/p>",
+              "collection_trigger_5": "",
+              "product_trigger_5": "",
+              "product_offer_5": "",
+              "icons_5": "card_giftcard",
+              "button_label_5": "Claim offer!",
+              "discount_name_5": "",
+              "discount_amount_5": "",
+              "discount_type_5": "%",
+              "title_6": "Special Offer!",
+              "text_6": "<p>Add this product to your cart and get 20% OFF your entire order.<\/p>",
+              "collection_trigger_6": "",
+              "product_trigger_6": "",
+              "product_offer_6": "",
+              "icons_6": "card_giftcard",
+              "button_label_6": "Claim offer!",
+              "discount_name_6": "",
+              "discount_amount_6": "",
+              "discount_type_6": "%",
+              "title_7": "Special Offer!",
+              "text_7": "<p>Add this product to your cart and get 20% OFF your entire order.<\/p>",
+              "collection_trigger_7": "",
+              "product_trigger_7": "",
+              "product_offer_7": "",
+              "icons_7": "card_giftcard",
+              "button_label_7": "Claim offer!",
+              "discount_name_7": "",
+              "discount_amount_7": "",
+              "discount_type_7": "%",
+              "title_8": "Special Offer!",
+              "text_8": "<p>Add this product to your cart and get 20% OFF your entire order.<\/p>",
+              "collection_trigger_8": "",
+              "product_trigger_8": "",
+              "product_offer_8": "",
+              "icons_8": "card_giftcard",
+              "button_label_8": "Claim offer!",
+              "discount_name_8": "",
+              "discount_amount_8": "",
+              "discount_type_8": "%",
+              "title_9": "Special Offer!",
+              "text_9": "<p>Add this product to your cart and get 20% OFF your entire order.<\/p>",
+              "collection_trigger_9": "",
+              "product_trigger_9": "",
+              "product_offer_9": "",
+              "icons_9": "card_giftcard",
+              "button_label_9": "Claim offer!",
+              "discount_name_9": "",
+              "discount_amount_9": "",
+              "discount_type_9": "%",
+              "title_10": "Special Offer!",
+              "text_10": "<p>Add this product to your cart and get 20% OFF your entire order.<\/p>",
+              "collection_trigger_10": "",
+              "product_trigger_10": "",
+              "product_offer_10": "",
+              "icons_10": "card_giftcard",
+              "button_label_10": "Claim offer!",
+              "discount_name_10": "",
+              "discount_amount_10": "",
+              "discount_type_10": "%"
+            }
+          }
+        },
+        "block_order": [
+          "957fd032-c4db-4944-841e-3e355f2fbce4"
+        ],
+        "settings": {
+          "dbtfy_upsell_popup_width": "",
+          "dbtfy_upsell_popup_description": "See product details",
+          "dbtfy_upsell_popup_cart": "Nein danke",
+          "dbtfy_upsell_popup_checkout": "Zur Kasse gehen →",
+          "text_alignment": "text-center",
+          "dbtfy_upsell_popup_range": 75
+        }
+      },
+      "dbtfy-quantity-breaks": {
+        "type": "dbtfy-quantity-breaks",
+        "blocks": {
+          "3ecae9fd-6b11-4a20-84b1-0e99e2faaaa2": {
+            "type": "product-break",
+            "settings": {
+              "title": "",
+              "product_break_show_on_product_page": true,
+              "product_break_visibility": "collection",
+              "product_break_collection": "posture-shirt",
+              "product_break_types": "",
+              "product_break_tags": "",
+              "product_break_product": "",
+              "product_break_range_1": 2,
+              "product_break_discount_code_1": "Test2",
+              "product_break_discount_amount_1": "10",
+              "product_break_discount_type_1": "$",
+              "product_break_range_2": 3,
+              "product_break_discount_code_2": "Test3",
+              "product_break_discount_amount_2": "12",
+              "product_break_discount_type_2": "$",
+              "product_break_range_3": 2,
+              "product_break_discount_code_3": "",
+              "product_break_discount_amount_3": "",
+              "product_break_discount_type_3": "%",
+              "product_break_range_4": 2,
+              "product_break_discount_code_4": "",
+              "product_break_discount_amount_4": "",
+              "product_break_discount_type_4": "%",
+              "product_break_range_5": 2,
+              "product_break_discount_code_5": "",
+              "product_break_discount_amount_5": "",
+              "product_break_discount_type_5": "%"
+            }
+          },
+          "8893dfdd-3b93-46ae-af01-1c25d217f5fc": {
+            "type": "cart-break",
+            "settings": {
+              "title": "",
+              "cart_break_range_1": 2,
+              "cart_break_discount_code_1": "",
+              "cart_break_discount_amount_1": "",
+              "cart_break_discount_type_1": "%",
+              "cart_break_range_2": 2,
+              "cart_break_discount_code_2": "",
+              "cart_break_discount_amount_2": "",
+              "cart_break_discount_type_2": "%",
+              "cart_break_range_3": 2,
+              "cart_break_discount_code_3": "",
+              "cart_break_discount_amount_3": "",
+              "cart_break_discount_type_3": "%",
+              "cart_break_range_4": 2,
+              "cart_break_discount_code_4": "",
+              "cart_break_discount_amount_4": "",
+              "cart_break_discount_type_4": "%",
+              "cart_break_range_5": 2,
+              "cart_break_discount_code_5": "",
+              "cart_break_discount_amount_5": "",
+              "cart_break_discount_type_5": "%",
+              "cart_break_range_6": 2,
+              "cart_break_discount_code_6": "",
+              "cart_break_discount_amount_6": "",
+              "cart_break_discount_type_6": "%",
+              "cart_break_range_7": 2,
+              "cart_break_discount_code_7": "",
+              "cart_break_discount_amount_7": "",
+              "cart_break_discount_type_7": "%",
+              "cart_break_range_8": 2,
+              "cart_break_discount_code_8": "",
+              "cart_break_discount_amount_8": "",
+              "cart_break_discount_type_8": "%",
+              "cart_break_range_9": 2,
+              "cart_break_discount_code_9": "",
+              "cart_break_discount_amount_9": "",
+              "cart_break_discount_type_9": "%",
+              "cart_break_range_10": 2,
+              "cart_break_discount_code_10": "",
+              "cart_break_discount_amount_10": "",
+              "cart_break_discount_type_10": "%"
+            }
+          }
+        },
+        "block_order": [
+          "3ecae9fd-6b11-4a20-84b1-0e99e2faaaa2",
+          "8893dfdd-3b93-46ae-af01-1c25d217f5fc"
+        ],
+        "settings": {
+          "dbtfy_quantity_breaks_single_text": "Buy _COUNT_: _PRICE_ _SAVED_AMOUNT_",
+          "dbtfy_quantity_breaks_price_type": "total_price",
+          "dbtfy_quantity_breaks_more_discount_text_before": "Add",
+          "dbtfy_quantity_breaks_more_discount_text_after": "more item to unlock",
+          "dbtfy_quantity_breaks_more_discount_text_after_percentage": "off",
+          "dbtfy_quantity_breaks_highest_discount_text": "Highest discount applied!"
+        }
+      },
+      "dbtfy-cart-upsell": {
+        "type": "dbtfy-cart-upsell",
+        "blocks": {
+          "044ae220-77bb-4e0f-bf98-ca576e03c1e0": {
+            "type": "cart-item-upsell",
+            "settings": {
+              "title": "Basic skulderstøtte tilkøb",
+              "specific_upsell_replace_item_1": "add",
+              "specific_upsell_title_1": "<strong>Spar 33%! <\/strong>Tilføj en Skulderstøtte Basic. Nu kun 199 kr (normal 299 kr).",
+              "specific_upsell_product_trigger_1": "anodyne-bh",
+              "specific_upsell_product_offer_1": "skulderstotte-basic-tilkob",
+              "specific_upsell_btn_title_1": "Tilføj",
+              "specific_upsell_replace_item_2": "add",
+              "specific_upsell_title_2": "<strong>Spar 33%! <\/strong>Tilføj en Skulderstøtte Basic. Nu kun 199 kr (normal 299 kr).",
+              "specific_upsell_product_trigger_2": "womens-posture-shirt-nude",
+              "specific_upsell_product_offer_2": "skulderstotte-basic-tilkob",
+              "specific_upsell_btn_title_2": "Tilføj",
+              "specific_upsell_replace_item_3": "add",
+              "specific_upsell_title_3": "<strong>Spar 33%! <\/strong>Tilføj en Skulderstøtte Basic. Nu kun 199 kr (normal 299 kr).",
+              "specific_upsell_product_trigger_3": "womens-posture-shirt-hvid",
+              "specific_upsell_product_offer_3": "skulderstotte-basic-tilkob",
+              "specific_upsell_btn_title_3": "Tilføj",
+              "specific_upsell_replace_item_4": "add",
+              "specific_upsell_title_4": "<strong>Spar 33%! <\/strong>Tilføj en Skulderstøtte Basic. Nu kun 199 kr (normal 299 kr).",
+              "specific_upsell_product_trigger_4": "womens-posture-shirt-sort",
+              "specific_upsell_product_offer_4": "skulderstotte-basic-tilkob",
+              "specific_upsell_btn_title_4": "Tilføj",
+              "specific_upsell_replace_item_5": "add",
+              "specific_upsell_title_5": "<strong>Spar 33%! <\/strong>Tilføj en Skulderstøtte Basic. Nu kun 199 kr (normal 299 kr).",
+              "specific_upsell_product_trigger_5": "womens-posture-shirt-zipper-sort",
+              "specific_upsell_product_offer_5": "skulderstotte-basic-tilkob",
+              "specific_upsell_btn_title_5": "Tilføj",
+              "specific_upsell_replace_item_6": "add",
+              "specific_upsell_title_6": "<strong>Spar 33%! <\/strong>Tilføj en Skulderstøtte Basic. Nu kun 199 kr (normal 299 kr).",
+              "specific_upsell_product_trigger_6": "womens-posture-shirt-zipper-hvid",
+              "specific_upsell_product_offer_6": "skulderstotte-basic-tilkob",
+              "specific_upsell_btn_title_6": "Tilføj",
+              "specific_upsell_replace_item_7": "add",
+              "specific_upsell_title_7": "<strong>Spar 33%! <\/strong>Tilføj en Skulderstøtte Basic. Nu kun 199 kr (normal 299 kr).",
+              "specific_upsell_product_trigger_7": "womens-posture-shirt-zipper-nude",
+              "specific_upsell_product_offer_7": "skulderstotte-basic-tilkob",
+              "specific_upsell_btn_title_7": "Tilføj",
+              "specific_upsell_replace_item_8": "add",
+              "specific_upsell_title_8": "<strong>Spar 33%! <\/strong>Tilføj en Skulderstøtte Basic. Nu kun 199 kr (normal 299 kr).",
+              "specific_upsell_product_trigger_8": "mens-posture-shirt-hvid",
+              "specific_upsell_product_offer_8": "skulderstotte-basic-tilkob",
+              "specific_upsell_btn_title_8": "Tilføj",
+              "specific_upsell_replace_item_9": "add",
+              "specific_upsell_title_9": "<strong>Spar 33%! <\/strong>Tilføj en Skulderstøtte Basic. Nu kun 199 kr (normal 299 kr).",
+              "specific_upsell_product_trigger_9": "mens-posture-shirt-sort",
+              "specific_upsell_product_offer_9": "skulderstotte-basic-tilkob",
+              "specific_upsell_btn_title_9": "Tilføj",
+              "specific_upsell_replace_item_10": "add",
+              "specific_upsell_title_10": "<strong>Spar 33%! <\/strong>Tilføj en Skulderstøtte Basic. Nu kun 199 kr (normal 299 kr).",
+              "specific_upsell_product_trigger_10": "mens-posture-shirt-zipper-sort",
+              "specific_upsell_product_offer_10": "skulderstotte-basic-tilkob",
+              "specific_upsell_btn_title_10": "Tilføj"
+            }
+          },
+          "f98348a9-d1df-4a7e-a63e-6125fd7063fd": {
+            "type": "cart-item-upsell",
+            "settings": {
+              "title": "Basic Skulderstøtte tilkøb",
+              "specific_upsell_replace_item_1": "add",
+              "specific_upsell_title_1": "<strong>Spar 33%! <\/strong>Tilføj en Skulderstøtte Basic. Nu kun 199 kr (normal 299 kr).",
+              "specific_upsell_product_trigger_1": "mens-posture-shirt-zipper-hvid",
+              "specific_upsell_product_offer_1": "skulderstotte-basic-tilkob",
+              "specific_upsell_btn_title_1": "Tilføj",
+              "specific_upsell_replace_item_2": "add",
+              "specific_upsell_title_2": "<strong>Spar 33%! <\/strong>Tilføj en Skulderstøtte Basic. Nu kun 199 kr (normal 299 kr).",
+              "specific_upsell_product_trigger_2": "laendebaelte",
+              "specific_upsell_product_offer_2": "skulderstotte-basic-tilkob",
+              "specific_upsell_btn_title_2": "Tilføj",
+              "specific_upsell_replace_item_3": "add",
+              "specific_upsell_title_3": "<strong>Spar 33%! <\/strong>Tilføj en Skulderstøtte Basic. Nu kun 199 kr (normal 299 kr).",
+              "specific_upsell_product_trigger_3": "ergonomisk-rygpude",
+              "specific_upsell_product_offer_3": "skulderstotte-basic-tilkob",
+              "specific_upsell_btn_title_3": "Tilføj",
+              "specific_upsell_replace_item_4": "add",
+              "specific_upsell_title_4": "",
+              "specific_upsell_product_trigger_4": "",
+              "specific_upsell_product_offer_4": "",
+              "specific_upsell_btn_title_4": "",
+              "specific_upsell_replace_item_5": "add",
+              "specific_upsell_title_5": "",
+              "specific_upsell_product_trigger_5": "",
+              "specific_upsell_product_offer_5": "",
+              "specific_upsell_btn_title_5": "",
+              "specific_upsell_replace_item_6": "add",
+              "specific_upsell_title_6": "",
+              "specific_upsell_product_trigger_6": "",
+              "specific_upsell_product_offer_6": "",
+              "specific_upsell_btn_title_6": "",
+              "specific_upsell_replace_item_7": "add",
+              "specific_upsell_title_7": "",
+              "specific_upsell_product_trigger_7": "",
+              "specific_upsell_product_offer_7": "",
+              "specific_upsell_btn_title_7": "",
+              "specific_upsell_replace_item_8": "add",
+              "specific_upsell_title_8": "",
+              "specific_upsell_product_trigger_8": "",
+              "specific_upsell_product_offer_8": "",
+              "specific_upsell_btn_title_8": "",
+              "specific_upsell_replace_item_9": "add",
+              "specific_upsell_title_9": "",
+              "specific_upsell_product_trigger_9": "",
+              "specific_upsell_product_offer_9": "",
+              "specific_upsell_btn_title_9": "",
+              "specific_upsell_replace_item_10": "add",
+              "specific_upsell_title_10": "",
+              "specific_upsell_product_trigger_10": "",
+              "specific_upsell_product_offer_10": "",
+              "specific_upsell_btn_title_10": ""
+            }
+          },
+          "fb027f97-5a8a-44a9-bcf2-efa1af2dc099": {
+            "type": "cart-item-upsell",
+            "settings": {
+              "title": "Knæbind tilkøb",
+              "specific_upsell_replace_item_1": "add",
+              "specific_upsell_title_1": "<strong>Spar 60%! <\/strong> Tilføj et justerbart knæbind. Nu kun 99 kr. (normal 249 kr).",
+              "specific_upsell_product_trigger_1": "skulderstoette-basic",
+              "specific_upsell_product_offer_1": "justerbart-knaebind",
+              "specific_upsell_btn_title_1": "Tilføj",
+              "specific_upsell_replace_item_2": "add",
+              "specific_upsell_title_2": "<strong>Spar 60%! <\/strong> Tilføj et justerbart knæbind. Nu kun 99 kr. (normal 249 kr).",
+              "specific_upsell_product_trigger_2": "skulderstoette-comfort",
+              "specific_upsell_product_offer_2": "justerbart-knaebind",
+              "specific_upsell_btn_title_2": "Tilføj",
+              "specific_upsell_replace_item_3": "add",
+              "specific_upsell_title_3": "<strong>Spar 60%! <\/strong> Tilføj et justerbart knæbind. Nu kun 99 kr. (normal 249 kr).",
+              "specific_upsell_product_trigger_3": "skulderstoette-premium",
+              "specific_upsell_product_offer_3": "justerbart-knaebind",
+              "specific_upsell_btn_title_3": "Tilføj",
+              "specific_upsell_replace_item_4": "add",
+              "specific_upsell_title_4": "",
+              "specific_upsell_product_trigger_4": "",
+              "specific_upsell_product_offer_4": "",
+              "specific_upsell_btn_title_4": "",
+              "specific_upsell_replace_item_5": "add",
+              "specific_upsell_title_5": "",
+              "specific_upsell_product_trigger_5": "",
+              "specific_upsell_product_offer_5": "",
+              "specific_upsell_btn_title_5": "",
+              "specific_upsell_replace_item_6": "add",
+              "specific_upsell_title_6": "",
+              "specific_upsell_product_trigger_6": "",
+              "specific_upsell_product_offer_6": "",
+              "specific_upsell_btn_title_6": "",
+              "specific_upsell_replace_item_7": "add",
+              "specific_upsell_title_7": "",
+              "specific_upsell_product_trigger_7": "",
+              "specific_upsell_product_offer_7": "",
+              "specific_upsell_btn_title_7": "",
+              "specific_upsell_replace_item_8": "add",
+              "specific_upsell_title_8": "",
+              "specific_upsell_product_trigger_8": "",
+              "specific_upsell_product_offer_8": "",
+              "specific_upsell_btn_title_8": "",
+              "specific_upsell_replace_item_9": "add",
+              "specific_upsell_title_9": "",
+              "specific_upsell_product_trigger_9": "",
+              "specific_upsell_product_offer_9": "",
+              "specific_upsell_btn_title_9": "",
+              "specific_upsell_replace_item_10": "add",
+              "specific_upsell_title_10": "",
+              "specific_upsell_product_trigger_10": "",
+              "specific_upsell_product_offer_10": "",
+              "specific_upsell_btn_title_10": ""
+            }
+          }
+        },
+        "block_order": [
+          "044ae220-77bb-4e0f-bf98-ca576e03c1e0",
+          "f98348a9-d1df-4a7e-a63e-6125fd7063fd",
+          "fb027f97-5a8a-44a9-bcf2-efa1af2dc099"
+        ],
+        "settings": {
+          "dbtfy_cart_upsell_button_style": "btn--primary"
+        }
+      },
+      "dbtfy-color-swatches": {
+        "type": "dbtfy-color-swatches",
+        "settings": {
+        }
+      },
+      "dbtfy-bullet-points": {
+        "type": "dbtfy-bullet-points",
+        "settings": {
+          "dbtfy_bullet_points_position": "under-addtocart-button",
+          "dbtfy_bullet_points_alignment": "left",
+          "dbtfy_bullet_points_display_type": "inline"
+        }
+      },
+      "dbtfy-sales-countdown": {
+        "type": "dbtfy-sales-countdown",
+        "settings": {
+          "dbtfy_sales_countdown_icons": "local_fire_department",
+          "dbtfy_sales_countdown_prefix": "Sale ends in",
+          "dbtfy_sales_countdown_suffix": "",
+          "dbtfy_sales_countdown_d": "d",
+          "dbtfy_sales_countdown_h": "h",
+          "dbtfy_sales_countdown_m": "m",
+          "dbtfy_sales_countdown_s": "s"
+        }
+      },
+      "dbtfy-delivery-time": {
+        "type": "dbtfy-delivery-time",
+        "settings": {
+          "dbtfy_delivery_time_position": "under-addtocart-button"
+        }
+      },
+      "dbtfy-size-chart": {
+        "type": "dbtfy-size-chart",
+        "settings": {
+          "dbtfy_size_chart_icon": "straighten",
+          "dbtfy_size_chart_title": "Size chart",
+          "dbtfy_size_chart_width": "large"
+        }
+      },
+      "drawer-menu": {
+        "type": "drawer-menu",
+        "settings": {
+          "drawer_link_toggle": true,
+          "email": true,
+          "phone": true,
+          "show_social_medias": true,
+          "hide_menu_icon": true,
+          "title": "Menu",
+          "drawer_top_link_list": "main-menu",
+          "drawer_bottom_link_list": ""
+        }
+      },
+      "announcement": {
+        "type": "announcement",
+        "blocks": {
+          "announcement-0": {
+            "type": "message",
+            "settings": {
+              "title": "",
+              "announcement_text": "<p><strong>30 dages fuld returret<\/strong><\/p>"
+            }
+          },
+          "c4676b39-a890-441a-b56f-27f60a8d0ad9": {
+            "type": "message",
+            "settings": {
+              "title": "",
+              "announcement_text": "<p><strong>Gratis ombytning<\/strong><\/p>"
+            }
+          },
+          "82893cc1-5e92-46bd-a94d-7204271ffa01": {
+            "type": "message",
+            "settings": {
+              "title": "",
+              "announcement_text": "<p><strong>Gratis fragt ved køb over 399 kr<\/strong><\/p>"
+            }
+          },
+          "1845e2c6-d475-470e-81ff-6bb64b635172": {
+            "type": "message",
+            "settings": {
+              "title": "",
+              "announcement_text": "<p><strong>5 stjerner på TrustPilot<\/strong><\/p>"
+            }
+          },
+          "ed921cc9-429d-455b-86d4-1b6382ef61e7": {
+            "type": "message",
+            "disabled": true,
+            "settings": {
+              "title": "",
+              "announcement_text": "<p><strong>SPAR 25%<\/strong> på alle produkter<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "announcement-0",
+          "c4676b39-a890-441a-b56f-27f60a8d0ad9",
+          "82893cc1-5e92-46bd-a94d-7204271ffa01",
+          "1845e2c6-d475-470e-81ff-6bb64b635172",
+          "ed921cc9-429d-455b-86d4-1b6382ef61e7"
+        ],
+        "settings": {
+          "style__selector": "black",
+          "show_announcement": true,
+          "small_announcement_text": false,
+          "show_social": false,
+          "email": true,
+          "phone": true,
+          "left_message": "<p>Vi forbedrer din kropsholdning<\/p>",
+          "right_message": "<p><a href=\"\/pages\/kontakt\" target=\"_blank\" title=\"Kontakt\">Kontakt<\/a><\/p>",
+          "announcement_autoplayspeed": 5
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "main_menu_link_list": "main-menu",
+          "navigation_type": "right",
+          "logo_link": true,
+          "default_logo": "shopify:\/\/shop_images\/Anodyne_black_medium_6728745e-a674-486e-8077-9faaf5a75715.png",
+          "mobile_logo": "shopify:\/\/shop_images\/Anodyne_black_medium_6728745e-a674-486e-8077-9faaf5a75715.png",
+          "default_logo_svg": "",
+          "inverted_logo_svg": "",
+          "mobile_logo_svg": "",
+          "logo_width": 160,
+          "logo_mobile_width": 100
+        }
+      },
+      "dbtfy-instagram-feed": {
+        "type": "dbtfy-instagram-feed",
+        "settings": {
+          "dbtfy_instagram_feed_icon": false,
+          "dbtfy_instagram_feed_access_token": "",
+          "dbtfy_instagram_feed_full_width": false,
+          "title": "From our Instagram",
+          "subtitle": "",
+          "dbtfy_instagram_feed_section_style": "section-border",
+          "dbtfy_instagram_feed_rows": "1",
+          "dbtfy_instagram_feed_desktop_grid": "6",
+          "dbtfy_instagram_feed_mobile_grid": "3"
+        }
+      },
+      "guarantee": {
+        "type": "guarantee",
+        "blocks": {
+          "guarantee-0": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "image": "shopify:\/\/shop_images\/Returns_200px.png",
+              "guarantee_icon": "loyalty",
+              "heading_text": "",
+              "text": "<p>Gratis ombytning<\/p>",
+              "text_alignment": "text-center",
+              "text_alignment_mobile": "text-center",
+              "button_style": "btn-outline-primary",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "guarantee-1": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "image": "shopify:\/\/shop_images\/Truck_200px.png",
+              "guarantee_icon": "loyalty",
+              "heading_text": "",
+              "text": "<p>Mulighed for gratis levering til pakkeshop<\/p>",
+              "text_alignment": "text-center",
+              "text_alignment_mobile": "text-center",
+              "button_style": "btn-outline-primary",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "guarantee-2": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "image": "shopify:\/\/shop_images\/Smile2_200px.png",
+              "guarantee_icon": "loyalty",
+              "heading_text": "",
+              "text": "<p>Prøv frit i 30 dage<\/p>",
+              "text_alignment": "text-center",
+              "text_alignment_mobile": "text-center",
+              "button_style": "btn-outline-primary",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "bb764f80-013b-4d19-89ae-5e332eb782cf": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "image": "shopify:\/\/shop_images\/e-maerket.png",
+              "guarantee_icon": "loyalty",
+              "heading_text": "",
+              "text": "<p>Vi er en <a href=\"https:\/\/certifikat.emaerket.dk\/anodyne.dk\" target=\"_blank\" title=\"https:\/\/certifikat.emaerket.dk\/anodyne.dk\">E-mærket<\/a> webshop<\/p>",
+              "text_alignment": "text-center",
+              "text_alignment_mobile": "text-center",
+              "button_style": "btn-outline-primary",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "guarantee-0",
+          "guarantee-1",
+          "guarantee-2",
+          "bb764f80-013b-4d19-89ae-5e332eb782cf"
+        ],
+        "settings": {
+          "show_guarantee": true,
+          "guarantee_size": "lg",
+          "section_style": "section-default"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-1": {
+            "type": "link_list",
+            "settings": {
+              "title": "Kategorier",
+              "column_width": 1,
+              "heading_text": "Kategorier",
+              "subtitle": "",
+              "footer_link_list": "footer-categories"
+            }
+          },
+          "0bf661af-2d67-4ed7-9f1e-750e2c09c74e": {
+            "type": "link_list",
+            "settings": {
+              "title": "Anodyne",
+              "column_width": 1,
+              "heading_text": "Anodyne®",
+              "subtitle": "",
+              "footer_link_list": "anodyne-menu"
+            }
+          },
+          "045bae48-bfff-4e04-a080-14a99dbf2e0c": {
+            "type": "text",
+            "settings": {
+              "title": "Kontakt",
+              "column_width": 1,
+              "svg": "",
+              "img_url": "",
+              "logo_width": 150,
+              "heading_text": "Kontakt os",
+              "subtitle": "",
+              "text": "<p>Anodyne.dk<\/p><p><strong>Man - tors<\/strong>: 10:00 - 16:00<br\/><strong>Fre:<\/strong> 10:00 - 15:00<\/p>",
+              "email": true,
+              "phone": true,
+              "show_social_media": false
+            }
+          },
+          "38aab7d5-4020-4b5d-aa34-5f065cd7a210": {
+            "type": "html",
+            "settings": {
+              "title": "Socials",
+              "column_width": 1,
+              "heading_text": "Socials",
+              "subtitle": "",
+              "html_area": "",
+              "facebook_link": "https:\/\/www.facebook.com\/anodyne.dk",
+              "youtube_link": "https:\/\/www.youtube.com\/channel\/UCFLDlWEPVUrvsuNjVt6sXJg",
+              "insta_link": "https:\/\/www.instagram.com\/anodyne.dk"
+            }
+          }
+        },
+        "block_order": [
+          "footer-1",
+          "0bf661af-2d67-4ed7-9f1e-750e2c09c74e",
+          "045bae48-bfff-4e04-a080-14a99dbf2e0c",
+          "38aab7d5-4020-4b5d-aa34-5f065cd7a210"
+        ],
+        "settings": {
+          "show_social_media": false,
+          "social_media_position_desktop": "center",
+          "social_title": "Follow-us on social media!",
+          "show_payment_icons": true,
+          "show_shopify_footer": false,
+          "show_debutify_footer": false,
+          "custom_credential": "<p>P.O. Pedersens Vej 9, 8200 Aarhus N - CVR: 37167053 <em>(NB: Intet salg på adressen)<\/em><\/p>",
+          "style__selector": "black",
+          "product_counter_text": "Black days starter om:",
+          "date__selector": "2022-11-15 23:59:59",
+          "show_product_counter": true
+        }
+      },
+      "dbtfy-upsell-bundles": {
+        "type": "dbtfy-upsell-bundles",
+        "settings": {
+          "dbtfy_upsell_bundles_title": "Frequently bought together",
+          "dbtfy_upsell_bundles_subtitle": "",
+          "dbtfy_upsell_bundles_total": "Total price:",
+          "dbtfy_upsell_bundles_cart": "Add selected items",
+          "dbtfy_upsell_bundles_icons": "library_add_check",
+          "dbtfy_upsell_bundles_current": "This item:",
+          "section_style": "section-border",
+          "dbtfy_upsell_bundles_reviews": false,
+          "dbtfy_upsell_bundles_limit": "2",
+          "dbtfy_upsell_bundles_position": "product"
+        }
+      },
+      "dbtfy-pricing-table": {
+        "type": "dbtfy-pricing-table",
+        "settings": {
+          "show_on_desktop": true,
+          "show_on_mobile": true,
+          "title": "Pricing table",
+          "subtitle": "",
+          "section_style": "section-blank",
+          "dbtfy_button_position": "middle"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "title": "",
+          "subtitle": "",
+          "section_style": "section-blank",
+          "rows": "2",
+          "desktop_grid": "4",
+          "mobile_grid": "2",
+          "slider_related_products": true,
+          "arrows": true,
+          "dots": true,
+          "autoplay": false,
+          "autoplayspeed": 5
+        }
+      },
+      "dbtfy-faq-section": {
+        "type": "dbtfy-faq-section",
+        "settings": {
+          "show_on_desktop": true,
+          "show_on_mobile": true,
+          "title": "FAQ",
+          "subtitle": "",
+          "section_style": "section-border",
+          "dbtfy_faq_searchbox": true,
+          "dbtfy_faq_search_placeholder": "Search questions...",
+          "dbtfy_faq_bannerbox": true,
+          "dbtfy_faq_banner_icon": "live_help",
+          "dbtfy_faq_banner_text": "Didn't find your answer?",
+          "dbtfy_faq_banner_subtitle": "Our customer service will be happy to help you.",
+          "dbtfy_faq_btn": "Get in Touch",
+          "dbtfy_faq_link": ""
+        }
+      },
+      "related-products": {
+        "type": "related-products",
+        "settings": {
+          "show_related_products": false,
+          "related_collection": true,
+          "same_vendor": false,
+          "same_type": false,
+          "never_empty": true,
+          "title": "You may also like",
+          "subtitle": "",
+          "section_style": "section-border",
+          "rows": "1",
+          "desktop_grid": "4",
+          "mobile_grid": "2",
+          "slider_related_products": true,
+          "arrows": true,
+          "dots": true,
+          "autoplay": false,
+          "autoplayspeed": 5
+        }
+      },
+      "quotes": {
+        "type": "quotes",
+        "settings": {
+          "show_on_desktop": false,
+          "show_on_mobile": false,
+          "title": "Testimonials",
+          "subtitle": "",
+          "section_style": "section-blank",
+          "quote_width": "60",
+          "arrows": true,
+          "dots": true,
+          "autoplay": true,
+          "autoplayspeed": 5
+        }
+      },
+      "1630070175c6ebb320": {
+        "type": "featured-collections",
+        "blocks": {
+          "1630070175c6ebb320-2": {
+            "type": "collection",
+            "settings": {
+              "collection": "posture-shirt"
+            }
+          },
+          "1630070175c6ebb320-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "ruckenstutze"
+            }
+          },
+          "1630070175c6ebb320-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "andere-producten"
+            }
+          }
+        },
+        "block_order": [
+          "1630070175c6ebb320-2",
+          "1630070175c6ebb320-1",
+          "1630070175c6ebb320-0"
+        ],
+        "settings": {
+          "show_on_desktop": true,
+          "show_on_mobile": true,
+          "full_width": false,
+          "title": "",
+          "subtitle": "",
+          "section_style": "section-blank",
+          "section_height": "small",
+          "show_view_all": false,
+          "button_label": "View all",
+          "button_link": "shopify:\/\/collections",
+          "button_style": "btn--primary",
+          "slider_featured_collections": false,
+          "arrows": false,
+          "dots": false
+        }
+      },
+      "163032806406e9f003": {
+        "type": "quotes",
+        "blocks": {
+          "163032806406e9f003-0": {
+            "type": "quote",
+            "settings": {
+              "quote_image": "shopify:\/\/shop_images\/Quotationmarks_trustedshops.png",
+              "icon": "format_quote",
+              "quote": "<p><em>Das Shirt sitzt gut und man merkt die Unterstützung durch das Material.<\/em><\/p>",
+              "author": "Angela E."
+            }
+          },
+          "163032806406e9f003-1": {
+            "type": "quote",
+            "settings": {
+              "quote_image": "shopify:\/\/shop_images\/Quotationmarks_trustedshops.png",
+              "icon": "format_quote",
+              "quote": "<p><em>Bin in jeglicher Hinsicht zufrieden. Schnelle Lieferung und prima Qualität<\/em><\/p>",
+              "author": "Thomas S."
+            }
+          },
+          "163032806406e9f003-2": {
+            "type": "quote",
+            "settings": {
+              "quote_image": "shopify:\/\/shop_images\/Quotationmarks_trustedshops.png",
+              "icon": "format_quote",
+              "quote": "<p><em>Auch bei dieser Bestellung ist alles ganz zu meinen Wünschen verlaufen.<\/em><\/p>",
+              "author": "Norbert B."
+            }
+          }
+        },
+        "block_order": [
+          "163032806406e9f003-0",
+          "163032806406e9f003-1",
+          "163032806406e9f003-2"
+        ],
+        "settings": {
+          "show_on_desktop": true,
+          "show_on_mobile": true,
+          "title": "",
+          "subtitle": "",
+          "section_style": "section-blank",
+          "quote_width": "60",
+          "arrows": true,
+          "dots": true,
+          "autoplay": true,
+          "autoplayspeed": 7
+        }
+      },
+      "1630331223d20499c6": {
+        "type": "featured-products",
+        "settings": {
+          "show_on_desktop": true,
+          "show_on_mobile": true,
+          "title": "Beliebte Produkte",
+          "subtitle": "",
+          "section_style": "section-blank",
+          "home_featured_products": "posture-shirt",
+          "rows": "1",
+          "desktop_grid": "4",
+          "mobile_grid": "2",
+          "show_view_all": true,
+          "button_label": "Mehr Sehen",
+          "button_link": "shopify:\/\/collections",
+          "button_style": "",
+          "slider_related_products": false,
+          "arrows": false,
+          "dots": false,
+          "autoplay": false,
+          "autoplayspeed": 5
+        }
+      },
+      "1630404145a76c9e4d": {
+        "type": "featured-video",
+        "blocks": {
+          "1630404145a76c9e4d-0": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=rWPAplHxWY4"
+            }
+          }
+        },
+        "block_order": [
+          "1630404145a76c9e4d-0"
+        ],
+        "settings": {
+          "show_on_desktop": true,
+          "show_on_mobile": true,
+          "full_width": false,
+          "title": "Wer ist Anodyne?",
+          "subtitle": "Sehen Sie sich unser Präsentationsvideo an",
+          "section_style": "section-default"
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "collection_tags_enable": false,
+          "collection_tags_count": false,
+          "collection_multiple_tags_filtering_enable": false,
+          "collection_sort_enable": false,
+          "tag_selector": "button",
+          "rows": "4",
+          "desktop_grid": "4",
+          "mobile_grid": "2"
+        }
+      },
+      "dbtfy-collection-filters": {
+        "type": "dbtfy-collection-filters",
+        "settings": {
+          "clear_label": "Clear",
+          "clear_all_label": "Clear All",
+          "hide_unavailable_options": false,
+          "visibility_tags_count": "all"
+        }
+      },
+      "map": {
+        "type": "map",
+        "settings": {
+          "show_on_desktop": false,
+          "show_on_mobile": false,
+          "hide_section": false,
+          "heading": "Our store",
+          "address": "<p>123 Fake St.<br\/>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br\/>Saturday, 11am - 9pm<br\/>Sunday, 11am - 5pm<\/p>",
+          "map_address": "490 Rue De La Gauchetière O, Montréal",
+          "button_text": "Get directions",
+          "map_icon": "location_on",
+          "api_key": "",
+          "image_position": "center center"
+        }
+      },
+      "dbtfy-cart-goal": {
+        "type": "dbtfy-cart-goal",
+        "settings": {
+          "dbtfy_cart_goal_before_text": "Endnu",
+          "dbtfy_cart_goal_amount": "399",
+          "dbtfy_cart_goal_after_text": "til gratis forsendelse.",
+          "dbtfy_cart_goal_reached_text": "Gratis levering til pakkeshop",
+          "dbtfy_cart_goal_icons": "local_shipping"
+        }
+      },
+      "dbtfy-customizable-products": {
+        "type": "dbtfy-customizable-products",
+        "settings": {
+        }
+      },
+      "dbtfy-product-tabs": {
+        "type": "dbtfy-product-tabs",
+        "settings": {
+          "dbtfy_product_tabs_display_type": "vertical",
+          "dbtfy_product_tab_heading_color": "headings",
+          "dbtfy_product_tab_text_color": "text",
+          "dbtfy_product_tab_background_color": "accent_background"
+        }
+      },
+      "dbtfy-product-swatches": {
+        "type": "dbtfy-product-swatches",
+        "settings": {
+          "dbtfy_product_swatches_show_in_grid": true
+        }
+      }
+    },
+    "content_for_index": [
+      "1630070175c6ebb320",
+      "163032806406e9f003",
+      "1630331223d20499c6",
+      "1630404145a76c9e4d"
+    ],
+    "blocks": {
+      "YhYm7mcDjlMdgmwsOp": {
+        "type": "shopify:\/\/apps\/drip-email-marketing\/blocks\/drip_shopify_snippet\/0c4de56d-b2fa-4621-acea-6293bc16aba8",
+        "disabled": false,
+        "settings": {
+          "account_param": "9047146"
+        }
+      }
+    }
+  }
+}

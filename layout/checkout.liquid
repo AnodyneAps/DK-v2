@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
+    <meta name="referrer" content="origin">
+
+    <title>{{ page_title }}</title>
+
+    {{ content_for_header }}
+
+    {{ checkout_stylesheets }}
+    {{ checkout_scripts }}
+  </head>
+  <body>
+    {{ skip_to_content_link }}
+    <header class="banner" data-header role="banner">
+      <div class="wrap">
+        {{ content_for_logo }}
+      </div>
+    </header>
+    {{ order_summary_toggle }}
+    <div class="content" data-content>
+      <div class="wrap">
+        <div class="main">
+          <header class="main__header" role="banner">
+            {{ content_for_logo }}
+            {{ breadcrumb }}
+            {{ alternative_payment_methods }}
+          </header>
+          <main class="main__content" role="main">
+            {{ content_for_layout }}
+          </main>
+          <footer class="main__footer" role="contentinfo">
+            {{ content_for_footer }}
+          </footer>
+        </div>
+        <aside class="sidebar" role="complementary">
+          <div class="sidebar__header">
+            {{ content_for_logo }}
+          </div>
+          <div class="sidebar__content">
+            {{ content_for_order_summary }}
+
+          </div>
+        </aside>
+      </div>
+    </div>
+    {{ tracking_code }}
+  <script>
+    (function($) {
+      if(typeof Checkout === 'object'){
+      if(typeof Checkout.$ === 'function'){
+      Checkout.$('button.order-summary-toggle.order-summary-toggle--show').trigger("click");
+      }
+      }
+      //check for valid 8 digits telephone number
+      window.PhoneNumberInputFormatter=function(){return false;};
+
+      $(document).on('page:load page:change', function() {
+      if (Shopify.Checkout.step === 'contact_information') {
+      var $phoneField = $('[name="checkout[shipping_address][phone]"]:not([tabindex="-1"])');
+      var $phoneDiv = $('[data-address-field="phone"]');
+      var spanAppend = $("<p class='field__message' style='color:#e22120'>Angiv venligst korrekt telefonnummer</p>");
+      var spanAppendSuccess = $("<p class='field__message' style='color:#67d767'>Tak, korrekt telefonnummer <span>&#10003;</span></p>");
+      phoneFormatValidated = false;
+      // Remove automatic formatting triggers
+      $phoneField.removeAttr('data-phone-formatter data-phone-formatter-country-select');
+      // Set maxium size
+      $phoneField.attr('maxlength', 16);
+      $phoneField.attr('minlength', 8);
+      $phoneField.attr('size', 8);
+      
+      function phoneNumberValidation() {
+        phoneFormatValidated = false;
+        var phoneFieldVal = $phoneField.val();
+        if(phoneFieldVal.length < 8){
+            phoneFormatValidated = false;
+            formattedPhoneValueFunc($phoneField,phoneFieldVal);
+            $phoneField.css({'border': '2px solid #e22120'});
+            $phoneDiv.append(spanAppend.show());
+            spanAppendSuccess.hide();
+        } else if(phoneFieldVal.length > 12) {
+            $phoneField.css({'border': '2px solid #e22120'});
+            phoneFormatValidated = false;
+            formattedPhoneValueFunc($phoneField,phoneFieldVal);
+            $phoneDiv.append(spanAppend.show());
+            spanAppendSuccess.hide();
+        } else if(phoneFieldVal.length >= 8 || phoneFieldVal.length <= 12) {
+            $phoneField.css({'border': '2px solid #67d767'});
+            $phoneDiv.append(spanAppendSuccess.show());
+            spanAppend.hide();
+            formattedPhoneValueFunc($phoneField,phoneFieldVal);
+            phoneFormatValidated = true;
+        } else {
+            // Strip out any non-numeric characters
+            formattedPhoneValueFunc($phoneField,phoneFieldVal);
+            phoneFormatValidated = false;
+        }
+      }
+      function formattedPhoneValueFunc(phoneField, phoneValue){
+        var formattedPhoneValue = phoneValue.replace(/[^\+0-9]/g, '');
+        phoneField.val(formattedPhoneValue);
+      }
+      // Run validator if there is a previously cached phone number
+      if ($phoneField.val() != "") { phoneNumberValidation() };
+      // Run validator when the user has switched focus from the phone field
+      $phoneField.on('blur', phoneNumberValidation);
+      $phoneField.on('change', phoneNumberValidation);
+      // Run the function when the continue button is clicked or the enter key is pressed
+      $('[data-step] form [type="submit"]').on('click', function(e) {
+      e.preventDefault();
+      phoneNumberValidation();
+      if (phoneFormatValidated) {
+      $('[data-step] form').trigger('submit');
+      }
+      });
+      $('[data-step] form').on('keypress', function(e) {
+      if (e.keyCode === 13) {
+      e.preventDefault();
+      phoneNumberValidation();
+      $('[data-step] form [type="submit"]').trigger('click');
+      }
+      });
+      }
+      });
+      })(Checkout.$);
+  </script>
+  </body>
+</html>

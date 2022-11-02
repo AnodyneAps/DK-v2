@@ -1,0 +1,164 @@
+{
+  "sections": {
+    "166367530215ab248b": {
+      "type": "featured-image-landing",
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/Vision_bd4a16a0-3599-4edb-a4e6-f24ab31ed395.jpg",
+        "section_style": "section-blank",
+        "wrapper__height": 360,
+        "image_title": "<p><strong>Vores vision<\/strong><\/p>",
+        "image_subtitle": "",
+        "image_btntext": "",
+        "image_link": "",
+        "show_on_image_scrolldown": false
+      }
+    },
+    "166367559796e36935": {
+      "type": "mission",
+      "blocks": {
+        "166367559738c81b46-0": {
+          "type": "html",
+          "settings": {
+            "mission_title": "",
+            "mission_description": "<div style=\"margin:2rem 0;\">\n<h1>Vi vil gøre en forskel<\/h1>\n<p>For mange er en sund kropsholdning vejen til et bedre liv. Uanset om man døjer med periodevise spændinger ved skrivebordet eller lider af kroniske smerter, er en sund kropsholdning noget, der kan være med til at lette hverdagen. Derfor tager vi vores kunder og deres situation seriøst og arbejder benhårdt for at hjælpe dem med at forbedre deres kropsholdning.<\/p>\n<\/div>",
+            "column_width": 12,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center",
+            "btn_text": "",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "166367559738c81b46-0"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "margin__bottom": 0,
+        "section_style": "section-blank",
+        "wrapper_size": ""
+      }
+    },
+    "1663676460fc28acce": {
+      "type": "custom-html",
+      "blocks": {
+        "1663676460ba284730-0": {
+          "type": "html",
+          "settings": {
+            "title": "",
+            "code": "<div style=\"padding-left:55px; padding-right:55px;\">\n<img src=\"https:\/\/i.ibb.co\/n1XdwZ4\/Purpose2.gif\" style=\"max-width:100px; width:100%\">\n<h2>Formål<\/h2>\n<p>Vi eksisterer for at forbedre kropsholdning, lindre smerter og øge livskvaliteten for vores kunder.<\/p>\n<\/div>",
+            "column_width": 6,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center"
+          }
+        },
+        "adbce269-f9e1-412e-8b7f-38c931c9d4c3": {
+          "type": "html",
+          "settings": {
+            "title": "",
+            "code": "<div style=\"padding-left:55px; padding-right:55px;\">\n<img src=\"https:\/\/i.ibb.co\/FgjcrpD\/Ambition2.gif\" style=\"max-width:100px; width:100%\">\n<h2>Ambition<\/h2>\n<p>Vi vil være den mest pålidelige og foretrukne leverandør af effektivt holdningskorrigerende tøj i hele Europa..<\/p>\n<\/div>",
+            "column_width": 6,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center"
+          }
+        }
+      },
+      "block_order": [
+        "1663676460ba284730-0",
+        "adbce269-f9e1-412e-8b7f-38c931c9d4c3"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "padding_section": true,
+        "section_style": "section-blank",
+        "wrapper_size": ""
+      }
+    },
+    "1663677295b91cddf3": {
+      "type": "featured-icons",
+      "blocks": {
+        "1663677295ba56017e-0": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Integrity.png",
+            "title": "Bevar integriteten",
+            "text": "<p>Vi er respektfulde og ærlige overfor vores kunder.<\/p>"
+          }
+        },
+        "1663677295ba56017e-1": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Quality.png",
+            "title": "Fokus på kvalitet",
+            "text": "<p>Vores produkter virker og holder i mange år.<\/p>"
+          }
+        },
+        "1663677295ba56017e-2": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Target.png",
+            "title": "Gør det enkelt",
+            "text": "<p>Vi gør det nemt at finde det helt rigtige produkt.<\/p>"
+          }
+        },
+        "f97af3f9-1518-4821-bef4-2273e327c1e4": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Feedback.png",
+            "title": "Lyt til kunden",
+            "text": "<p>Vi holder fingeren på pulsen og lytter til vores kunders feedback.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1663677295ba56017e-0",
+        "1663677295ba56017e-1",
+        "1663677295ba56017e-2",
+        "f97af3f9-1518-4821-bef4-2273e327c1e4"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "title": "Vores værdier",
+        "subtitle": "Hos Anodyne har vi fire kerneværdier, som guider alle vores beslutninger og sikrer, at vi altid leverer den samme gode service.",
+        "section_style": "section-default",
+        "text_align": "text-center"
+      }
+    },
+    "16636773046ce0c44d": {
+      "type": "featured-products",
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "title": "Mest solgte",
+        "subtitle": "",
+        "section_style": "section-blank",
+        "home_featured_products": "posture-shirt",
+        "rows": "2",
+        "desktop_grid": "4",
+        "mobile_grid": "2",
+        "show_view_all": false,
+        "button_label": "View all",
+        "button_link": "",
+        "button_style": "btn-outline-primary",
+        "slider_related_products": true,
+        "arrows": true,
+        "dots": true,
+        "autoplay": false,
+        "autoplayspeed": 5
+      }
+    }
+  },
+  "order": [
+    "166367530215ab248b",
+    "166367559796e36935",
+    "1663676460fc28acce",
+    "1663677295b91cddf3",
+    "16636773046ce0c44d"
+  ]
+}

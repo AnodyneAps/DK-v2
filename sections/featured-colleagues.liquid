@@ -1,0 +1,164 @@
+<div class="{% unless section.settings.show_on_desktop %} medium--hide large--hide{% endunless %} {% unless section.settings.show_on_mobile %} small--hide{% endunless %} {{ section.settings.section_style }}" data-section-type="featured-colleagues-section">
+  <div class="box box-small">
+		{%- assign wrapper_size = section.settings.wrapper_size -%}
+    <div class="wrapper{{wrapper_size}}">
+					{%- unless section.settings.title == blank and section.settings.subtitle == blank -%}
+						<div class="grid">
+							<div class="grid__item large--eight-twelfths push--large--two-twelfths ">
+								<div class="section-header">
+									{%- unless section.settings.title == blank -%}
+										<h2 class="section-header__title">{{ section.settings.title | escape }}</h2>
+									{%- endunless -%}
+									{%- unless section.settings.subtitle == blank -%}
+										<p class="section-header__subtitle">{{ section.settings.subtitle | escape }}</p>
+									{%- endunless -%}
+								</div>
+							</div>
+						</div>
+					{%- endunless -%}
+			<!-- Custom HTML -->
+				<div class="colleague-grid">
+			{%- if section.blocks.size > 0 -%}
+          <!-- Blocks -->
+					{%- for block in section.blocks -%}
+                  <div class="colleague-single">
+                    {%- if block.settings.colleague_image !=blank -%}
+                    <div class="colleague-img">
+                      <img class="lazyload" src="{{ block.settings.colleague_image | img_url: '400x400'}}" alt="{% if block.settings.colleague_image.alt != blank %}{{ block.settings.colleague_image.alt }}{% else %} Anodyne Team {% endif %}">
+                    </div>
+                    {%- endif -%}
+                    {%- if block.settings.colleague_desc !=blank or block.settings.text_alignment !=blank   -%}
+                    <div class="colleague_desc   {{ block.settings.text_alignment  }}">
+                      {{ block.settings.colleague_desc }}
+                    </div>
+											{%- endif -%}
+									</div>
+					{%- endfor -%}
+        </div>
+      </div>
+      {%- else -%}
+        {%- render 'no-blocks' -%}
+      {%- endif -%}
+ </div>
+</div>
+{% schema %}
+{
+	"name": "Featured Colleagues",
+	"class": "featured-colleagues-section",
+	"settings": [
+		{
+			"type": "checkbox",
+			"id": "show_on_desktop",
+			"label": "Show on desktop",
+			"default": true
+		},
+		{
+			"type": "checkbox",
+			"id": "show_on_mobile",
+			"label": "Show on mobile",
+			"default": true
+		},
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Heading",
+			"default": "Meet our team"
+		},
+		{
+			"type": "text",
+			"id": "subtitle",
+			"label": "Subheading"
+		},
+		{
+			"type": "select",
+			"id": "section_style",
+			"label": "Section style",
+			"default": "section-blank",
+			"options": [
+				{
+					"value": "section-blank",
+					"label": "Blank background"
+				},
+				{
+					"value": "section-default",
+					"label": "Accent background"
+				},
+				{
+					"value": "section-border",
+					"label": "Border top"
+				}
+			]
+		},
+		{
+			"type": "select",
+			"id": "wrapper_size",
+			"label": "Wrapper size",
+			"default": "",
+			"options": [
+				{
+					"value": "",
+					"label": "Default"
+				},
+				{
+					"value": "-fluid",
+					"label": "Fluid"
+				},
+				{
+					"value": "-full",
+					"label": "Full"
+				}
+			]
+		}
+	],
+  "blocks" : [
+    {
+      "type": "featured_colleagues",
+      "name": "Colleagues",
+      "settings": [
+				{
+					"type": "image_picker",
+					"id": "colleague_image",
+					"label": "Add colleague image"
+				},
+        {
+          "type": "html",
+          "id": "colleague_desc",
+          "label": "Add colleague details",
+          "default": "<h2>John Day</h2><p>Web Developer</p>"
+        },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "label": "Text alignment",
+          "default": "text-left",
+          "options": [
+            {
+              "value": "text-left",
+              "label": "Left"
+            },
+            {
+              "value": "text-center",
+              "label": "Center"
+            },
+            {
+              "value": "text-right",
+              "label": "Right"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+	"presets": [
+	{
+		"name":  "Featured Colleagues",
+		"category": "add colleagues images",
+		"blocks": [
+			{
+				"type": "featured_colleagues"
+			}
+		]
+	}
+]
+}
+{% endschema %}

@@ -1,0 +1,285 @@
+<div class="" data-section-id="{{ section.id }}" data-section-type="video-section">
+	{%- if section.settings.page_width == 'fixed_width' -%}
+    	<div class="page-width">
+  	{%- endif -%}
+		<div class="videoblock videoblock-{{ section.settings.height }}">
+			{%- if section.settings.newvideo_link != blank -%}
+				<div class="fullscreen-video-wrap
+							fullscreen-video-wrap--{{ section.settings.height }}
+							fullscreen-video-wrap--{{ section.id }}">
+					<video class="video-js" loop autoplay preload muted playsinline
+						poster="https:{{ section.settings.image | img_url: 'master' }}">
+						<source src="{{ section.settings.newvideo_link }}" type="video/mp4">
+						</source>
+					</video>
+				</div>
+			{% elsif section.settings.image != blank %}
+				<div class="video__image box ratio-container lazyload js"
+					data-bgset="{% include 'bgset', image: section.settings.image %}"
+					data-sizes="auto"
+					data-parent-fit="contain"
+					style="background-position: {{ section.settings.image_position }};"
+					data-image-loading-animation>
+				</div>
+
+			{%- else -%}
+				<div class="placeholder-background">
+					{{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+				</div>
+			{%- endif -%}
+
+			{%- if section.settings.show_overlay -%}<div class="video__overlay"></div>{%- endif -%}
+
+			<div class="hero-fixed-width__content">
+				<div class="page-width text-center">
+					{%- if section.settings.video_title != blank -%}
+						<h2 class="h1 mega-title{% if section.settings.text_size == 'large' %} mega-title--large{% endif %}">{{ section.settings.video_title }}</h2>
+					{%- endif -%}
+					{%- if section.settings.text_description != blank -%}
+						<div class="rte-setting mega-subtitle{% if section.settings.text_description_size == 'large' %} mega-subtitle--large{% endif %}">{{ section.settings.text_description }}</div>
+					{%- endif -%}
+					{%- if section.settings.button_label != blank and section.settings.button_link != blank -%}
+						<a href="{{ section.settings.button_link }}" class="btn hero__btn">
+							{{ section.settings.button_label | escape }}
+						</a>
+					{%- endif -%}
+          {%- if section.settings.second_button_label != blank and section.settings.second_button_link != blank -%}
+          <a href="{{ section.settings.second_button_link }}" class="btn hero__btn second_hero__btn">
+            {{ section.settings.second_button_label | escape }}
+          </a>
+        {%- endif -%}
+				</div>
+			</div>
+			{%- if section.settings.show_scrolldown -%}
+			<div class="scrolldown">
+					<div class="Icon-wrapper">{%- render 'icon' with 'scrolldown' -%}</div>
+					<div class="Icon-wrapper">{%- render 'icon' with 'scrolldown' -%}</div>
+					<div class="Icon-wrapper">{%- render 'icon' with 'scrolldown' -%}</div>
+			</div>
+		{%- endif -%}
+    {%- if section.settings.show_emark -%}
+    <div class="emark-container">
+        <div class="Emark-wrapper">{%- render 'icon' with 'emark' -%}</div>
+    </div>
+  {%- endif -%}
+      {% if section.settings.show_bottom_counter %}
+          {%- render 'flip-clock' -%}
+    {% endif %}
+		</div>
+
+	{%- if section.settings.page_width == 'fixed_width' -%}
+    	</div>
+  	{%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Hero video",
+  "class": "index-section video-section index-section--flush",
+  "settings": [
+	{
+      "type": "select",
+      "id": "page_width",
+      "label": "Text width",
+      "default": "full_width",
+      "options": [
+        {
+          "label":  "Medium",
+          "value": "full_width"
+        },
+        {
+          "label": "Stor",
+          "value": "fixed_width"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "height",
+      "label": "Video hight",
+      "default": "full",
+      "options": [
+        {
+          "label": "Small",
+          "value": "small"
+        },
+        {
+          "label": "Medium",
+          "value": "medium"
+        },
+        {
+          "label": "Large",
+          "value": "large"
+        },
+        {
+          "label": "Xlarge",
+          "value": "full"
+        }
+      ]
+    },
+	{
+      "type": "url",
+      "id": "newvideo_link",
+      "label": "Videolink"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_overlay",
+      "label": "Show Overlay",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Cover Image"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image position",
+      "default": "center center",
+      "options": [
+        {
+          "label": "Left top",
+          "value": "left top"
+        },
+        {
+          "label": "Center top",
+          "value": "center top"
+        },
+        {
+          "label": "Right top",
+          "value": "right top"
+        },
+        {
+          "label": "Left center",
+          "value": "left center"
+        },
+        {
+          "label": "Center center",
+          "value": "center center"
+        },
+        {
+          "label": "Right center",
+          "value": "right center"
+        },
+        {
+          "label": "Left bottom",
+          "value": "left bottom"
+        },
+        {
+          "label": "Center bottom",
+          "value": "center bottom"
+        },
+        {
+          "label": "Right bottom",
+          "value": "right bottom"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "id": "video_title",
+      "label": "Video title",
+	    "default": "How To Add A Video Background On Shopify"
+    },
+    {
+      "type": "select",
+      "id": "text_size",
+      "label": "Text size",
+      "default": "medium",
+      "options": [
+        {
+          "label": "Medium",
+          "value": "medium"
+        },
+        {
+          "label": "Large",
+          "value": "large"
+        }
+      ]
+    },
+	{
+      "type": "richtext",
+      "id": "text_description",
+      "label": "Text",
+      "default": "<p>Brug denne tekst til at dele oplysninger om dit brand med dine kunder. Beskriv et produkt, del meddelelser, eller byd kunder velkommen til din butik.</p>"
+    },
+    {
+      "type": "select",
+      "id": "text_description_size",
+      "label": "Description size",
+      "default": "medium",
+      "options": [
+        {
+          "label": "Medium",
+          "value": "medium"
+        },
+        {
+          "label": "Large",
+          "value": "large"
+        }
+      ]
+    },
+	{
+		"type": "text",
+		"id": "button_label",
+		"label": "Button text"
+	},
+	{
+		"type": "url",
+		"id": "button_link",
+		"label": "first button link"
+	},
+  {
+		"type": "text",
+		"id": "second_button_label",
+		"label": "Second button  text"
+	},
+	{
+		"type": "url",
+		"id": "second_button_link",
+		"label": "Second button link"
+	},
+	{
+      "type": "checkbox",
+      "id": "show_scrolldown",
+      "label": "Show scrolldown",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_emark",
+      "label": "Show E mark",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Hero Counter"
+    },
+    {
+      "type": "text",
+      "id": "bottom_counter_text",
+      "label": "Add counter text",
+      "default": "We send your order in"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_bottom_counter",
+      "label": "Show Counter at the bottom of the website",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero video",
+      "category": "Video",
+      "settings": {
+        "image_position": "center center",
+        "show_overlay": true,
+        "height": "medium"
+      }
+    }
+  ]
+}
+{% endschema %}

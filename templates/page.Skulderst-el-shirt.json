@@ -1,0 +1,92 @@
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1663745743b81d3ed3": {
+      "type": "custom-html",
+      "blocks": {
+        "16637457432019bd32-0": {
+          "type": "html",
+          "settings": {
+            "title": "",
+            "code": "<div style=\"margin-bottom:-60px\">\n<h1>Posture Shirt eller Skulderstøtte?<\/h1>\n<h4>Læs mere om forskelle og ligheder mellem de to produkter her.<\/h4>\n<\/div>",
+            "column_width": 12,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center"
+          }
+        }
+      },
+      "block_order": [
+        "16637457432019bd32-0"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "padding_section": true,
+        "section_style": "section-blank",
+        "wrapper_size": ""
+      }
+    },
+    "16637445009e5e2911": {
+      "type": "featured-row",
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "image": "shopify:\/\/shop_images\/Posture_shirt.jpg",
+        "image_link": "",
+        "section_style": "section-blank",
+        "text_size": "medium",
+        "image_alignement": "left",
+        "text_alignment": "",
+        "title": "Hvorfor vælge en Posture Shirt™?",
+        "text": "<p>Vælg en Posture Shirt™, hvis du ønsker et produkt med høj komfort, som giver støtte hele dagen.<\/p><p>• Forbedrer kropsholdningen<br\/>• Øger kropsholdningsbevidstheden<br\/>• Aktiverer muskulaturen<br\/>• Giver fri bevægelighed<br\/>• Dokumenteret effekt på lindring af smerter og spændinger<br\/>• Medicinsk registreret (klasse 1)<\/p><p><br\/>Kan bruges <strong>hele dagen<\/strong> (ved gradvis tilvænning):<\/p><p>• Siddende<br\/>• Stående<br\/>• Ved fysisk aktivitet <\/p>",
+        "button_style": "",
+        "button_label": "Se Posture Shirts",
+        "button_link": "shopify:\/\/collections\/posture-shirt"
+      }
+    },
+    "166374504046831ffc": {
+      "type": "featured-row",
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "image": "shopify:\/\/shop_images\/Brace.jpg",
+        "image_link": "",
+        "section_style": "section-blank",
+        "text_size": "medium",
+        "image_alignement": "right",
+        "text_alignment": "",
+        "title": "Hvorfor vælge en Skulderstøtte?",
+        "text": "<p>Vælg en Skulderstøtte, hvis du ønsker et produkt, du kan bruge i kortere perioder i løbet af dagen.<\/p><p>• Forbedrer kropsholdningen<br\/>• Stabiliserer og aflaster<br\/>• Kan lindre smerter og spændinger<\/p><p>Kan bruges <strong>30-60 min.<\/strong> efter behov:<\/p><p>• Siddende<br\/>• Stående<\/p>",
+        "button_style": "",
+        "button_label": "Se skulderstøtter",
+        "button_link": "shopify:\/\/collections\/skulderstoette"
+      }
+    },
+    "16637455326d1926f0": {
+      "type": "featured-content",
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "title": "Sammenligning",
+        "text": "<p>Begge produkter hjælper til at forbedre din kropsholdning, men de arbejder med muskulaturen på forskellige måder. En Posture Shirt™ går med sin unikke NeuroBand™-teknologi ind og aktiverer og stimulerer din muskulatur i takt med, at den øger kropsholdningsbevidstheden, så din krop gradvist selv indtager en bedre holdning. En Skulderstøtte stabiliserer og aflaster, men kun i den periode, du har den på.<\/p><p>Overordnet set anbefaler vi, at du vælger en Posture Shirt™, hvis du ønsker et produkt med høj komfort, som giver dig støtte hele dagen. En Skulderstøtte kan med fordel vælges, hvis du kun ønsker støtte i kortere perioder i løbet af dagen.<\/p>",
+        "section_style": "section-blank",
+        "text_size": "large",
+        "text_alignment": "text-center",
+        "button_style": "btn--primary",
+        "button_label": "",
+        "button_link": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1663745743b81d3ed3",
+    "16637445009e5e2911",
+    "166374504046831ffc",
+    "16637455326d1926f0"
+  ]
+}

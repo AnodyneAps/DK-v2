@@ -1,0 +1,51 @@
+{
+  "sections": {
+    "main": {
+      "type": "product-template",
+      "settings": {}
+    },
+    "upsell-bundles": {
+      "type": "dbtfy-upsell-bundles",
+      "settings": {}
+    },
+    "pricing-table": {
+      "type": "dbtfy-pricing-table",
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {}
+    },
+    "review-widget": {
+      "type": "product-review-widget",
+      "settings": {}
+    },
+    "faq-section": {
+      "type": "dbtfy-faq-section",
+      "settings": {}
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {}
+    },
+    "back-to-collection": {
+      "type": "product-back-to-collection",
+      "settings": {}
+    },
+    "quotes": {
+      "type": "quotes",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "upsell-bundles",
+    "pricing-table",
+    "product-recommendations",
+    "review-widget",
+    "faq-section",
+    "related-products",
+    "back-to-collection",
+    "quotes"
+  ]
+}

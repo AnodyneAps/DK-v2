@@ -1,0 +1,97 @@
+<div class="services home-services">
+  <div class="wrapper">
+    <div class="services-wrapper">
+      {% assign main_title = section.settings.title %}
+      {%if main_title !=blank %}
+      <h2 class="services-title">{{main_title}}</h2>
+      {% endif%}
+      <div class="services-slider" id="service-list-{{ section.id }}">
+        {%- for block in section.blocks -%}
+        <a href="{{block.settings.uspLinkUrl}}" class="services-item carousel__slide-wrapper--{{block.id}}" {{
+          block.shopify_attributes }}>
+          <div class="content">
+            <div class="content-imagebox">
+              <img class="img" src="{{block.settings.icon | img_url: '60x60' }}" alt="{{block.settings.title}}">
+            </div>
+            <div class="content-textbox">
+              <h4 class="title">{{block.settings.title}}</h4>
+              <div class="info">{{block.settings.description}}</div>
+              <div class="Arrow-wrapper">{%- render 'icon' with 'long-arrow-right' -%}</div>
+            </div>
+          </div>
+        </a>
+        {%- endfor -%}
+      </div>
+    </div>
+
+    {%- if section.blocks.size == 0 -%}
+    {%- endif -%}
+  </div>
+</div>
+
+<style>
+  .services-wrapper {
+    padding-bottom: 40px;
+  }
+</style>
+
+{% schema %}
+{
+"name": "Services",
+"class": "index-section",
+"max_blocks": 4,
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Title",
+"default": "Services"
+}
+],
+"blocks": [
+{
+"type": "service",
+"name": "Services",
+"settings": [
+{
+"id": "title",
+"type": "text",
+"label": "Title",
+"default": "Service heading"
+},
+{
+"type": "textarea",
+"id": "description",
+"label": "HTML / Description",
+"default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quis."
+},
+{
+"type": "image_picker",
+"id": "icon",
+"label": "icon jpg/png",
+"info": "Dimensions 100X100px"
+},
+{
+"type": "url",
+"id": "uspLinkUrl",
+"label": "Add a link to USP"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Services",
+"category": "Text",
+"blocks": [
+{
+"type": "service"
+},
+{
+"type": "service"
+}
+]
+}
+]
+}
+{% endschema %}

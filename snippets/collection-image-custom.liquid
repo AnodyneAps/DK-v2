@@ -1,0 +1,29 @@
+{%- if settings.show_hero and collection.image -%}
+  <div class="collection-custom-image-container"
+     data-section-type="hero-section">
+  <div class="custom-hero hero--{{ settings.section_height }} hero-mobile-{{ settings.section_height_mobile }} custom-media-wrapper">
+		<div class="collection-image-inner-container">
+			<div class="hero-image media-half bgset lazyload"
+			{%- render 'lazysizes', img: collection.image, img_type: 'background' -%}>
+			</div>
+		</div>
+		<div class="collection-title-wrapper">
+			<h2 class="collection-title">{{ collection.title | escape }}</h2>
+			{% if section.settings.stars_text !=blank %}
+				<p class="collection-subtext">
+					{{section.settings.stars_text}}
+				</p>
+			{% endif %}
+			{% if section.settings.collection_stars != blank and section.settings.stars_url != blank %}
+				<a target="_blank" href="{{section.settings.stars_url | escape }}" class="stars-link-container">
+					<img src="{{section.settings.collection_stars | img_url: '800x32px'}}" alt="{{section.settings.collection_stars.alt}}">
+				</a>
+			{% endif %}
+		</div>
+  </div>
+</div>
+{%- else if collection.image == blank -%}
+<div class="hero-container hero-collection hero-first"
+     data-section-type="hero-section">
+</div>
+{%- endif -%}

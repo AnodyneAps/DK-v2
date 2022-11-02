@@ -1,0 +1,184 @@
+{
+  "sections": {
+    "1663745735c524cd6e": {
+      "type": "custom-html",
+      "blocks": {
+        "166374573542577662-0": {
+          "type": "html",
+          "settings": {
+            "title": "",
+            "code": "<div style=\"margin-bottom:-60px\">\n<h1>Øvelser til udspændning af ryg og nakke<\/h1>\n<p>Døjer du med nakkesmerter eller spændinger skulder eller ryg? I samarbejde med kiropraktor og klinikejer Michael Justad fra JustHealth, har vi i videoen herunder samlet 5 nemme øvelser, som du kan lave på under 5 minutter – på kontoret eller hjemme.<\/p>\n<\/div>",
+            "column_width": 12,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center"
+          }
+        }
+      },
+      "block_order": [
+        "166374573542577662-0"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "padding_section": true,
+        "section_style": "section-blank",
+        "wrapper_size": ""
+      }
+    },
+    "1663745903f051ca53": {
+      "type": "featured-video",
+      "blocks": {
+        "16637459035ef84327-0": {
+          "type": "video",
+          "settings": {
+            "video_cover_image": "shopify:\/\/shop_images\/Ovelser-cover-image.jpg",
+            "title": "",
+            "video_url": "https:\/\/youtu.be\/cwrhb8dS56U",
+            "animated_button": true
+          }
+        }
+      },
+      "block_order": [
+        "16637459035ef84327-0"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "full_width": false,
+        "title": "",
+        "subtitle": "",
+        "section_style": "section-blank"
+      }
+    },
+    "16637487828de14f44": {
+      "type": "featured-html",
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "image": "shopify:\/\/shop_images\/Working_posture.jpg",
+        "image_link": "",
+        "section_style": "section-blank",
+        "text_size": "medium",
+        "image_alignement": "right",
+        "text_alignment": "",
+        "title": "Optimér din arbejdsstilling på kontoret",
+        "html_text": "<p>Er du en af dem, der døjer med spændinger i nakke, skuldre eller ryg, fordi du har et primært stillesiddende arbejde, så hjælper de 5 afspændingsøvelser dig godt på vej til at lindre og forebygge dette i hverdagen. Det kan samtidig være en fordel at se på, om du kan optimere din arbejdsstilling, når du sidder ved skrivebordet.<\/p><strong><br>Følg disse råd til en korrekt arbejdsstilling ved skrivebord:<\/strong><div style=\"padding-left:20px\">\n<p><\/p>\n<ul>\n<li><p>Sid med ret ryg, skub bækkenet ind og træk skuldrene tilbage – set fra siden skal rygsøjlen være i en S-kurven<\/p><\/li>\n<li><p>Ben og knæ skal være i en 90 graders vinkel eller derover<\/p><\/li>\n<li><p>Begge albuer skal hvile på skrivebord eller armlæn i en ret vinkel ud fra kroppen, så skuldrene slapper af<\/p><\/li>\n<li><p>Computer eller computerskærm skal være placeret i øjenhøjde<\/p><\/li>\n<p><\/p>\n<li><p>Skift arbejdsstilling ofte og veksel gerne mellem at stå og sidde<\/p><\/li>\n<\/ul>\n<\/div>",
+        "button_style": "btn--primary",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "1663746941a7432fff": {
+      "type": "featured-products",
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "title": "Mest solgte",
+        "subtitle": "",
+        "section_style": "section-default",
+        "home_featured_products": "posture-shirt",
+        "rows": "2",
+        "desktop_grid": "4",
+        "mobile_grid": "2",
+        "show_view_all": false,
+        "button_label": "View all",
+        "button_link": "",
+        "button_style": "btn-outline-primary",
+        "slider_related_products": true,
+        "arrows": true,
+        "dots": true,
+        "autoplay": false,
+        "autoplayspeed": 5
+      }
+    },
+    "16637488008808e289": {
+      "type": "custom-html",
+      "blocks": {
+        "1663748800958b12bf-0": {
+          "type": "html",
+          "settings": {
+            "title": "",
+            "code": "<div style=\"margin-bottom:-30px\">\n<h2>Holdningskorrigerende produkter til kontorarbejde<\/h2>\n<p>Hos Anodyne® tilbyder vi produkter inden for holdningskorrektion, aflastning og generel kropssundhed. Vores produkter har til formål at øge kropsholdningsbevidstheden, aflaste og støtte kroppen i dagligdagen, lindre smerter og spændinger, samt øge dagligt velvære. Kropssundheden er i fokus, og det er derfor vigtigt at fastslå, at vi altid anbefaler at bruge produkterne som et supplement til en aktiv livsstil, da motion og bevægelse er fundamentalt for kroppens sundhed..<\/p>\n<\/div>",
+            "column_width": 12,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center"
+          }
+        }
+      },
+      "block_order": [
+        "1663748800958b12bf-0"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "padding_section": true,
+        "section_style": "section-blank",
+        "wrapper_size": ""
+      }
+    },
+    "16637492022b0e0201": {
+      "type": "featured-row",
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "image": "shopify:\/\/shop_images\/Belt_500x330_995774e2-41ce-4644-bb78-e58978635d61.jpg",
+        "image_link": "shopify:\/\/collections\/rygstoette",
+        "section_style": "section-blank",
+        "text_size": "medium",
+        "image_alignement": "left",
+        "text_alignment": "",
+        "title": "Aflast ryg og lænd med Skulderstøtte eller Lændebælte",
+        "text": "<p>Ryggen er særligt udsat, når vi sidder meget ned, og derfor kan det være en fordel at aflaste ryg og skuldre i løbet af arbejdsdagen. Hos Anodyne® tilbyder vi en række produkter til rygstøtte, heriblandt vores <em>skulderstøtter<\/em> og <em>lændebælte<\/em>. Begge produkter er ideelle redskaber til at forebygge og behandle smerter og spændinger, og de fungerer som hjælpemidler til at støtte og aflaste muskulaturen, når der opstår et akut behov.<\/p><p>Vores <a href=\"https:\/\/codebeautify.org\/collections\/skulderstoette\"><span style=\"text-decoration:underline\">skulderstøtter<\/span><\/a> fremmer en god holdning, når du har produktet på, og kan med fordel anvendes ved smerter og spændinger i nakke, skulder og øvre ryg. Skulderbladene trækkes tilbage på plads, hvorved skuldre og øvre ryg aflastes. <a href=\"https:\/\/codebeautify.org\/products\/laendebaelte\"><span style=\"text-decoration:underline\">Lændebæltet<\/span><\/a> kan med fordel anvendes, hvis man døjer med smerter eller spændinger i lænden. Lændebæltet støtter og aflaster muskler og led, mens presset på musklerne mindskes, og samtidig bidrager det til et øget fokus på holdningen omkring lænden.<\/p>",
+        "button_style": "",
+        "button_label": "Se udvalg",
+        "button_link": "shopify:\/\/collections\/rygstoette"
+      }
+    },
+    "16637496063027e35a": {
+      "type": "featured-row",
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "image": "shopify:\/\/shop_images\/Posture-Shirt_500x330_97e93c41-6f0c-41da-b71e-4a970c3d343b.jpg",
+        "image_link": "shopify:\/\/collections\/posture-shirt",
+        "section_style": "section-default",
+        "text_size": "medium",
+        "image_alignement": "right",
+        "text_alignment": "",
+        "title": "Forebyg spændinger med en holdningskorrigerende trøje",
+        "text": "<p>Er kropsholdningen optimal, når man sidder ned, kan man i langt de fleste tilfælde undgå at få smerter eller spændinger i nakken og ryggen. Men det er svært hele tiden at huske på at rette ryggen op. Ønsker man hjælp til at huske den gode kropsholdning, er vores<a href=\"https:\/\/codebeautify.org\/collections\/posture-shirt\/\"><span style=\"text-decoration:underline\">Posture Shirt™<\/span><\/a>et oplagt valg. De integrerede støttebånd på ryggen, som kaldes NeuroBands™, trækker let i skuldrene, så man bliver mindet om, at de skal trækkes tilbage på plads. Posture Shirt™ fungerer således som en påmindelse om at aktivere muskulaturen i øvre ryg, hvilket gør det nemmere at huske at rette ryggen op i løbet af dagen og gøre den gode kropsholdning til en vane. På den måde kan den også forebygge spændinger og smerter i dagligdagen, fordi kroppen undgår at falde sammen.<\/p>",
+        "button_style": "",
+        "button_label": "Se udvalg",
+        "button_link": "shopify:\/\/collections\/posture-shirt"
+      }
+    },
+    "16637498776cfac0c7": {
+      "type": "featured-row",
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "image": "shopify:\/\/shop_images\/Pillow.jpg",
+        "image_link": "shopify:\/\/collections\/andre-produkter",
+        "section_style": "section-blank",
+        "text_size": "medium",
+        "image_alignement": "left",
+        "text_alignment": "",
+        "title": "Optimér siddestillingen med ergonomiske produkter",
+        "text": "<p>Vi forhandler også et udvalg af produkter, der fremmer ergonomien og arbejdsstillingen ved skrivebordet, heriblandt vores <em>rygpude<\/em> og støttesædet <em>BackJoy Posture+<\/em>. Begge produkter er med til at forebygge smerter og spændinger i lænden, som nemt kan opstå, når man har et primært stillesiddende arbejde.<\/p><p><br\/>Vores <a href=\"https:\/\/codebeautify.org\/products\/ergonomisk-rygpude\/\"><span style=\"text-decoration:underline\">Rygpude<\/span><\/a> giver lænden god støtte, mindsker presset på de nedre rygmuskler og får det naturlige lændesvaj frem. <a href=\"https:\/\/codebeautify.org\/products\/backjoy-posture\"><span style=\"text-decoration:underline\">BackJoy Posture+<\/span><\/a> fremmer også en korrekt siddestilling, idet bækkenet skubbes frem, og rygsøjlen placeres i sin ideelle S-kurve. Brug produkterne ved skrivebordet, spisebordet, i sofaen, i bilen, og hvor du ellers har brug for ekstra lændestøtte.<\/p>",
+        "button_style": "",
+        "button_label": "Se udvalg",
+        "button_link": "shopify:\/\/collections\/andre-produkter"
+      }
+    }
+  },
+  "order": [
+    "1663745735c524cd6e",
+    "1663745903f051ca53",
+    "16637487828de14f44",
+    "1663746941a7432fff",
+    "16637488008808e289",
+    "16637492022b0e0201",
+    "16637496063027e35a",
+    "16637498776cfac0c7"
+  ]
+}

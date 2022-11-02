@@ -1,0 +1,43 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "collection-image": {
+      "type": "collection-image",
+      "settings": {
+        "stars_text": "{{ collection.metafields.theme.collection_banner.value }}",
+        "stars_url": "cdn.shopify.com\/s\/files\/1\/0539\/3527\/6214\/files\/collectionbanner_264x360.gif?v=1660223394"
+      }
+    },
+    "main": {
+      "type": "collection-template",
+      "settings": {
+        "style__selector": "none",
+        "collection_tags_enable": false,
+        "collection_tags_count": false,
+        "collection_multiple_tags_filtering_enable": false,
+        "collection_sort_enable": false,
+        "tag_selector": "button",
+        "collection_layout": "grid",
+        "rows": "4",
+        "desktop_grid": "4",
+        "mobile_grid": "2",
+        "collection_giff_enable": true,
+        "collection_banner_gif_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0539\/3527\/6214\/files\/collectionbanner_264x360.gif?v=1660223394",
+        "collection_banner_font_family": "anonymous_pro_n4",
+        "collection_banner_title": "Særtilbud",
+        "collection_banner_button_label": "KLIK HER",
+        "collection_banner_button_link": "shopify:\/\/collections\/demosalg",
+        "collection_enable_porcent_tag": true
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "collection-image",
+    "main"
+  ]
+}

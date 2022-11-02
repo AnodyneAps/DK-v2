@@ -1,0 +1,297 @@
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "f6b01b2a-2351-4013-a086-973c6fc1b430": {
+      "type": "featured-image-landing",
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/Smertelindring_hero_0d6583a6-b4ab-40eb-96e9-83c7250414e2.jpg",
+        "section_style": "section-blank",
+        "wrapper__height": 360,
+        "image_title": "<p><strong>Lindring af smerter og spændinger<\/strong><\/p>",
+        "image_subtitle": "",
+        "image_btntext": "",
+        "image_link": "",
+        "show_on_image_scrolldown": false
+      }
+    },
+    "6be71e9c-89aa-4377-a27e-e58ba9c9ab5b": {
+      "type": "featured-icons",
+      "blocks": {
+        "template--16098110144661__6be71e9c-89aa-4377-a27e-e58ba9c9ab5b-166599345649f84013-0": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ease.png",
+            "title": "Lindrer smerter",
+            "text": "<p>Kan lindre spændinger og smerter i ryg, skuldre og nakke.<\/p>"
+          }
+        },
+        "template--16098110144661__6be71e9c-89aa-4377-a27e-e58ba9c9ab5b-166599345649f84013-1": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Confidence.png",
+            "title": "Forebygger",
+            "text": "<p>Er med til at forhindre, at du får problemer med smerter i fremtiden.<\/p>"
+          }
+        },
+        "template--16098110144661__6be71e9c-89aa-4377-a27e-e58ba9c9ab5b-166599345649f84013-2": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Alleviate.png",
+            "title": "Aflaster",
+            "text": "<p>Aflaster udsatte muskelgrupper og sikrer, at din krop holder mange år endnu.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16098110144661__6be71e9c-89aa-4377-a27e-e58ba9c9ab5b-166599345649f84013-0",
+        "template--16098110144661__6be71e9c-89aa-4377-a27e-e58ba9c9ab5b-166599345649f84013-1",
+        "template--16098110144661__6be71e9c-89aa-4377-a27e-e58ba9c9ab5b-166599345649f84013-2"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "title": "",
+        "subtitle": "",
+        "section_style": "section-default",
+        "text_align": "text-center"
+      }
+    },
+    "46c1dfc4-8219-410b-a31e-21b90031f9fd": {
+      "type": "mission",
+      "blocks": {
+        "template--16098110144661__46c1dfc4-8219-410b-a31e-21b90031f9fd-16659933787fc5bfa2-0": {
+          "type": "html",
+          "settings": {
+            "mission_title": "",
+            "mission_description": "<br><h2>Fordele ved god kropsholdning<\/h2><p>Døjer du med smerter i ryg, skuldre, nakke eller hoved? Både kortvarige og kroniske smerter kan fylde utroligt meget i dagligdagen og påvirke både krop og sind, specielt fordi de ikke kan ses af andre. Vidste du, at vores kropsholdning kan have stor betydning for, om vi oplever smerter og spændinger? Faktisk kan en god kropsholdning bidrage til smertelindring og løsne op for muskelspændinger, idet kroppen aflastes mest muligt, når den er i sin optimale position. Kropsholdningen kan bl.a. forbedres ved brug af holdningskorrigerende tøj, og på denne side kan du helt kort læse mere om, hvordan vores produkter kan hjælpe dig.<\/p><br>",
+            "column_width": 12,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center",
+            "btn_text": "",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16098110144661__46c1dfc4-8219-410b-a31e-21b90031f9fd-16659933787fc5bfa2-0"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "margin__bottom": 0,
+        "section_style": "section-blank",
+        "wrapper_size": ""
+      }
+    },
+    "14a77dd3-1b42-4a65-a56c-936087340be7": {
+      "type": "mission",
+      "blocks": {
+        "template--16098110144661__14a77dd3-1b42-4a65-a56c-936087340be7-16659933787fc5bfa2-0": {
+          "type": "html",
+          "settings": {
+            "mission_title": "",
+            "mission_description": "<br><h2>Kan holdningskorrigerende tøj lindre smerter?<\/h2>Holdningskorrigerende tøj kan have en smertelindrende effekt, og kan bruges som hjælpemiddel til skævhed i ryggen og korrektion af skoliose. Men det kræver, at tøjet er af en ordentlig kvalitet og har beviselig effekt. Sandheden er desværre, at der findes forhandlere, som sælger billigt, men effektløst holdningstøj rundt omkring på nettet.<p><\/p>\n<p>Vi gør derfor meget ud af at kunne dokumentere effekten af vores produkter og har fået lavet en uvildig undersøgelse, som indsamlede svar fra 1039 af vores kunder. Undersøgelsen konkluderer, at vores Posture Shirt™ har en positiv indvirkning på kropsholdningen og kan bruges som et supplerende hjælpemiddel til smertelindring i hoved, nakke, skuldre og ryg. Det kan du læse meget mere om herunder. Og så er vores kunder yderst tilfredse – <a href=\"\/pages\/test-af-holdningstoej\/\"><u>hele 82% af de adspurgte kunder vil anbefale andre at bruge vores produkter<\/u><\/a>. Det er vi naturligvis enormt stolte af, for det betyder jo, at vi har været med til at gøre en beskeden forskel ude i verden.<\/p><br>",
+            "column_width": 12,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center",
+            "btn_text": "",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16098110144661__14a77dd3-1b42-4a65-a56c-936087340be7-16659933787fc5bfa2-0"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "margin__bottom": 0,
+        "section_style": "section-default",
+        "wrapper_size": ""
+      }
+    },
+    "5b53ece3-669b-4189-95af-ce8a16b44471": {
+      "type": "featured-columns",
+      "blocks": {
+        "template--16098110144661__5b53ece3-669b-4189-95af-ce8a16b44471-1665993457acaf497c-0": {
+          "type": "text_block",
+          "settings": {
+            "title": "",
+            "image": "shopify:\/\/shop_images\/Upper_back.jpg",
+            "image_link": "",
+            "icon": "",
+            "heading_text": "Lindring af rygsmerter",
+            "text": "<p>73% oplever, at hyppigheden af rygsmerter er blevet mindre.<\/p>",
+            "button_style": "btn--primary",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--16098110144661__5b53ece3-669b-4189-95af-ce8a16b44471-1665993457acaf497c-1": {
+          "type": "text_block",
+          "settings": {
+            "title": "",
+            "image": "shopify:\/\/shop_images\/Shoulders_99166cdc-641c-48eb-b2c1-a0274ad8c3c1.jpg",
+            "image_link": "",
+            "icon": "",
+            "heading_text": "Lindring af skuldersmerter",
+            "text": "<p>73% føler, at intensiteten af deres skuldersmerter er blevet reduceret.<\/p>",
+            "button_style": "btn--primary",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--16098110144661__5b53ece3-669b-4189-95af-ce8a16b44471-1665993457acaf497c-2": {
+          "type": "text_block",
+          "settings": {
+            "title": "",
+            "image": "shopify:\/\/shop_images\/Neck.jpg",
+            "image_link": "",
+            "icon": "",
+            "heading_text": "Lindring af nakkesmerter",
+            "text": "<p>70% oplever, at hyppigheden af nakkesmerter er blevet mindre. <\/p>",
+            "button_style": "btn--primary",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "22beee5f-1c98-45a6-8607-0796241a2334": {
+          "type": "text_block",
+          "settings": {
+            "title": "",
+            "image": "shopify:\/\/shop_images\/Lumbar.jpg",
+            "image_link": "",
+            "icon": "",
+            "heading_text": "Lindring af lændesmerter",
+            "text": "<p>65% oplever, at intensiteten af smerter i lænden er blevet mindre.<\/p>",
+            "button_style": "btn--primary",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16098110144661__5b53ece3-669b-4189-95af-ce8a16b44471-1665993457acaf497c-0",
+        "template--16098110144661__5b53ece3-669b-4189-95af-ce8a16b44471-1665993457acaf497c-1",
+        "template--16098110144661__5b53ece3-669b-4189-95af-ce8a16b44471-1665993457acaf497c-2",
+        "22beee5f-1c98-45a6-8607-0796241a2334"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "title": "",
+        "subtitle": "",
+        "section_style": "section-blank",
+        "text_align": "text-center"
+      }
+    },
+    "e694d021-181f-4f9b-97f7-04d27d4d07cc": {
+      "type": "custom-html",
+      "blocks": {
+        "template--16098110144661__e694d021-181f-4f9b-97f7-04d27d4d07cc-16659933783d1067f6-0": {
+          "type": "html",
+          "settings": {
+            "title": "",
+            "code": "<p><img alt=\"\" class=\"responsive\" src=\"https:\/\/sw9336.smartweb-static.com\/upload_dir\/blog\/ce-maerk-v1.png\" style=\"border-width: 0px; border-style: solid; width: 397px; height: 399px;\"><\/p>\n<p>Anodyne® er den eneste forhandler af holdningskorrigerende tøj i Europa, hvis produkter er både <a href=\"\/registreringer\/\"><u>FDA-registreret og CE-mærket som medicinsk udstyr<\/u><\/a>. Det betyder, at vores produkter overholder en række stramme krav til miljø, sikkerhed, kvalitet og ydeevne.<\/p>\n<p>Denne registrering gælder både for vores <a href=\"\/kvinder-og-maend\/4-posture-shirt\/\"><u>Posture Shirt™<\/u><\/a>, <a href=\"\/holdningsvest\/\"><u>SpinalQ Pro<\/u><\/a>, og <u><a href=\"\/holdningsvest\/\">MyLign Pro<\/a><\/u>.<\/p>\n<p><a class=\"btn kh-btn sm\" href=\"\/registreringer\/\">LÆS MERE<\/a><\/p>",
+            "column_width": 12,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16098110144661__e694d021-181f-4f9b-97f7-04d27d4d07cc-16659933783d1067f6-0"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "padding_section": true,
+        "section_style": "section-default",
+        "wrapper_size": ""
+      }
+    },
+    "d1cfa87e-1910-418e-a6d3-7db9c4448614": {
+      "type": "featured-row",
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "image": "shopify:\/\/shop_images\/kinesiotape.jpg",
+        "image_link": "",
+        "section_style": "section-blank",
+        "text_size": "medium",
+        "image_alignement": "left",
+        "text_alignment": "",
+        "title": "Inspireret af kinesiotape",
+        "text": "<p>Anodyne® Posture Shirt™ er den originale holdningskorrigerende t-shirt på markedet. T-shirten er udviklet på baggrund af videnskabelige studier om menneskets fysiologi og med inspiration fra brugen af kinesiotape som fysioterapeutisk behandling af smerter.<\/p><p>Kinesiotapen er integreret i vores Posture Shirt™ med de såkaldte NeuroBands™ på ryggen – støttebånd placeret netop der, hvor kinesiotape normalt påsættes. Disse NeuroBands™ er centrale for t-shirtens evne til at fremme en bedre holdning, idet de trækker skuldrene let tilbage. Dette træk påminder kroppen om at rette sig op og bevare en god kropsholdning.<\/p>",
+        "button_style": "",
+        "button_label": "Køb her",
+        "button_link": "shopify:\/\/collections\/posture-shirt"
+      }
+    },
+    "c632e1a2-8d82-4f8d-ba64-63a3cae5b09c": {
+      "type": "featured-row",
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "image": "shopify:\/\/shop_images\/MK.jpg",
+        "image_link": "",
+        "section_style": "section-default",
+        "text_size": "medium",
+        "image_alignement": "right",
+        "text_alignment": "",
+        "title": "Smertelindring i vores DNA",
+        "text": "<p>Anodyne betyder nemlig ”smertestillende” på engelsk. Anodyne® blev grundlagt, fordi direktøren, Kenneth, selv døjede med smerter i mange år. Efter utallige fysioterapeutiske behandlinger og lang tids søgen fandt han en holdningskorrigerende t-shirt fra USA, som hjalp ham med at rette op på sin kropsholdning. Effekten var for ham ikke til at tage fejl af, og han vidste med det samme, at denne t-shirt bare måtte deles med andre, som også døjer med smerter. Derfor grundlagde han sammen med sin kone, Mia, Anodyne® i 2015 og begyndte at forhandle den såkaldte Posture Shirt™ i Europa. Sidenhen er sortimentet blevet udvidet, og vi tilbyder nu en lang række produkter, der kan forbedre kropsholdningen og hjælpe til smertelindring.  <\/p>",
+        "button_style": "",
+        "button_label": "Se udvalg",
+        "button_link": "shopify:\/\/collections\/posture-shirt"
+      }
+    },
+    "5789ab60-b393-4c34-a8c6-99319f56d30b": {
+      "type": "mission",
+      "blocks": {
+        "template--16098110144661__5789ab60-b393-4c34-a8c6-99319f56d30b-1665995087ea306100-0": {
+          "type": "html",
+          "settings": {
+            "mission_title": "<br><br>Nysgerrig?",
+            "mission_description": "<p>Så tag gerne et kig på vores udvalg og find din favorit allerede nu. Har du spørgsmål til vores produkter eller service, er du som altid velkommen til at kontakte vores kundeservice.<\/p>",
+            "column_width": 12,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center",
+            "btn_text": "",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16098110144661__5789ab60-b393-4c34-a8c6-99319f56d30b-1665995087ea306100-0"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "margin__bottom": 48,
+        "section_style": "section-blank",
+        "wrapper_size": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "f6b01b2a-2351-4013-a086-973c6fc1b430",
+    "6be71e9c-89aa-4377-a27e-e58ba9c9ab5b",
+    "46c1dfc4-8219-410b-a31e-21b90031f9fd",
+    "14a77dd3-1b42-4a65-a56c-936087340be7",
+    "5b53ece3-669b-4189-95af-ce8a16b44471",
+    "e694d021-181f-4f9b-97f7-04d27d4d07cc",
+    "d1cfa87e-1910-418e-a6d3-7db9c4448614",
+    "c632e1a2-8d82-4f8d-ba64-63a3cae5b09c",
+    "5789ab60-b393-4c34-a8c6-99319f56d30b"
+  ]
+}

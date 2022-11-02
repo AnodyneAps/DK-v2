@@ -1,0 +1,142 @@
+<section id="frontpage__accordions" class="frontpage__accordions {{section.settings.section_style}}">
+	<div class="wrapper">
+		{% assign main_title = section.settings.title %}
+		{%if main_title !=blank %}
+		<h1 class="h2 accordion__title-main">{{main_title}}</h1>
+		{% endif%}
+		<ul class="accordion">
+			{%- for block in section.blocks -%}
+			<li class="item">
+		
+						{% if forloop.index == 1 %}
+							{%- if block.settings.accordion_title != blank -%}
+							<h2 class="accordion__title accordionTitleActive"> {{ block.settings.accordion_title }}	<span class="accIcon anime"></span></h2>
+							{%- endif -%}
+						{% else %}
+							{%- if block.settings.accordion_title != blank -%}
+							<h2 class="accordion__title "> {{ block.settings.accordion_title }}	<span class="accIcon "></span></h2>
+							{%- endif -%}
+							{% endif %}
+				
+						{% if forloop.index == 1 %}
+						<div class="accordion__flex accordion-show">
+						{% else %}
+						<div class="accordion__flex">
+							{% endif %}
+						<div class="fx textholder ">
+							{%- if block.settings.accordion__inner-title != blank -%}
+							<h4 class="accordion__innertitle"> {{ block.settings.accordion__inner-title }}</h4>
+							{%- endif -%}
+							{%- if block.settings.accordion__description != blank -%}
+								<p class="accordion__description">
+									{{ block.settings.accordion__description }}
+								</p>
+							{%- endif -%}
+
+							{% if block.settings.accordion__buttontext  != blank %}
+							<a href="{{block.settings.accordion__LinkUrl}}" class="btn accordion__btn">{{block.settings.accordion__buttontext}} </a>
+						{% endif %}
+							</div>
+						{%- if block.settings.accordion__image != blank -%}
+						<div class="fx accordion__image"> <img src="{{block.settings.accordion__image | img_url: '640x427'}}" alt="{{block.settings.ccordion__inner-title}}"></div>
+					{%- endif -%}
+			</div>
+			</li>
+			{%- endfor -%}
+		</ul>
+	</div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Accordions",
+  "class": "frontpage__accordions",
+  "max_blocks": 8,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "pain Reducing Recommendations"
+    },
+		{
+			"type": "select",
+			"id": "section_style",
+			"label": "Section style",
+			"default": "section-blank",
+			"options": [
+				{
+					"value": "section-blank",
+					"label": "Blank background"
+				},
+				{
+					"value": "section-default",
+					"label": "Accent background"
+				},
+				{
+					"value": "section-border",
+					"label": "Border top"
+				}
+			]
+		}
+  ],
+  "blocks": [
+    {
+      "type": "Accordion",
+      "name": "Frontpage Accordions",
+      "settings": [
+        {
+          "id": "accordion_title",
+          "type": "text",
+          "label": "Add accordion main title"
+        },
+
+				{
+          "id": "accordion__inner-title",
+          "type": "text",
+          "label": "Inner title",
+          "default": "Working on Desk could be a problem"
+        },
+				{
+          "type": "textarea",
+          "id": "accordion__description",
+          "label": "HTML / Description",
+          "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quis."
+        },
+				{
+          "type": "image_picker",
+          "id": "accordion__image",
+          "label": "icon jpg/png",
+          "info": "Dimensions 640X427px"
+        },
+				{
+          "id": "accordion__buttontext",
+          "type": "text",
+          "label": "Add button text",
+          "default": "Button text"
+        },
+        {
+          "type": "url",
+          "id": "accordion__LinkUrl",
+          "label": "Add a link to tabs"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Accordions",
+      "category": "Text",
+      "blocks": [
+        {
+          "type": "Accordion"
+        },
+        {
+          "type": "Accordion"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,13 @@
+{% if product.metafields.choose_size.choose_product_size_chart != blank%}
+<div class="sizes__modal-container ">
+	<div class="sizes__modal-header">
+		<div class="h3">Size Guide</div>
+		<button type="button" class="btn sizes__modal-close" title="Close Sizes Table">
+
+			<span class="material-icons-outlined" aria-hidden="true">close</span>
+		</button>
+	</div>
+	{{pages[product.metafields.choose_size.choose_product_size_chart].content}}
+</div>
+<div class="overlay-backdrop overlay-table"></div>
+{% endif %}

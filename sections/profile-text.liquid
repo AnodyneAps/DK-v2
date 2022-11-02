@@ -1,0 +1,366 @@
+<div id="section-{{ section.id }}" class="profile {% unless section.settings.show_on_desktop %} medium--hide large--hide{% endunless %} {{ section.settings.section_style }}{% unless section.settings.show_on_mobile %} small--hide{% endunless %}" data-section-id="{{ section.id }}" data-section-type="profile-text-section">
+  <div class="{%- if section.settings.padding_section -%}box{%- endif -%}">
+    <div class="wrapper{{ section.settings.wrapper_size }}">
+      {%- if section.blocks.size > 0 -%}
+
+					{%- for block in section.blocks -%}
+            <div class="profile__item" >
+							{% if block.settings.title != blank %}
+								<h2 class="h1 profile-title">{{block.settings.title}}</h2>
+							{% endif %}
+              {%- if block.settings.code != blank -%}
+                <div class="profile__text {{ block.settings.text_alignment }}">
+                  {{ block.settings.code }}
+                </div>
+              {%- else -%}
+                <div class="text-center">
+                  {{ 'home_page.onboarding.no_content' | t }}
+                </div>
+              {%- endif -%}
+							<hr class="add__line">
+							<div class="profile_status__wrapper">
+								<a href="{%- if block.settings.status1_link != blank -%}{{block.settings.status1_link}} {%- else -%} # {%- endif -%}" class="status__item">
+									{% if block.settings.status1_number !=blank %}
+										<div class="status__number">
+											{{block.settings.status1_number}}
+										</div>
+									{% endif %}
+									{% if block.settings.status1_label != blank %}
+											<div class="status__label">
+												{{block.settings.status1_label}}
+											</div>
+									{% endif %}
+								</a>
+								<a href="{%- if block.settings.status2_link != blank -%}{{block.settings.status2_link}} {%- else -%} # {%- endif -%}" class="status__item">
+									{% if block.settings.status2_number !=blank %}
+										<div class="status__number">
+											{{block.settings.status2_number}}
+										</div>
+									{% endif %}
+									{% if block.settings.status2_label != blank %}
+											<div class="status__label">
+												{{block.settings.status2_label}}
+											</div>
+									{% endif %}
+								</a>
+								<a href="{%- if block.settings.status3_link != blank -%}{{block.settings.status3_link}} {%- else -%} # {%- endif -%}" class="status__item">
+									{% if block.settings.status3_number !=blank %}
+										<div class="status__number">
+											{{block.settings.status3_number}}
+										</div>
+									{% endif %}
+									{% if block.settings.status3_label != blank %}
+											<div class="status__label">
+												{{block.settings.status3_label}}
+											</div>
+									{% endif %}
+								</a>
+								<a href="{%- if block.settings.status4_link != blank -%}{{block.settings.status4_link}} {%- else -%} # {%- endif -%}" class="status__item">
+									{% if block.settings.status4_number !=blank %}
+										<div class="status__number">
+											{{block.settings.status4_number}}
+										</div>
+									{% endif %}
+									{% if block.settings.status4_label != blank %}
+											<div class="status__label">
+												{{block.settings.status4_label}}
+											</div>
+									{% endif %}
+								</a>
+							</div>
+								{%- if block.settings.vendor_image != blank -%}
+                <div class="profile__vendor">
+								<div class="vendor-image vendor-image-{{ block.id }} bgset lazyload"
+										{%- render 'lazysizes', img: block.settings.vendor_image, img_type: 'background' -%}>
+								</div>
+								{%- if block.settings.vendor_image -%}
+								<style>
+									.vendor-image-{{ block.id }} {
+										background-position: {{ block.settings.vendor_image_position }};
+									}
+								</style>
+								{%- endif -%}
+							{%- else -%}
+										<span class="nothing"></span>
+							{%- endif -%}
+							{% if block.settings.vendor_text !=blank %}
+								<div class="vendor__text">
+									{{block.settings.vendor_text}}
+								</div>
+              </div>
+							{% endif %}
+            </div>
+          {%- endfor -%}
+
+        </div>
+      {%- endif -%}
+
+      {%- if section.blocks.size == 0 -%}
+        {%- render 'no-blocks' -%}
+      {%- endif -%}
+
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Profile-Text",
+	  "class": "profile-text-section",
+    "max_blocks": 2,
+	  "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_on_desktop",
+        "label": "t:sections.custom_html.settings.show_on_desktop.label",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_on_mobile",
+        "label": "t:sections.custom_html.settings.show_on_mobile.label",
+        "default": true
+      },
+	    {
+        "type": "checkbox",
+        "id": "padding_section",
+        "label": "Add More Padding",
+		    "default": true
+      },
+      {
+        "type": "select",
+        "id": "section_style",
+        "label": "t:sections.custom_html.settings.section_style.label",
+        "default": "section-blank",
+        "options": [
+          {
+            "value": "section-blank",
+            "label": "t:sections.custom_html.settings.section_style.options__1.label"
+          },
+		      {
+            "value": "section-default",
+            "label": "t:sections.custom_html.settings.section_style.options__2.label"
+          },
+					{
+            "value": "section-pattern-accent",
+            "label": "pattern background Accent"
+          },
+					{
+            "value": "section-pattern-primary",
+            "label": "pattern background Primary"
+          },
+          {
+            "value": "section-border",
+            "label": "t:sections.custom_html.settings.section_style.options__3.label"
+          }
+        ]
+      },
+	    {
+        "type": "select",
+        "id": "wrapper_size",
+        "label": "t:sections.custom_html.settings.wrapper_size.label",
+		    "default": "",
+        "options": [
+		      {
+            "value": "",
+            "label": "t:sections.custom_html.settings.wrapper_size.options__1.label"
+          },
+	        {
+            "value": "-fluid",
+            "label": "t:sections.custom_html.settings.wrapper_size.options__2.label"
+          },
+		      {
+            "value": "-full",
+            "label": "t:sections.custom_html.settings.wrapper_size.options__3.label"
+          }
+        ]
+      }
+	  ],
+    "blocks": [
+      {
+        "type": "Profile-Text",
+        "name": "Profile text",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Add title",
+            "info": "Add title to your main text"
+          },
+          {
+            "type": "richtext",
+            "id": "code",
+            "label": "t:sections.custom_html.blocks.html.settings.html_code.label",
+			      "default": "<p>This section can be used to code your own custom layout</p>"
+          },
+					{
+            "type": "select",
+            "id": "text_alignment",
+            "label": "Align text",
+            "default": "text-center",
+            "options": [
+              {
+                "value": "text-left",
+                "label": "Text left"
+              },
+              {
+                "value": "text-center",
+                "label": "Text center"
+              },
+              {
+                "value": "text-right",
+                "label": "Text right"
+              },
+               {
+                "value": "text-justify",
+                "label": "Text justify"
+              }
+            ]
+          },
+					{
+            "type": "header",
+            "content": "Anodye achievement status"
+          },
+          {
+            "type": "text",
+            "id": "status1_number",
+            "label": "Add first status",
+		      	"default": "100.000"
+          },
+					{
+            "type": "text",
+            "id": "status1_label",
+            "label": "Add first status label",
+		      	"default": "Happy Customers"
+          },
+          {
+            "type": "url",
+            "id": "status1_link",
+            "label": "Add a reference link if available",
+		      	"default": "/collections/all"
+          },
+					{
+            "type": "text",
+            "id": "status2_number",
+            "label": "Add second status",
+		      	"default": "100.000"
+          },
+					{
+            "type": "text",
+            "id": "status2_label",
+            "label": "Add second status label",
+		      	"default": "Happy Customers"
+          },
+          {
+            "type": "url",
+            "id": "status2_link",
+            "label": "Add a reference link if available",
+		      	"default": "/collections/all"
+          },
+					{
+            "type": "text",
+            "id": "status3_number",
+            "label": "Add third status",
+		      	"default": "100.000"
+          },
+					{
+            "type": "text",
+            "id": "status3_label",
+            "label": "Add third status label",
+		      	"default": "Happy Customers"
+          },
+          {
+            "type": "url",
+            "id": "status3_link",
+            "label": "Add a reference link if available",
+		      	"default": "/collections/all"
+          },
+					{
+            "type": "text",
+            "id": "status4_number",
+            "label": "Add fourth status",
+		      	"default": "100.000"
+          },
+					{
+            "type": "text",
+            "id": "status4_label",
+            "label": "Add fourth status label",
+		      	"default": "Happy Customers"
+          },
+          {
+            "type": "url",
+            "id": "status4_link",
+            "label": "Add a reference link if available",
+		      	"default": "/collections/all"
+          },
+          {
+            "type": "image_picker",
+            "id": "vendor_image",
+            "label": "Add vendor logo",
+            "info": "The logo size has to be 100x100px"
+          },
+          {
+            "type": "select",
+            "id": "vendor_image_position",
+            "label": "Position vendor in a right place",
+            "default": "center center",
+            "options": [
+              {
+                "label": "Top left",
+                "value": "top left"
+              },
+              {
+                "label": "Top center",
+                "value": "top center"
+              },
+              {
+                "label": "Top right",
+                "value": "top right"
+              },
+              {
+                "label": "Center left",
+                "value": "center left"
+              },
+              {
+                "label": "Center center",
+                "value": "center center"
+              },
+              {
+                "label": "Center right",
+                "value": "center right"
+              },
+              {
+                "label": "Bottom left",
+                "value": "bottom left"
+              },
+              {
+                "label": "Bottom center",
+                "value": "bottom center"
+              },
+              {
+                "label": "Bottom right",
+                "value": "bottom right"
+              }
+            ]
+          },
+					{
+            "type": "text",
+            "id": "vendor_text",
+            "label": "Add vendor text",
+		      	"default": "Anodyne presents"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Profile-Text",
+        "category": "profile text main",
+        "blocks": [
+          {
+            "type": "Profile-Text"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

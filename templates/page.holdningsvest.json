@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "main": {
+      "type": "featured-image",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
