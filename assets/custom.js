@@ -110,9 +110,8 @@ if (setupTime == null) {
 
 
 const dateCollect = flipFlopBar.dataset.collectDate;
-console.log(dateCollect)
-const countToBlackDays = new Date(dateCollect);
-
+const dateStr = dateCollect.replace(' ', 'T');
+const countToBlackDays = new Date( dateStr );
 let previousTimeBetweenDates
 let daysContainer = document.querySelector("[data-days]");
 // let dayDots = document.querySelector("[data-dots]");
