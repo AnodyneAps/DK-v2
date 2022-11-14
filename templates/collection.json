@@ -25,7 +25,7 @@
         "rows": "4",
         "desktop_grid": "4",
         "mobile_grid": "2",
-        "collection_giff_enable": true,
+        "collection_giff_enable": false,
         "collection_banner_gif_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0539\/3527\/6214\/files\/collectionbanner_264x360.gif?v=1660223394",
         "collection_banner_font_family": "anonymous_pro_n4",
         "collection_banner_title": "Særtilbud",

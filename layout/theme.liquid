@@ -89,7 +89,7 @@
     <link rel="preload" href="{{ "lazysizes.min.js" | asset_url }}" as="script">
 
     {%- if content_for_header contains "debutify" -%}
-      <link rel="preload" href="{{ "dbtfy-addons.min.js" | asset_url }}" as="script">
+      <link rel="preload" href="{{ "dbtify-addons.min.js" | asset_url }}" as="script">
     {%- endif -%}
 
     {%- if canonical_url != blank -%}
@@ -171,10 +171,11 @@
           <script src="{{ 'jquery.currencies.min.js' | asset_url }}" defer="defer"></script>
         {%- endif -%}
       {%- endif -%}
-
-      <script src="{{ 'dbtfy-addons.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'dbtify-addons.min.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
+    <script defer src='https://cdn.debutify.com/scripts/production/YW5vZHluZS1kZW5tYXJrLm15c2hvcGlmeS5jb20=/debutify_script_tags.js'></script>
+  
     {%- if request.page_type contains "customers/" -%}
       {{ "shopify_common.js" | shopify_asset_url | script_tag }}
     {%- endif -%}

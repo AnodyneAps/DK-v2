@@ -85,6 +85,7 @@
     "base_family": "avenir_next_n4",
     "base_font_size": 15,
     "dbtfy_cart_reminder": false,
+    "dbtfy_cart_upsell": true,
     "dbtfy_quantity_breaks": false,
     "dbtfy_upsell_bundles": false,
     "dbtfy_cart_discount": false,
@@ -213,13 +214,12 @@
         "blocks": {
           "957fd032-c4db-4944-841e-3e355f2fbce4": {
             "type": "upsell",
-            "disabled": true,
             "settings": {
               "heading": "",
               "title_1": "Spar 25%",
               "text_1": "<p>Lige nu kan du <strong>sparer 25%<\/strong> på hele din ordre! <\/p>",
-              "collection_trigger_1": "bedst-solgte",
-              "product_trigger_1": "",
+              "collection_trigger_1": "",
+              "product_trigger_1": "anodyne-bh",
               "product_offer_1": "rabat25",
               "icons_1": "card_giftcard",
               "button_label_1": "Tilføj 25% rabat til min ordre",
@@ -434,7 +434,7 @@
             "settings": {
               "title": "Basic skulderstøtte tilkøb",
               "specific_upsell_replace_item_1": "add",
-              "specific_upsell_title_1": "<strong>Spar 33%! <\/strong>Tilføj en Skulderstøtte Basic. Nu kun 199 kr (normal 299 kr).",
+              "specific_upsell_title_1": "Spar 33% Tilføj en Skulderstøtte Basic. Nu kun 199 kr (normal 299 kr).",
               "specific_upsell_product_trigger_1": "anodyne-bh",
               "specific_upsell_product_offer_1": "skulderstotte-basic-tilkob",
               "specific_upsell_btn_title_1": "Tilføj",
@@ -685,17 +685,18 @@
           },
           "1845e2c6-d475-470e-81ff-6bb64b635172": {
             "type": "message",
+            "disabled": true,
             "settings": {
-              "title": "",
-              "announcement_text": "<p><strong>5 stjerner på TrustPilot<\/strong><\/p>"
+              "title": "Black Days",
+              "announcement_text": "<p><strong>Black Days <\/strong>– Det bliver ikke billigere<\/p>"
             }
           },
           "ed921cc9-429d-455b-86d4-1b6382ef61e7": {
             "type": "message",
             "disabled": true,
             "settings": {
-              "title": "",
-              "announcement_text": "<p><strong>SPAR 25%<\/strong> på alle produkter<\/p>"
+              "title": "Black Days",
+              "announcement_text": "<p><strong>Black Days<\/strong> - Spar op til 80%<\/p>"
             }
           }
         },
@@ -715,7 +716,7 @@
           "phone": true,
           "left_message": "<p>Vi forbedrer din kropsholdning<\/p>",
           "right_message": "<p><a href=\"\/pages\/kontakt\" target=\"_blank\" title=\"Kontakt\">Kontakt<\/a><\/p>",
-          "announcement_autoplayspeed": 5
+          "announcement_autoplayspeed": 3
         }
       },
       "header": {
@@ -886,12 +887,12 @@
           "show_social_media": false,
           "social_media_position_desktop": "center",
           "social_title": "Follow-us on social media!",
-          "show_payment_icons": true,
+          "show_payment_icons": false,
           "show_shopify_footer": false,
           "show_debutify_footer": false,
           "custom_credential": "<p>P.O. Pedersens Vej 9, 8200 Aarhus N - CVR: 37167053 <em>(NB: Intet salg på adressen)<\/em><\/p>",
           "style__selector": "black",
-          "product_counter_text": "Black days starter om:",
+          "product_counter_text": "Black Days starter om:",
           "date__selector": "2022-11-15 23:59:59",
           "show_product_counter": true
         }
