@@ -15,7 +15,7 @@
     "main": {
       "type": "collection-template",
       "settings": {
-        "style__selector": "none",
+        "style__selector": "black",
         "collection_tags_enable": false,
         "collection_tags_count": false,
         "collection_multiple_tags_filtering_enable": false,

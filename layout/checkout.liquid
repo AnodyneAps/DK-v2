@@ -125,6 +125,67 @@
       });
       }
       });
+      //total saving
+      function injectCompareAtPrice(event) {
+			var line_items = [
+				{% for line in checkout.line_items %}
+					{% if line.variant.compare_at_price > 0 %}
+						{
+							'variant_id':'{{ line.variant_id }}',
+							'compare_at_price':'{{ line.variant.compare_at_price }}',
+							'quantity': {{ line.quantity }},
+						},
+					{% endif %}
+				{% endfor %}
+			]
+			let totalSaving = line_items.reduce(function (previousValue, currentValue) {
+				return previousValue + currentValue.quantity * currentValue.compare_at_price;
+			}, 0);
+            let rabatKode = document.querySelector("[data-checkout-discount-amount-target]");
+            if(rabatKode){
+                let rabatKodeValue = rabatKode.dataset.checkoutDiscountAmountTarget;
+                let rabatKodeValueAsh = Math.round((parseFloat(rabatKodeValue)/100).toFixed(2));
+                let tableBody = document.querySelector(".total-line-table__tbody");
+    			let totalPriceContainer = document.querySelector("[data-checkout-subtotal-price-target]");
+    			let totalSubtotalPrice = totalPriceContainer.dataset.checkoutSubtotalPriceTarget;
+                let totalSavingsColculate = totalSubtotalPrice - totalSaving;
+                let totalFinalSaving = (parseFloat(totalSavingsColculate)/100);
+                let totalFinalSavingRabat = Math.round(Math.abs(totalFinalSaving) + rabatKodeValueAsh).toFixed(2);
+                
+                let elmentInnerHtml = `
+                <tr class="total-line total-line--savings">
+                <th class="total-line__name" scope="row">Total besparelse</th>
+                <td class="total-line__savings">
+                <span class="order-summary__savings" style="color:#ff891d;font-weight:bold;">
+                -${totalFinalSavingRabat}&nbsp;kr.
+                </span>
+                </td>
+                </tr>
+                `
+				tableBody.insertAdjacentHTML('beforeend', elmentInnerHtml);
+            }else{
+                let tableBody = document.querySelector(".total-line-table__tbody");
+                let totalPriceContainer = document.querySelector("[data-checkout-subtotal-price-target]");
+                let totalSubtotalPrice = totalPriceContainer.dataset.checkoutSubtotalPriceTarget;
+                let totalSavingsColculate = totalSubtotalPrice - totalSaving;
+                let totalFinalSaving = (parseFloat(totalSavingsColculate)/100).toFixed(2);
+
+              let elmentInnerHtml = `
+              <tr class="total-line total-line--savings">
+              <th class="total-line__name" scope="row">Total besparelse</th>
+              <td class="total-line__savings">
+              <span class="order-summary__savings" style="color:#ff891d;font-weight:bold;">
+              ${totalFinalSaving}&nbsp;kr.
+                </span>
+                </td>
+                </tr>
+				`
+				tableBody.insertAdjacentHTML('beforeend', elmentInnerHtml);
+            }
+			}
+			document.addEventListener('page:load', injectCompareAtPrice);
+			document.addEventListener('page:change', injectCompareAtPrice);
+			document.addEventListener('rebuy.refresh', injectCompareAtPrice);
       })(Checkout.$);
   </script>
   </body>

@@ -3,6 +3,7 @@
     "main": {
       "type": "product-tabs-template",
       "settings": {
+        "blackdays_banner": "shopify:\/\/shop_images\/product-bannerbf.png",
         "show_product_vendor": false,
         "show_product_type": false,
         "show_product_sku": false,
@@ -30,7 +31,7 @@
         "text_alignment_mobile": "small--text-center",
         "show_animation_banner": true,
         "animation_banner_text": "<p>Fri fragt ved køb over 399 kr.<\/p>",
-        "show_discount_notification": false,
+        "show_discount_notification": true,
         "discount_notification_text": "<p>Du kan roligt købe julegaver - returretten er forlænget frem til <strong>d. 24. januar 2023<\/strong><\/p>",
         "discount_notification_link": ""
       }
@@ -78,6 +79,7 @@
         "title": "Populære produkter",
         "subtitle": "",
         "section_style": "section-border",
+        "style__selector": "black",
         "rows": "2",
         "desktop_grid": "4",
         "mobile_grid": "2",
