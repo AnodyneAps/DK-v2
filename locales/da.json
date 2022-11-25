@@ -566,5 +566,15 @@
   },
   "date_formats": {
     "month_day_year": "%a %b %d"
+  },
+  "shopify": {
+    "checkout": {
+      "review": {
+        "blocks": {
+          "shipping_address_title": "Adresse",
+          "shipping_method_title": "Metode"
+        }
+      }
+    }
   }
 }

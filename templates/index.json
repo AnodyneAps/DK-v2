@@ -37,7 +37,7 @@
         "video_title": "",
         "svg_selector": "blackdays",
         "text_size": "medium",
-        "text_description": "<p>Black Days – <strong>Spar op til 80%<\/strong> – Det bliver ikke billigere<\/p>",
+        "text_description": "<p>Black Friday – <strong>Spar op til 80%<\/strong> – Det bliver ikke billigere<\/p>",
         "text_description_size": "medium",
         "button_label": "Mænd",
         "button_link": "shopify:\/\/collections\/maend",
@@ -45,8 +45,8 @@
         "second_button_link": "shopify:\/\/collections\/kvinder",
         "show_scrolldown": true,
         "show_emark": true,
-        "bottom_counter_text": "Black Days slutter om:",
-        "date__selector": "2022-11-27T23:59:59",
+        "bottom_counter_text": "Black Friday slutter om:",
+        "date__selector": "2022-11-25T23:59:59",
         "show_bottom_counter": true
       }
     },

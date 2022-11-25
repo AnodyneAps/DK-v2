@@ -1,7 +1,4 @@
-<div id="CollectionSection"
-     data-section-id="{{ section.id }}"
-     data-section-type="collection-template"
-     data-collection-layout="{{ section.settings.collection_layout }}">
+<div id="CollectionSection" data-section-id="{{ section.id }}" data-section-type="collection-template" data-collection-layout="{{ section.settings.collection_layout }}">
 
   <div class="box">
     <div class="wrapper">
@@ -28,9 +25,9 @@
 
             {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
 
-            <select id="sortBy" class="collection-sortby-select select--small full" name="sort_by" aria-describedby="a11y-refresh-page-message" >
+            <select id="sortBy" class="collection-sortby-select select--small full" name="sort_by" aria-describedby="a11y-refresh-page-message">
               {%- for option in collection.sort_options -%}
-                <option value="{{ option.value }}"{% if sort_by == option.value %} selected="selected"{% endif %}>{{ option.name }}</option>
+                <option value="{{ option.value }}" {% if sort_by == option.value %} selected="selected"{% endif %}>{{ option.name }}</option>
               {%- endfor -%}
             </select>
           </div>
@@ -252,8 +249,8 @@
 
       <div class="collection-and-pagination-container">
         {%- paginate collection.products by limit -%}
-          <div {% if settings.dbtfy_infinite_scroll %}id="infiniteScrollContainer" {% endif %}
-               class="grid grid-spacer collection-list-products{% if collection_layout == 'list' %} collection-list-products--list{% endif %}{% if collection_layout == 'grid_list' %} collection-list-products--grid-list{% endif %}">
+          <div {% if settings.dbtfy_infinite_scroll %}id="infiniteScrollContainer"{% endif %}
+            class="grid grid-spacer collection-list-products{% if collection_layout == 'list' %} collection-list-products--list{% endif %}{% if collection_layout == 'grid_list' %} collection-list-products--grid-list{% endif %}">
 
             {%- capture grid_item_width -%}
               {%- render 'product-width' -%}
@@ -261,11 +258,12 @@
 
             {%- for product in collection.products -%}
               {%- capture product_item -%}
-                {%- capture current -%}{% cycle 1, 2, 3, 4, 5, 6 %}{%- endcapture -%}
+                {%- capture current -%}
+                  {% cycle 1, 2, 3, 4, 5, 6 %}{%- endcapture -%}
 
                 {%- if collection_layout == 'grid' -%}
                   {%- render 'product-grid-item' with product as product, grid_item_width: grid_item_width, current: current -%}
-                 
+
                 {%- elsif collection_layout == 'list' -%}
                   {%- render 'product-list-item' with product as product, current: current, visible: true -%}
                 {%- elsif collection_layout == 'grid_list' -%}
@@ -288,17 +286,17 @@
               </div>
             {%- endfor -%}
             {% if section.settings.collection_giff_enable %}
-            {%- render 'product-grid-giff' -%}
+              {%- render 'product-grid-giff' -%}
             {% endif %}
-       
+
           </div>
 
           {%- render "pagination" with paginate as paginate -%}
           {%- unless collection.description == blank -%}
-          <p class="collection-description text-lead">
-            {{ collection.description }}
-          </p>
-        {%- endunless -%}
+            <p class="collection-description text-lead">
+              {{ collection.description }}
+            </p>
+          {%- endunless -%}
         {%- endpaginate -%}
       </div>
     </div>
@@ -308,12 +306,12 @@
 {% schema %}
   {
     "name": "t:sections.collection_template.name",
-	  "class": "collection-section",
+    "class": "collection-section",
     "settings": [
-	    {
-		    "type": "header",
-		    "content": "t:sections.collection_template.settings.header__1.content"
-	    },
+      {
+        "type": "header",
+        "content": "t:sections.collection_template.settings.header__1.content"
+      },
       {
         "type": "select",
         "id": "style__selector",
@@ -326,6 +324,9 @@
           }, {
             "label": "Black Days",
             "value": "black"
+          }, {
+            "label": "Black Friday",
+            "value": "blackfriday"
           }, {
             "label": "Cyber Days",
             "value": "cyber"
@@ -343,20 +344,17 @@
         "id": "collection_tags_count",
         "label": "t:sections.collection_template.settings.show_tags_count.label",
         "default": true
-      },
-      {
+      }, {
         "type": "checkbox",
         "id": "collection_multiple_tags_filtering_enable",
         "label": "t:sections.collection_template.settings.enable_multiple_tags_filtering.label",
         "default": true
-      },
-      {
+      }, {
         "type": "checkbox",
         "id": "collection_sort_enable",
         "label": "t:sections.collection_template.settings.enable_sorting.label",
         "default": true
-      },
-      {
+      }, {
         "type": "select",
         "id": "tag_selector",
         "label": "t:sections.collection_template.settings.tag_picker_type.label",
@@ -365,14 +363,12 @@
           {
             "value": "button",
             "label": "t:sections.collection_template.settings.tag_picker_type.options__1.label"
-          },
-          {
+          }, {
             "value": "select",
             "label": "t:sections.collection_template.settings.tag_picker_type.options__2.label"
           }
         ]
-      },
-      {
+      }, {
         "type": "select",
         "id": "collection_layout",
         "label": "t:sections.collection_template.settings.collection_layout.label",
@@ -381,22 +377,18 @@
           {
             "value": "grid",
             "label": "t:sections.collection_template.settings.collection_layout.options__1.label"
-          },
-          {
+          }, {
             "value": "list",
             "label": "t:sections.collection_template.settings.collection_layout.options__2.label"
-          },
-          {
+          }, {
             "value": "grid_list",
             "label": "t:sections.collection_template.settings.collection_layout.options__3.label"
           }
         ]
-      },
-      {
+      }, {
         "type": "header",
         "content": "t:sections.collection_template.settings.header__2.content"
-      },
-      {
+      }, {
         "type": "select",
         "id": "rows",
         "label": "t:sections.collection_template.settings.rows_count.label",
@@ -417,30 +409,24 @@
           {
             "value": "5",
             "label": "5"
-          },
-          {
+          }, {
             "value": "6",
             "label": "6"
-          },
-          {
+          }, {
             "value": "7",
             "label": "7"
-          },
-          {
+          }, {
             "value": "8",
             "label": "8"
-          },
-          {
+          }, {
             "value": "9",
             "label": "9"
-          },
-          {
+          }, {
             "value": "10",
             "label": "10"
           }
         ]
-      },
-	    {
+      }, {
         "type": "select",
         "id": "desktop_grid",
         "label": "t:sections.collection_template.settings.products_per_row_desktop.label",
@@ -449,85 +435,71 @@
           {
             "value": "2",
             "label": "2"
-          },
-          {
+          }, {
             "value": "3",
             "label": "3"
-          },
-          {
+          }, {
             "value": "4",
             "label": "4"
           }
         ]
-	    },
-	    {
+      }, {
         "type": "select",
         "id": "mobile_grid",
         "label": "t:sections.collection_template.settings.products_per_row_mobile.label",
         "default": "2",
-        "options":[
+        "options": [
           {
             "value": "1",
             "label": "1"
-          },
-          {
+          }, {
             "value": "2",
             "label": "2"
           }
         ]
-      },
-      {
-		    "type": "header",
-		    "content": "collection banner image/giff"
-	    },
-      {
+      }, {
+        "type": "header",
+        "content": "collection banner image/giff"
+      }, {
         "type": "checkbox",
         "id": "collection_giff_enable",
         "label": "Enable image banner or a giff banner on collection",
-        "default": false 
-      },
-      {
+        "default": false
+      }, {
         "type": "image_picker",
         "id": "collection_banner",
         "label": "Add a banner on collection, with size: 264X360px."
-      },
-      {
+      }, {
         "type": "url",
         "id": "collection_banner_gif_link",
         "label": "Add a gif link from settings>files"
-      },
-      {
+      }, {
         "type": "font_picker",
         "id": "collection_banner_font_family",
         "label": "Font",
         "default": "poppins_n4"
-      },
-      {
+      }, {
         "type": "text",
         "id": "collection_banner_title",
         "label": "Add a title text to banner"
-      },
-      {
+      }, {
         "type": "header",
         "content": "Buttons"
-      },
-      {
+      }, {
         "type": "text",
         "id": "collection_banner_button_label",
         "label": "Button label",
         "default": "Shop now"
-      },
-      {
+      }, {
         "type": "url",
         "id": "collection_banner_button_link",
         "label": "Button link",
         "default": "/collections/all"
-      },
-      {
+      }, {
         "type": "checkbox",
         "id": "collection_enable_porcent_tag",
         "label": "Enable porcent tag on collection",
-        "default": false 
+        "default": false
       }
     ]
   }

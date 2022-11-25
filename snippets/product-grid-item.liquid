@@ -64,26 +64,25 @@
       <a href="{{ product_link }}" class="grid-product__image-link">
 
         {%- assign media = product.media.first -%}
-        {%- comment -%} for zipper product add zip image start {%- endcomment -%}
+        {%- comment -%}
+          for zipper product add zip image start
+        {%- endcomment -%}
         {% if product_link  contains 'zipper' %}
-        <span class="zipper__product"></span>
+          <span class="zipper__product"></span>
         {% endif %}
-        {%- comment -%} for zipper product add zip image end {%- endcomment -%}
+        {%- comment -%}
+          for zipper product add zip image end
+        {%- endcomment -%}
         {%- if emptyState -%}
           {{ 'product-' | append: current | placeholder_svg_tag: 'card-image placeholder-svg' }}
         {%- elsif media != blank -%}
           <div id="ProductImageWrapper-{{ media.id }}" class="product--wrapper card-image grid-product--wrapper media-wrapper" style="padding-top:{{ 1 | divided_by: media.preview_image.aspect_ratio | times: 100 }}%;">
-            <img class="product--image media lazyload ProductImage-{{ media.id }}"
-                {% render 'lazysizes', img: media.preview_image, img_type: 'responsive' %}
-                 alt="{{ media.preview_image.alt }}"
-                 data-image>
+            <img class="product--image media lazyload ProductImage-{{ media.id }}" {% render 'lazysizes', img: media.preview_image, img_type: 'responsive' %} alt="{{ media.preview_image.alt }}" data-image>
           </div>
 
           {%- if image_hover -%}
             <div class="product--wrapper card-image grid-product--wrapper media-wrapper product-hover-image" style="padding-top:{{ 1 | divided_by: media_hover_image.aspect_ratio | times: 100 }}%;">
-              <img class="product--image media lazyload"
-                  {% render 'lazysizes', img: media_hover_image, img_type: 'responsive', add_on_crop: settings.dbtfy_product_image_crop %}
-                   alt="{{ media_hover_image.alt }}">
+              <img class="product--image media lazyload" {% render 'lazysizes', img: media_hover_image, img_type: 'responsive', add_on_crop: settings.dbtfy_product_image_crop %} alt="{{ media_hover_image.alt }}">
             </div>
           {%- endif -%}
         {%- else -%}
@@ -114,14 +113,27 @@
 
           {%- if settings.dbtfy_discount_saved -%}
             <span class="badge triangle__badge grid-product__badge grid-product__badge-{{ settings.tag_placement }}">
-            {%- comment -%} you can add a disount price amount with porcent tag{{ discount_price }}{%- endcomment -%}
-                {% if section.settings.style__selector == 'black' %}
-                  <span class="triangle_porcent"><strong class='black'>Black</strong><strong class='days'>Days</strong></span>
-                {% elsif section.settings.style__selector == 'cyber' %}
-                   <span class="triangle_porcent"><strong class='black'>Cyber</strong><strong class='cyber-days'>Days</strong></span>
-                {% else%}
-                  <span class="triangle_porcent_v2">%</span>
-                {% endif %}
+              {%- comment -%}
+                you can add a disount price amount with porcent tag{{ discount_price }}
+              {%- endcomment -%}
+              {% if section.settings.style__selector == 'black' %}
+                <span class="triangle_porcent">
+                  <strong class='black'>Black</strong>
+                  <strong class='days'>Days</strong>
+                </span>
+              {% elsif section.settings.style__selector == 'blackfriday' %}
+                <span class="triangle_porcent">
+                  <strong class='black'>Black</strong>
+                  <strong class='days'>Friday</strong>
+                </span>
+              {% elsif section.settings.style__selector == 'cyber' %}
+                <span class="triangle_porcent">
+                  <strong class='black'>Cyber</strong>
+                  <strong class='cyber-days'>Days</strong>
+                </span>
+              {% else%}
+                <span class="triangle_porcent_v2">%</span>
+              {% endif %}
             </span>
           {%- endif -%}
 
@@ -137,7 +149,11 @@
           echo '</div>'
         endunless
       -%}
-      {%- if discount_price != blank %}<span class="product__custom_label">{%- comment -%}{{product.metafields.product.product_custom_label}}{%- endcomment -%}- {{ discount_price }} </span>{%- endif -%}
+      {%- if discount_price != blank %}
+        <span class="product__custom_label">
+          {%- comment -%}{{product.metafields.product.product_custom_label}}{%- endcomment -%}- {{ discount_price }}
+        </span>
+      {%- endif -%}
     </div>
     {%- liquid
       unless emptyState
@@ -188,8 +204,7 @@
             </span>
           {%- endif -%}
           &nbsp;
-          <span class="price-compare text-strike text-muted {% unless on_sale %}hide{% endunless %}"
-                aria-label="{{ 'products.general.regular_price' | t }}">
+          <span class="price-compare text-strike text-muted {% unless on_sale %}hide{% endunless %}" aria-label="{{ 'products.general.regular_price' | t }}">
             {%- if on_sale -%}
               <span class="money">{{ compare_at_price | money }}</span>
             {%- else -%}
@@ -200,7 +215,8 @@
 
         {%- if variant.available and variant.unit_price_measurement -%}
           {%- capture unit_price_separator -%}
-            <span aria-hidden="true">/</span><span class="visually-hidden">&nbsp;{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
+            <span aria-hidden="true">/</span>
+            <span class="visually-hidden">&nbsp;{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
           {%- endcapture -%}
 
           {%- capture unit_price_base_unit -%}
@@ -215,7 +231,8 @@
 
           <span class="product-unit-price">
             <span class="visually-hidden">{{ 'products.general.unit_price' | t }}</span>
-            <span>{{ variant.unit_price | money }}</span>{{- unit_price_separator -}}{{- unit_price_base_unit -}}
+            <span>{{ variant.unit_price | money }}</span>
+            {{- unit_price_separator -}}{{- unit_price_base_unit -}}
           </span>
         {%- endif -%}
       </p>
