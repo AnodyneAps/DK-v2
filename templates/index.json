@@ -27,7 +27,7 @@
     "1998a02f-6647-4103-b1fb-0756807b97c3": {
       "type": "hero-blackdays",
       "settings": {
-        "style__selector": "black",
+        "style__selector": "cyber",
         "page_width": "full_width",
         "height": "medium",
         "newvideo_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0596\/7842\/5237\/files\/Cover.mp4?v=1637326801",
@@ -35,9 +35,9 @@
         "image": "shopify:\/\/shop_images\/Skaermbillede_2021-11-18_kl._14.03.24.png",
         "image_position": "center center",
         "video_title": "",
-        "svg_selector": "blackdays",
+        "svg_selector": "cyberdays",
         "text_size": "medium",
-        "text_description": "<p>Black Friday – <strong>Spar op til 80%<\/strong> – Det bliver ikke billigere<\/p>",
+        "text_description": "<p>Cyber Days – <strong>Spar op til 80%<\/strong> – Det bliver ikke billigere<\/p>",
         "text_description_size": "medium",
         "button_label": "Mænd",
         "button_link": "shopify:\/\/collections\/maend",
@@ -45,8 +45,8 @@
         "second_button_link": "shopify:\/\/collections\/kvinder",
         "show_scrolldown": true,
         "show_emark": true,
-        "bottom_counter_text": "Black Friday slutter om:",
-        "date__selector": "2022-11-25T23:59:59",
+        "bottom_counter_text": "Cyber Days slutter om:",
+        "date__selector": "2022-12-04 23:59:59",
         "show_bottom_counter": true
       }
     },
@@ -256,7 +256,7 @@
         "title": "Mest populære produkter",
         "subtitle": "",
         "section_style": "section-blank",
-        "style__selector": "black",
+        "style__selector": "cyber",
         "home_featured_products": "posture-shirt",
         "rows": "2",
         "desktop_grid": "4",

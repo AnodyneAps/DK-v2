@@ -748,14 +748,14 @@
             "type": "message",
             "settings": {
               "title": "Black Days",
-              "announcement_text": "<p><strong>Black Friday <\/strong>– Det bliver ikke billigere<\/p>"
+              "announcement_text": "<p><strong>Cyber Days <\/strong>– Det bliver ikke billigere<\/p>"
             }
           },
           "ed921cc9-429d-455b-86d4-1b6382ef61e7": {
             "type": "message",
             "settings": {
               "title": "Black Days",
-              "announcement_text": "<p><strong>Black Friday<\/strong> - Spar op til 80%<\/p>"
+              "announcement_text": "<p><strong>Cyber Days<\/strong> - Spar op til 80%<\/p>"
             }
           }
         },
@@ -767,7 +767,7 @@
           "ed921cc9-429d-455b-86d4-1b6382ef61e7"
         ],
         "settings": {
-          "style__selector": "black",
+          "style__selector": "cyber",
           "show_announcement": true,
           "small_announcement_text": false,
           "show_social": false,
@@ -950,9 +950,9 @@
           "show_shopify_footer": false,
           "show_debutify_footer": false,
           "custom_credential": "<p>P.O. Pedersens Vej 9, 8200 Aarhus N - CVR: 37167053 <em>(NB: Intet salg på adressen)<\/em><\/p>",
-          "style__selector": "black",
-          "product_counter_text": "Black Friday slutter om:",
-          "date__selector": "2022-11-25T23:59:59",
+          "style__selector": "cyber",
+          "product_counter_text": "Cyber Days slutter om:",
+          "date__selector": "2022-12-04 23:59:59",
           "show_product_counter": true
         }
       },

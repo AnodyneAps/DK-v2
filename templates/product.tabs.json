@@ -3,7 +3,7 @@
     "main": {
       "type": "product-tabs-template",
       "settings": {
-        "blackdays_banner": "shopify:\/\/shop_images\/product-bannerbf.png",
+        "blackdays_banner": "shopify:\/\/shop_images\/cyberbanner.png",
         "show_product_vendor": false,
         "show_product_type": false,
         "show_product_sku": false,
@@ -79,7 +79,7 @@
         "title": "Populære produkter",
         "subtitle": "",
         "section_style": "section-border",
-        "style__selector": "black",
+        "style__selector": "cyber",
         "rows": "2",
         "desktop_grid": "4",
         "mobile_grid": "2",
