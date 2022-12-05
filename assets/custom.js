@@ -238,7 +238,7 @@ const removeActiveHomeTabItemClass = () => {
 
 // product counter scripts 
 const counter = document.getElementById("product__counter");
-console.log(counter);
+if(counter){
 setInterval(() => {
 	//set day hours
 	const d = new Date();
@@ -274,6 +274,7 @@ function countTimer(time){
 	const minutes = addZero(Math.floor(time / 60) % 60)
 	const hours = addZero(Math.floor(time / 3600))
   	counter.innerHTML = "<div class='inner'>"+hours+"<span class='dots'>:</span></div><div class='inner'>"+minutes+"<span class='dots'>:</span></div><div class='inner'>"+seconds+"</div>";
+}
 }
 
 
