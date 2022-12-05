@@ -730,15 +730,13 @@
           },
           "c4676b39-a890-441a-b56f-27f60a8d0ad9": {
             "type": "message",
-            "disabled": true,
             "settings": {
               "title": "",
-              "announcement_text": "<p><strong>Gratis ombytning<\/strong><\/p>"
+              "announcement_text": "<p>Gratis ombytning<\/p>"
             }
           },
           "82893cc1-5e92-46bd-a94d-7204271ffa01": {
             "type": "message",
-            "disabled": true,
             "settings": {
               "title": "",
               "announcement_text": "<p>Gratis fragt ved køb over 399 kr<\/p>"
@@ -746,6 +744,7 @@
           },
           "1845e2c6-d475-470e-81ff-6bb64b635172": {
             "type": "message",
+            "disabled": true,
             "settings": {
               "title": "Black Days",
               "announcement_text": "<p><strong>Cyber Days <\/strong>– Det bliver ikke billigere<\/p>"
@@ -753,6 +752,7 @@
           },
           "ed921cc9-429d-455b-86d4-1b6382ef61e7": {
             "type": "message",
+            "disabled": true,
             "settings": {
               "title": "Black Days",
               "announcement_text": "<p><strong>Cyber Days<\/strong> - Spar op til 80%<\/p>"
@@ -767,7 +767,7 @@
           "ed921cc9-429d-455b-86d4-1b6382ef61e7"
         ],
         "settings": {
-          "style__selector": "cyber",
+          "style__selector": "none",
           "show_announcement": true,
           "small_announcement_text": false,
           "show_social": false,
@@ -949,11 +949,7 @@
           "show_payment_icons": false,
           "show_shopify_footer": false,
           "show_debutify_footer": false,
-          "custom_credential": "<p>P.O. Pedersens Vej 9, 8200 Aarhus N - CVR: 37167053 <em>(NB: Intet salg på adressen)<\/em><\/p>",
-          "style__selector": "cyber",
-          "product_counter_text": "Cyber Days slutter om:",
-          "date__selector": "2022-12-04 23:59:59",
-          "show_product_counter": true
+          "custom_credential": "<p>P.O. Pedersens Vej 9, 8200 Aarhus N - CVR: 37167053 <em>(NB: Intet salg på adressen)<\/em><\/p>"
         }
       },
       "dbtfy-upsell-bundles": {

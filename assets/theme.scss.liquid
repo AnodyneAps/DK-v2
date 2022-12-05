@@ -10883,7 +10883,9 @@ body:not(.dbtfy-wish_list-destroy) {
     }
   }
 }
-
+.Icon--anodyne__vendor .anodyne--name{
+  fill: $cAccent;
+}
 .scrolldown {
   z-index: 2;
   position: absolute;
@@ -11229,14 +11231,14 @@ body:not(.dbtfy-wish_list-destroy) {
           }
           .top,
           .top-flip {
-            background-color: darken($cLightGray, 7%);
+            background-color: darken($cLightGray, 1%);
             border-top-right-radius: 5px;
             border-top-left-radius: 5px;
             border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
           }
           .bottom,
           .bottom-flip {
-            background-color: $white;
+            background-color: darken($cLightGray, 9%);
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -11249,7 +11251,7 @@ body:not(.dbtfy-wish_list-destroy) {
           .top-flip {
             position: absolute;
             width: 100%;
-            background-color: darken($cLightGray, 7%);
+            background-color: darken($cLightGray, 9%);
             -webkit-animation: flip-top 250ms ease-in;
                     animation: flip-top 250ms ease-in;
             -webkit-transform-origin: bottom;
@@ -11315,7 +11317,7 @@ body:not(.dbtfy-wish_list-destroy) {
     .close__btn::before{
       transform: rotate(45deg);
     }
-    &.fixed-bottom,&.product-bottom{
+    &.fixed-bottom{
       position: fixed;
       bottom: 0;
       width: 100%;
@@ -11363,32 +11365,11 @@ body:not(.dbtfy-wish_list-destroy) {
           color: $white;
          }
     }
-    &.cyber__days{
-      background-color: $cyberdays !important;
-    }
-    &.black__days{
-      background-color: $blackdays !important;
-    }
    }
    &.hide{
     display: none !important;
    }
   }
-  /* bcdays */
-.black__days{
-  .flip-container{
-    &.show-flip{
-      background-color: $blackdays !important;
-    }
-  }
-}
-.cyber__days{
-  .flip-container{
-    &.show-flip{
-      background-color: $cyberdays !important;
-    }
-  }
-}
 //counter animation keys
   @-webkit-keyframes flip-top {
     100% {
@@ -11414,6 +11395,30 @@ body:not(.dbtfy-wish_list-destroy) {
               transform: rotateX(0deg);
     }
   }
+.product-counter-container{
+  border-radius: 5px;
+  background-color: #f3f3f3;
+  border: 1px solid #f9f9f9;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:$gutter-sm;
+  gap:10px;
+  p {
+    padding-top:13px;
+    font-weight:600;
+  }
+  .inner{
+    color: $cAccent;
+    font-weight: bold;
+  }
+  #product__counter{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+}
 .profile {
   .profile__item{
     width: 100%;

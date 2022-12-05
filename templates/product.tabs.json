@@ -3,7 +3,6 @@
     "main": {
       "type": "product-tabs-template",
       "settings": {
-        "blackdays_banner": "shopify:\/\/shop_images\/cyberbanner.png",
         "show_product_vendor": false,
         "show_product_type": false,
         "show_product_sku": false,
@@ -29,6 +28,8 @@
         "description_style": "section-border",
         "text_alignment": "",
         "text_alignment_mobile": "small--text-center",
+        "product_counter_text": "<p>Vi pakker din ordre om:<\/p>",
+        "show_product_counter": true,
         "show_animation_banner": true,
         "animation_banner_text": "<p>Fri fragt ved køb over 399 kr.<\/p>",
         "show_discount_notification": true,
@@ -79,7 +80,7 @@
         "title": "Populære produkter",
         "subtitle": "",
         "section_style": "section-border",
-        "style__selector": "cyber",
+        "style__selector": "none",
         "rows": "2",
         "desktop_grid": "4",
         "mobile_grid": "2",
