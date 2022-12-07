@@ -44,7 +44,7 @@
         "second_button_label": "Kvinder",
         "second_button_link": "shopify:\/\/collections\/kvinder",
         "show_scrolldown": true,
-        "show_emark": true,
+        "show_emark": false,
         "bottom_counter_text": "Vi pakker din ordre om:",
         "date__selector": "2022-12-04 23:59:59",
         "show_bottom_counter": true

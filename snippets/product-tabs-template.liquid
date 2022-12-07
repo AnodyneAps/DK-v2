@@ -339,10 +339,7 @@
 
         <!-- right grid item -->
         <div id="ProductMeta-{{ section.id }}" class="grid__item product-single__meta--wrapper {{ product_description_width }}{% if emptyState %} large--sticky medium--sticky sticky-check-header{% endif %} {% if sold_out %}variant-soldout{% endif %}">
-          <!-- run emaerk icon here  -->
-          <div class="emaerk__icon-wrapper">
-            {%- render 'icon' with 'emaerklogo' -%}
-          </div>
+
           <div class="product-single__meta">
             {%- liquid
               assign showProductProperties = false
@@ -910,7 +907,7 @@
       "options": {{ product.options | json }},
       "options_with_values": {
         {% for product_option in product.options_with_values %}
-          "option  {{ product_option.position }}" : {{ product_option.values | json }}
+          "option   {{ product_option.position }}" : {{ product_option.values | json }}
           {% unless forloop.last %},{% endunless %}{% endfor %}
       },
       "price": {{ product.price | json }},
@@ -949,7 +946,7 @@
           }, 6000);
         } else {
           event.preventDefault()
-          $("#not_select_id").html("<p id='not_select-m'>   {{ 'products.sizes.choose-size-message' | t }}</p>");
+          $("#not_select_id").html("<p id='not_select-m'>    {{ 'products.sizes.choose-size-message' | t }}</p>");
           $('.variant-label-option-value').html("");
           setTimeout(function() {
             $("#not_select-m").hide();

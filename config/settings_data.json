@@ -432,6 +432,7 @@
         "blocks": {
           "044ae220-77bb-4e0f-bf98-ca576e03c1e0": {
             "type": "cart-item-upsell",
+            "disabled": true,
             "settings": {
               "title": "Basic skulderstøtte tilkøb",
               "specific_upsell_replace_item_1": "add",
@@ -488,6 +489,7 @@
           },
           "f98348a9-d1df-4a7e-a63e-6125fd7063fd": {
             "type": "cart-item-upsell",
+            "disabled": true,
             "settings": {
               "title": "Basic Skulderstøtte tilkøb",
               "specific_upsell_replace_item_1": "add",
@@ -544,6 +546,7 @@
           },
           "5b1792be-5298-4eae-bc5a-99806d2d996e": {
             "type": "cart-item-upsell",
+            "disabled": true,
             "settings": {
               "title": "Basic Skulderstøtte tilkøb",
               "specific_upsell_replace_item_1": "add",
