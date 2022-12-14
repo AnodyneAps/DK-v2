@@ -378,13 +378,6 @@
   </div>
 </footer>
 
-{% if template.name != index %}
-  {% if section.settings.show_product_counter %}
-    {%- render 'product-clock' -%}
-  {% endif %}
-{% endif %}
-
-
 {% schema %}
   {
     "name": "t:sections.footer.name",
