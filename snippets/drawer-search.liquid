@@ -18,7 +18,7 @@
 
 <div id="SearchDrawer" class="drawer drawer--top overlay-content" aria-hidden="true" tabindex="-1">
   <div class="drawer__inner">
-    {%- if content_for_header contains 'debutify' and settings.dbtfy_smart_search -%}
+    {%- if settings.dbtfy_smart_search -%}
       <predictive-search>
         {{ search_content }}
       </predictive-search>

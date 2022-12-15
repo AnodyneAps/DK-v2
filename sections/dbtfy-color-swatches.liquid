@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_color_swatches -%}
+{%- if settings.dbtfy_color_swatches -%}
   <style>
     {% for block in section.blocks %}
       {%- for i in (1..10) -%}

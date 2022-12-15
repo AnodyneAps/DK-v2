@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_wish_list -%}
+{%- if settings.dbtfy_wish_list -%}
   {%- liquid
     assign show_bubble = settings.dbtfy_wish_list_bubble
     assign enable_bubble_animation = settings.dbtfy_wish_list_bubble_animation

@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_delivery_date -%}
+{%- if settings.dbtfy_delivery_date -%}
   {%- liquid
     assign required_to_checkout = settings.dbtfy_delivery_date_required
     assign label_icon = settings.dbtfy_delivery_date_icon

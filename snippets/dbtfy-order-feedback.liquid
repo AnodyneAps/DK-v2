@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_order_feedback -%}
+{%- if settings.dbtfy_order_feedback -%}
   {%- liquid
     assign required_to_checkout = settings.dbtfy_order_feedback_required
     assign select_title = 'add-ons.order_feedback.select_title' | t

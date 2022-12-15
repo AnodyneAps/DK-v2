@@ -1,4 +1,8 @@
-<div id="section-{{ section.id }}" class="{% unless section.settings.show_on_desktop %} medium--hide large--hide{% endunless %} {% unless section.settings.show_on_mobile %} small--hide{% endunless %} {{ section.settings.section_style }}" data-section-id="{{ section.id }}" data-section-type="featured-row-section">
+<div
+  id="section-{{ section.id }}"
+  class="{% unless section.settings.show_on_desktop %} medium--hide large--hide{% endunless %} {% unless section.settings.show_on_mobile %} small--hide{% endunless %} {{ section.settings.section_style }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="featured-row-section">
   <div class="box">
     <div class="wrapper">
 
@@ -8,15 +12,16 @@
             <div class="media-wrapper" style="padding-top:{{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100}}%;">
               {%- if section.settings.image_link != blank -%}
                 <a href="{{ section.settings.image_link }}">
-              {%- endif -%} 
+                {%- endif -%}
 
-                <img class="media lazyload"
-                {%- render 'lazysizes', img: section.settings.image, img_type: 'responsive' -%}
-                alt="{{ section.settings.image.alt }}">
+                <img
+                  class="media lazyload"
+                  {%- render 'lazysizes', img: section.settings.image, img_type: 'responsive' -%}
+                  alt="{{ section.settings.image.alt }}">
 
-              {%- if section.settings.image_link != blank -%} 
+                {%- if section.settings.image_link != blank -%}
                 </a>
-              {%- endif -%}   
+              {%- endif -%}
             </div>
           {%- else -%}
             {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
@@ -45,7 +50,7 @@
 {% schema %}
   {
     "name": "featured html",
-	  "class": "featured-row-section",
+    "class": "featured-row-section",
     "settings": [
       {
         "type": "checkbox",
@@ -53,7 +58,7 @@
         "label": "t:sections.featured_row.settings.show_on_desktop.label",
         "default": true
       },
-       {
+      {
         "type": "checkbox",
         "id": "show_on_mobile",
         "label": "t:sections.featured_row.settings.show_on_mobile.label",
@@ -68,8 +73,7 @@
         "type": "url",
         "id": "image_link",
         "label": "Image link"
-      },
-      {
+      }, {
         "type": "select",
         "id": "section_style",
         "label": "t:sections.featured_row.settings.section_style.label",
@@ -78,18 +82,15 @@
           {
             "value": "section-blank",
             "label": "t:sections.featured_row.settings.section_style.options__1.label"
-          },
-		      {
+          }, {
             "value": "section-default",
             "label": "t:sections.featured_row.settings.section_style.options__2.label"
-          },
-          {
+          }, {
             "value": "section-border",
             "label": "t:sections.featured_row.settings.section_style.options__3.label"
           }
         ]
-      },
-	    {
+      }, {
         "type": "select",
         "id": "text_size",
         "label": "t:sections.featured_row.settings.text_size.label",
@@ -98,14 +99,12 @@
           {
             "value": "medium",
             "label": "t:sections.featured_row.settings.text_size.options__1.label"
-          },
-          {
+          }, {
             "value": "large",
             "label": "t:sections.featured_row.settings.text_size.options__2.label"
           }
         ]
-      },
-      {
+      }, {
         "type": "select",
         "id": "image_alignement",
         "label": "t:sections.featured_row.settings.image_alignement.label",
@@ -114,14 +113,12 @@
           {
             "value": "left",
             "label": "t:sections.featured_row.settings.image_alignement.options__1.label"
-          },
-          {
+          }, {
             "value": "right",
             "label": "t:sections.featured_row.settings.image_alignement.options__2.label"
           }
         ]
-      },
-	    {
+      }, {
         "type": "select",
         "id": "text_alignment",
         "label": "t:sections.featured_row.settings.text_alignment.label",
@@ -130,34 +127,28 @@
           {
             "value": "",
             "label": "t:sections.featured_row.settings.text_alignment.options__1.label"
-          },
- 		      {
+          }, {
             "value": "text-center",
             "label": "t:sections.featured_row.settings.text_alignment.options__2.label"
-          },
-          {
+          }, {
             "value": "text-right",
             "label": "t:sections.featured_row.settings.text_alignment.options__3.label"
-          },
-          {
+          }, {
             "value": "text-justify",
             "label": "t:sections.featured_row.settings.text_alignment.options__4.label"
           }
         ]
-      },
-      {
+      }, {
         "type": "text",
         "id": "title",
         "label": "t:sections.featured_row.settings.title.label",
         "default": "Image with text"
-      },
-      {
+      }, {
         "type": "html",
         "id": "html_text",
         "label": "t:sections.featured_row.settings.text.label",
         "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
-      },
-	    {
+      }, {
         "type": "select",
         "id": "button_style",
         "label": "t:sections.featured_row.settings.button_style.label",
@@ -166,23 +157,19 @@
           {
             "value": "",
             "label": "t:sections.featured_row.settings.button_style.options__1.label"
-          },
-          {
+          }, {
             "value": "btn--primary",
             "label": "t:sections.featured_row.settings.button_style.options__2.label"
-          },
-          {
+          }, {
             "value": "btn-outline-primary",
             "label": "t:sections.featured_row.settings.button_style.options__3.label"
           }
         ]
-      },
-      {
+      }, {
         "type": "text",
         "id": "button_label",
         "label": "t:sections.featured_row.settings.button_label.label"
-      },
-      {
+      }, {
         "type": "url",
         "id": "button_link",
         "label": "t:sections.featured_row.settings.button_link.label"

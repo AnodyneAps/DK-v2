@@ -376,7 +376,6 @@
               <div class="{%- if title_position_mobile == "above" -%} small--hide {%- endif -%}">
                 {%- render "review-badge" with product as product, position: "product_page", class: "spacer-bottom" -%}
               </div>
-              <div class="dbtfy-product-sales-countdown-box main-product-block" {% if product.selected_variant.available == false %}{% endif %}></div>
             {%- endunless -%}
 
             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="product-single__meta-info">
@@ -460,7 +459,7 @@
                       {%- liquid
                         assign is_color_option = false
 
-                        if content_for_header contains 'debutify' and product.available and product.variants.size >= 1 and settings.dbtfy_color_swatches
+                        if product.available and product.variants.size >= 1 and settings.dbtfy_color_swatches
                           assign swatch_list = settings.dbtfy_color_swatches_color | split: ","
 
                           for swatch in swatch_list

@@ -2,7 +2,8 @@
   "sections": {
     "main": {
       "type": "page-order-tracking-content",
-      "settings": {}
+      "settings": {
+      }
     }
   },
   "order": [

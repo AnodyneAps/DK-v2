@@ -36,7 +36,7 @@
     {%- render 'product-width', desktop: desktop_grid, mobile: mobile_grid -%}
   {%- endcapture -%}
 
-  {%- if content_for_header contains 'debutify' and settings.dbtfy_gift_wrap -%}
+  {%- if settings.dbtfy_gift_wrap -%}
     {%- unless product.id == gift_wrap_product_id -%}
       {%- render 'product-grid-item' with product as product, grid_item_width: grid_item_width, current: 1 -%}
     {%- endunless -%}

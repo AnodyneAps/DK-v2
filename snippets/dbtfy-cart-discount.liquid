@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_cart_discount -%}
+{%- if settings.dbtfy_cart_discount -%}
   {%- liquid
     assign icon = settings.dbtfy_cart_discount_icon
     assign button_icon = settings.dbtfy_cart_discount_apply_button_icons

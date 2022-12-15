@@ -1,1 +1,0 @@
-{% if customer.email %} {% assign customer_hashed_email = customer.email | sha256 %} <div id='__vzmedia__customer_identifier' style='height:0;'>{{customer_hashed_email}}</div> {% else %} <div id='__vzmedia__customer_identifier' style='height:0;'></div>{% endif %}

@@ -39,7 +39,19 @@
       </div>
     {%- endif -%}
   {%- else -%}
-    <div id="productRecommendationsSection" class="{{ section.settings.section_style }}" data-product-id="{{ product.id }}" data-section-id="{{ section.id }}" data-section-type="product-recommendations" data-section-url="{{ routes.product_recommendations_url }}" data-limit="{{ limit }}" data-arrows="{{ section.settings.arrows }}" data-dots="{{ section.settings.dots }}" data-autoplay="{{ section.settings.autoplay }}" data-autoplayspeed="{{ section.settings.autoplayspeed | times: 1000 }}" data-slidetoshow="{{ section.settings.desktop_grid }}"></div>
+    <div
+      id="productRecommendationsSection"
+      class="{{ section.settings.section_style }}"
+      data-product-id="{{ product.id }}"
+      data-section-id="{{ section.id }}"
+      data-section-type="product-recommendations"
+      data-section-url="{{ routes.product_recommendations_url }}"
+      data-limit="{{ limit }}"
+      data-arrows="{{ section.settings.arrows }}"
+      data-dots="{{ section.settings.dots }}"
+      data-autoplay="{{ section.settings.autoplay }}"
+      data-autoplayspeed="{{ section.settings.autoplayspeed | times: 1000 }}"
+      data-slidetoshow="{{ section.settings.desktop_grid }}"></div>
   {%- endif -%}
 {%- endif -%}
 

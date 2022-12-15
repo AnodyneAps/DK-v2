@@ -8,7 +8,12 @@
  -%}
 
 <!-- site footer -->
-<footer id="section-footer" class="site-footer" role="contentinfo" data-section-id="{{ section.id }}" data-section-type="footer-section">
+<footer
+  id="section-footer"
+  class="site-footer"
+  role="contentinfo"
+  data-section-id="{{ section.id }}"
+  data-section-type="footer-section">
   {%- if section.settings.show_social_media -%}
     {%- liquid
        case section.settings.social_media_position_desktop
@@ -75,42 +80,42 @@
 
               {%- case block.type -%}
                 {%- when "html" -%}
-                  {%- if block.settings.html_area != blank -%}
-                    <div class="site-footer__custom_html">
-                      {{ block.settings.html_area }}
-                    </div>
-                  {%- endif -%}
-                  <!-- custom social links  -->
-                  <div class="site-footer__socials">
-                    {%- if block.settings.facebook_link != blank -%}
-                      <a href=" {{ block.settings.facebook_link }}" target="_blank">
-                        {%- include 'svg-definitions' with 'facebook' -%}
-                        <span class="footer-facebook">Facebook</span>
-                      </a>
-                    {%- endif -%}
-                    {%- if block.settings.youtube_link != blank -%}
-                      <a href=" {{ block.settings.youtube_link }}" target="_blank">
-                        {%- include 'svg-definitions' with 'youtube' -%}
-                        <span class="footer-youtube">Youtube</span>
-                      </a>
-                    {%- endif -%}
-                    {%- if block.settings.insta_link != blank -%}
-                      <a href=" {{ block.settings.insta_link }}" target="_blank">
-                        {%- include 'svg-definitions' with 'instagram' -%}
-                        <span class="footer-Instagram">Instagram</span>
-                      </a>
-                    {%- endif -%}
+                {%- if block.settings.html_area != blank -%}
+                  <div class="site-footer__custom_html">
+                    {{ block.settings.html_area }}
                   </div>
-                  <!-- social links end  -->
+                {%- endif -%}
+                <!-- custom social links  -->
+                <div class="site-footer__socials">
+                  {%- if block.settings.facebook_link != blank -%}
+                    <a href=" {{ block.settings.facebook_link }}" target="_blank">
+                      {%- include 'svg-definitions' with 'facebook' -%}
+                      <span class="footer-facebook">Facebook</span>
+                    </a>
+                  {%- endif -%}
+                  {%- if block.settings.youtube_link != blank -%}
+                    <a href=" {{ block.settings.youtube_link }}" target="_blank">
+                      {%- include 'svg-definitions' with 'youtube' -%}
+                      <span class="footer-youtube">Youtube</span>
+                    </a>
+                  {%- endif -%}
+                  {%- if block.settings.insta_link != blank -%}
+                    <a href=" {{ block.settings.insta_link }}" target="_blank">
+                      {%- include 'svg-definitions' with 'instagram' -%}
+                      <span class="footer-Instagram">Instagram</span>
+                    </a>
+                  {%- endif -%}
+                </div>
+                <!-- social links end  -->
                 {%- when 'newsletter' -%}
-                  {%- render 'newsletter-form', source: block.settings.customer_tag -%}
+                {%- render 'newsletter-form', source: block.settings.customer_tag -%}
                 {%- when 'text' -%}
-                  {%- if block.settings.image != blank or block.settings.svg != blank -%}
-                    {%- if block.settings.img_url != blank -%}
-                      <a href="{{ block.settings.img_url }}" class="image-link">
-                      {%- endif -%}
+                {%- if block.settings.image != blank or block.settings.svg != blank -%}
+                  {%- if block.settings.img_url != blank -%}
+                    <a href="{{ block.settings.img_url }}" class="image-link">
+                    {%- endif -%}
 
-                      {%- liquid
+                    {%- liquid
                       if block.settings.svg != blank
                          assign footer_logo = block.settings.svg
                          assign footer_logo_type = 'svg'
@@ -120,65 +125,68 @@
                        endif
                      -%}
 
-                      {%- if footer_logo != blank -%}
-                        <img class="footer-logo imgset spacer-bottom lazyload radius-none" {% render 'lazysizes', img: footer_logo, img_type: footer_logo_type, img_width: block.settings.logo_width %} alt="{{ shop.name }}">
-                      {%- endif -%}
-
-                      {%- if block.settings.img_url != blank -%}
-                      </a>
+                    {%- if footer_logo != blank -%}
+                      <img
+                        class="footer-logo imgset spacer-bottom lazyload radius-none"
+                        {% render 'lazysizes', img: footer_logo, img_type: footer_logo_type, img_width: block.settings.logo_width %}
+                        alt="{{ shop.name }}">
                     {%- endif -%}
+
+                    {%- if block.settings.img_url != blank -%}
+                    </a>
                   {%- endif -%}
+                {%- endif -%}
 
-                  {%- if block.settings.text != blank -%}
-                    <div class="site-footer__rte rte">
-                      {{ block.settings.text }}
-                    </div>
-                  {%- endif -%}
+                {%- if block.settings.text != blank -%}
+                  <div class="site-footer__rte rte">
+                    {{ block.settings.text }}
+                  </div>
+                {%- endif -%}
 
-                  {%- if block.settings.email or block.settings.phone -%}
-                    <ul class="no-bullets site-footer__linklist ">
-                      {%- if block.settings.email -%}
-                        <li>
-                          <a href="mailto:{{ shop.email | escape }}">
-                            <span class="{{ settings.icon }} icon-width" aria-hidden="true">email</span>
-                            {{ shop.email }}
-                          </a>
-                        </li>
-                      {%- endif -%}
-
-                      {%- if block.settings.phone -%}
-                        <li>
-                          <a href="tel:{{ shop.phone | remove: '-' | replace: ' ', '' }}">
-                            <span class="{{ settings.icon }} icon-width" aria-hidden="true">phone</span>
-                            {{ shop.phone }}
-                          </a>
-                        </li>
-                      {%- endif -%}
-                    </ul>
-                  {%- endif -%}
-
-                  {%- if block.settings.show_social_media -%}
-                    <div class="spacer-top">
-                      {%- if section.settings.social_title != blank -%}
-                        <h6 class="h4 spacer-bottom-sm">{{ section.settings.social_title }}
-                        </h6>
-                      {%- endif -%}
-
-                      {%- render 'social-medias' -%}
-                    </div>
-                  {%- endif -%}
-                {%- when 'link_list' -%}
+                {%- if block.settings.email or block.settings.phone -%}
                   <ul class="no-bullets site-footer__linklist ">
-                    {%- for link in linklists[block.settings.footer_link_list].links -%}
+                    {%- if block.settings.email -%}
                       <li>
-                        <a href="{{ link.url }}">
-                          {{ link.title }}
+                        <a href="mailto:{{ shop.email | escape }}">
+                          <span class="{{ settings.icon }} icon-width" aria-hidden="true">email</span>
+                          {{ shop.email }}
                         </a>
                       </li>
-                    {%- endfor -%}
+                    {%- endif -%}
+
+                    {%- if block.settings.phone -%}
+                      <li>
+                        <a href="tel:{{ shop.phone | remove: '-' | replace: ' ', '' }}">
+                          <span class="{{ settings.icon }} icon-width" aria-hidden="true">phone</span>
+                          {{ shop.phone }}
+                        </a>
+                      </li>
+                    {%- endif -%}
                   </ul>
+                {%- endif -%}
+
+                {%- if block.settings.show_social_media -%}
+                  <div class="spacer-top">
+                    {%- if section.settings.social_title != blank -%}
+                      <h6 class="h4 spacer-bottom-sm">{{ section.settings.social_title }}
+                      </h6>
+                    {%- endif -%}
+
+                    {%- render 'social-medias' -%}
+                  </div>
+                {%- endif -%}
+                {%- when 'link_list' -%}
+                <ul class="no-bullets site-footer__linklist ">
+                  {%- for link in linklists[block.settings.footer_link_list].links -%}
+                    <li>
+                      <a href="{{ link.url }}">
+                        {{ link.title }}
+                      </a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
                 {%- when 'product' -%}
-                  {%- liquid
+                {%- liquid
                      assign featured_product = block.settings.product
  
                      if block.settings.product != blank
@@ -189,11 +197,11 @@
  
                    -%}
 
-                  <div class="grid">
-                    {%- render 'product-grid-item' with featured_product as product, emptyState: emptyState, current: 1 -%}
-                  </div>
+                <div class="grid">
+                  {%- render 'product-grid-item' with featured_product as product, emptyState: emptyState, current: 1 -%}
+                </div>
                 {%- when 'featured_collection' -%}
-                  {%- liquid
+                {%- liquid
                      assign limit = block.settings.collection_limit
  
                      if block.settings.collection == blank or collections[block.settings.collection].products_count == 0
@@ -203,10 +211,17 @@
                      endif
                    -%}
 
-                  <div class="dbtfy-footer_feature-collection">
-                    <div id="ProductGrid-{{ section.id }}" class="grid grid-small slick slick-product-grid" data-arrows="{{ block.settings.arrows }}" data-dots="{{ block.settings.dots }}" data-autoplay="{{ block.settings.autoplay }}" data-autoplayspeed="{{ block.settings.autoplayspeed | times: 1000 }}" data-slidetoshow="1">
+                <div class="dbtfy-footer_feature-collection">
+                  <div
+                    id="ProductGrid-{{ section.id }}"
+                    class="grid grid-small slick slick-product-grid"
+                    data-arrows="{{ block.settings.arrows }}"
+                    data-dots="{{ block.settings.dots }}"
+                    data-autoplay="{{ block.settings.autoplay }}"
+                    data-autoplayspeed="{{ block.settings.autoplayspeed | times: 1000 }}"
+                    data-slidetoshow="1">
 
-                      {%- liquid
+                    {%- liquid
                          if emptyState
                            for i in (1..limit)
                              capture current
@@ -235,19 +250,19 @@
                            endfor
                          endif
                        -%}
-                    </div>
                   </div>
+                </div>
                 {%- when 'collection_list' -%}
-                  {%- liquid
+                {%- liquid
                      assign collection_1 = collections[block.settings.collection_1]
                      assign collection_2 = collections[block.settings.collection_2]
                      assign collection_3 = collections[block.settings.collection_3]
                      assign collection_4 = collections[block.settings.collection_4]
                    -%}
 
-                  {%- if collection_1 != blank or collection_2 != blank or collection_3 != blank or collection_4 != blank -%}
-                    <div class="grid grid-spacer grid-small">
-                      {%- liquid
+                {%- if collection_1 != blank or collection_2 != blank or collection_3 != blank or collection_4 != blank -%}
+                  <div class="grid grid-spacer grid-small">
+                    {%- liquid
                          if collection_1 != blank
                            render 'collection-grid-item' with collection_1 as collection, grid_item_width: 'full', class: 'box-small', no_heading_tag: true, current: 1
                          endif
@@ -264,10 +279,10 @@
                            render 'collection-grid-item' with collection_4 as collection, grid_item_width: 'full', class: 'box-small', no_heading_tag: true, current: 4
                          endif
                        -%}
-                    </div>
-                  {%- endif -%}
+                  </div>
+                {%- endif -%}
                 {%- when 'featured_blog' -%}
-                  {%- liquid
+                {%- liquid
                      assign blog = blogs[block.settings.blog]
                      assign limit = 1
  
@@ -278,8 +293,8 @@
                      endif
                    -%}
 
-                  <div class="grid">
-                    {%- liquid
+                <div class="grid">
+                  {%- liquid
                        if emptyState
                          for i in (1..limit)
                            capture current
@@ -294,9 +309,9 @@
                          endfor
                        endif
                      -%}
-                  </div>
+                </div>
                 {%- when 'featured_article' -%}
-                  {%- liquid
+                {%- liquid
                      assign article = articles[block.settings.article]
                      assign articleUrl = article.url | split: '/'
                      assign blogHandle = articleUrl[2]
@@ -310,15 +325,15 @@
                      endif
                    -%}
 
-                  <div class="grid">
-                    {%- liquid
+                <div class="grid">
+                  {%- liquid
                        if emptyState
                          render 'article-grid-item', emptyState: emptyState, current: 1
                        else
                          render "article-grid-item" with article as article, blog: blog, no_heading_tag: true, emptyState: emptyState
                        endif
                      -%}
-                  </div>
+                </div>
               {%- endcase -%}
             </div>
           {%- endfor -%}
@@ -355,14 +370,22 @@
             {%- if section.settings.show_shopify_footer -%}
               <span class="text-small">
                 | Powered by
-                <a href="https://www.shopify.com/?ref=debutify&utm_campaign=theme-footer" target="_blank" rel="nofollow" title="Create your own online store with Shopify">Shopify</a>
+                <a
+                  href="https://www.shopify.com/?ref=debutify&utm_campaign=theme-footer"
+                  target="_blank"
+                  rel="nofollow"
+                  title="Create your own online store with Shopify">Shopify</a>
               </span>
             {%- endif -%}
 
             {%- if section.settings.show_debutify_footer -%}
               <span class="text-small">
                 | Theme by
-                <a href="https://debutify.com?utm_source={{ shop.domain }}&utm_medium=referral&utm_campaign=product-theme-footer-link" target="_blank" rel="nofollow" title="The World's #1 Free Shopify Theme">Debutify</a>
+                <a
+                  href="https://debutify.com?utm_source={{ shop.domain }}&utm_medium=referral&utm_campaign=product-theme-footer-link"
+                  target="_blank"
+                  rel="nofollow"
+                  title="The World's #1 Free Shopify Theme">Debutify</a>
               </span>
             {%- endif -%}
           </p>

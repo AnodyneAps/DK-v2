@@ -2,7 +2,8 @@
   "sections": {
     "main": {
       "type": "page-wishlist-content",
-      "settings": {}
+      "settings": {
+      }
     }
   },
   "order": [

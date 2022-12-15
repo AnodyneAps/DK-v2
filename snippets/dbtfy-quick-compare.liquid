@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_quick_compare -%}
+{%- if settings.dbtfy_quick_compare -%}
   {%- liquid
     assign button_icon = settings.dbtfy_quick_compare_button_icon
     assign button_position_x = settings.dbtfy_quick_compare_button_position

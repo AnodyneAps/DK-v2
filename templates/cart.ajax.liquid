@@ -3,28 +3,29 @@
 {%- assign total_compare_at_price = 0 -%}
 {%- assign gift_wrap_product_id = settings.dbtfy_gift_wrap_product.id -%}
 
-<form id="ajaxCartForm"
-      class="ajaxcart-form flex full flex-column"
-      action="{{ routes.cart_url }}"
-      method="post"
-      novalidate>
+<form
+  id="ajaxCartForm"
+  class="ajaxcart-form flex full flex-column"
+  action="{{ routes.cart_url }}"
+  method="post"
+  novalidate>
 
   <div class="drawer__header">
     <div class="drawer__title">
       <a href="{{ routes.cart_url }}">
-        <span class="{{ settings.icon }} icon-width"
-              aria-hidden="true">{{ settings.icon_cart }}</span>
-          {{ 'cart.general.title' | t }}
+        <span class="{{ settings.icon }} icon-width"aria-hidden="true">{{ settings.icon_cart }}</span>
+        {{ 'cart.general.title' | t }}
 
         <span>({{ cart.item_count }})</span>
       </a>
     </div>
 
-    <button type="button"
-            class="btn btn-square-small js-drawer-close modal-close js-modal-close"
-            aria-label="{{ 'cart.general.close_cart' | t }}"
-            title="{{ 'cart.general.close_cart' | t }}"
-            {%- if settings.cart_type == 'modal' -%} data-modal-close="#CartModal" {%- endif -%}>
+    <button
+      type="button"
+      class="btn btn-square-small js-drawer-close modal-close js-modal-close"
+      aria-label="{{ 'cart.general.close_cart' | t }}"
+      title="{{ 'cart.general.close_cart' | t }}"
+      {%- if settings.cart_type == 'modal' -%}data-modal-close="#CartModal"{%- endif -%}>
 
       <span class="{{ settings.icon }}" aria-hidden="true">close</span>
     </button>
@@ -61,33 +62,19 @@
             endif
           -%}
 
-          <div class="cart__row ajaxcart_row cart-item drawer__inner-section"
-                data-product-handle="{{ item.product.handle }}"
-                data-product-id="{{ item.product.id }}"
-                data-line="{{ forloop.index }}"
-                data-product-variant-id="{{ item.variant.id }}"
-                {% if item.variant.inventory_management == "shopify" %}
-                  {% if item.variant.inventory_quantity > 0 %}
-                    data-product-quantity="{{ item.variant.inventory_quantity }}"
-                  {% else %}
-                    {% if item.variant.inventory_policy == "continue" %}
-                      data-product-quantity="99999"
-                    {% endif %}
-                  {% endif %}
-                {% else %}
-                  data-product-quantity="99999"
-                {% endif %}
-          >
+          <div
+            class="cart__row ajaxcart_row cart-item drawer__inner-section"
+            data-product-handle="{{ item.product.handle }}"
+            data-product-id="{{ item.product.id }}"
+            data-line="{{ forloop.index }}"
+            data-product-variant-id="{{ item.variant.id }}"
+            {% if item.variant.inventory_management == "shopify" %}{% if item.variant.inventory_quantity > 0 %}data-product-quantity="{{ item.variant.inventory_quantity }}"{% else %}{% if item.variant.inventory_policy == "continue" %}data-product-quantity="99999"{% endif %}{% endif %}{% else %}data-product-quantity="99999"{% endif %}>
             <div class="grid grid-small {% if has_discount or on_sale %} cart__product-has-discount{% endif %}">
               <div class="grid__item four-twelfths">
-                <a href="{{ item.product.url | within: collections.all }}"
-                   class="{% if item.image != blank %}product--wrapper {% endif %}media-wrapper image-link"
-                   style="padding-top: {{ 1 | divided_by: item.image.aspect_ratio | times: 100 }}%;">
+                <a href="{{ item.product.url | within: collections.all }}"class="{% if item.image != blank %}product--wrapper {% endif %}media-wrapper image-link"style="padding-top: {{ 1 | divided_by: item.image.aspect_ratio | times: 100 }}%;">
 
                   {%- if item.image != blank -%}
-                    <img class="product--image media lazyload"
-                        {% render 'lazysizes', img: item.image, img_type: 'responsive' %}
-                         alt="{{ item.title | escape }}">
+                    <img class="product--image media lazyload"{% render 'lazysizes', img: item.image, img_type: 'responsive' %}alt="{{ item.title | escape }}">
                   {%- else -%}
                     {{ "product-1" | placeholder_svg_tag: 'placeholder-svg' }}
                   {%- endif -%}
@@ -97,17 +84,16 @@
               <div class="grid__item eight-twelfths flex flex-column justify-center">
                 <div class="spacer-auto-xs">
                   <div class="cart__product-name h6 flex justify-between spacer-bottom-xs">
-                    <a href="{{ item.product.url | within: collections.all }}"
-                    {% unless settings.enable_full_product_titles %} class="text-ellipsis" {% endunless %}>
+                    <a href="{{ item.product.url | within: collections.all }}"{% unless settings.enable_full_product_titles %}class="text-ellipsis"{% endunless %}>
                       {{ item.product.title }}
                     </a>
 
                     <button
-                        class="cart__product-remove"
-                        data-line="{{ forloop.index }}"
-                        type="button"
-                        aria-label="{{ 'cart.general.remove' | t }}"
-                        title="{{ 'cart.general.remove' | t }}">
+                      class="cart__product-remove"
+                      data-line="{{ forloop.index }}"
+                      type="button"
+                      aria-label="{{ 'cart.general.remove' | t }}"
+                      title="{{ 'cart.general.remove' | t }}">
 
                       <span class="btn__text">
                         <span class="{{ settings.icon }} icon-width" aria-hidden="true">delete</span>
@@ -147,8 +133,7 @@
                   <div class="grid grid-small">
                     {%- for discount_allocation in item.line_level_discount_allocations -%}
                       <div class="grid__item six-twelfths">
-                        <p class="product-discount text-secondary"
-                            aria-label="{{ 'customer.order.discount' | t }}">
+                        <p class="product-discount text-secondary" aria-label="{{ 'customer.order.discount' | t }}">
                           <span class="{{ settings.icon }} icon-width" aria-hidden="true">local_offer</span>
                           <span class="visually-hidden">{{ 'customer.order.discount' | t }}:</span>
                           {{ discount_allocation.discount_application.title }}
@@ -169,14 +154,13 @@
                     <div class="grid__item flex-auto">
                       {%- assign quantity_id = 'updates_ajax-' | append: item.key -%}
 
-                      <label for="{{ quantity_id }}"
-                             class="visually-hidden">{{ 'cart.label.quantity' | t }}</label>
+                      <label for="{{ quantity_id }}"class="visually-hidden">{{ 'cart.label.quantity' | t }}</label>
 
                       {%- render 'quantity-selector' with item as item, type: 'cart', id: quantity_id -%}
                     </div>
                   {%- endcapture -%}
 
-                  {%- if content_for_header contains 'debutify' and settings.dbtfy_gift_wrap -%}
+                  {%- if settings.dbtfy_gift_wrap -%}
                     {%- unless item.product.id == gift_wrap_product_id -%}
                       {{ quantity_selector }}
                     {%- endunless -%}
@@ -187,20 +171,31 @@
                   <div class="grid__item flex-fill cart__price-wrapper text-right">
                     <div class="text-money-cart inline-flex flex-column">
                       {%- if has_discount -%}
-                        <span class="cart__price text-sale" aria-label="{{ 'products.general.sale_price' | t }}"><span class="money">{{ item.final_line_price | money }}</span></span>
-                        <span class="cart__price cart__price--compare text-muted text-strike" aria-label="{{ 'products.general.regular_price' | t }}"><span class="money">{{ item.original_line_price | money }}</span></span>
+                        <span class="cart__price text-sale" aria-label="{{ 'products.general.sale_price' | t }}">
+                          <span class="money">{{ item.final_line_price | money }}</span>
+                        </span>
+                        <span class="cart__price cart__price--compare text-muted text-strike" aria-label="{{ 'products.general.regular_price' | t }}">
+                          <span class="money">{{ item.original_line_price | money }}</span>
+                        </span>
                       {%- elsif on_sale -%}
-                        <span class="cart__price text-sale" aria-label="{{ 'products.general.sale_price' | t }}"><span class="money">{{ item.variant.price | times: item.quantity | money }}</span></span>
-                        <span class="cart__price cart__price--compare text-muted text-strike" aria-label="{{ 'products.general.regular_price' | t }}"><span class="money">{{ item.variant.compare_at_price | times: item.quantity | money }}</span></span>
+                        <span class="cart__price text-sale" aria-label="{{ 'products.general.sale_price' | t }}">
+                          <span class="money">{{ item.variant.price | times: item.quantity | money }}</span>
+                        </span>
+                        <span class="cart__price cart__price--compare text-muted text-strike" aria-label="{{ 'products.general.regular_price' | t }}">
+                          <span class="money">{{ item.variant.compare_at_price | times: item.quantity | money }}</span>
+                        </span>
                       {% else %}
-                        <span class="cart__price" aria-label="{{ 'products.general.regular_price' | t }}"><span class="money">{{ item.original_line_price | money }}</span></span>
+                        <span class="cart__price" aria-label="{{ 'products.general.regular_price' | t }}">
+                          <span class="money">{{ item.original_line_price | money }}</span>
+                        </span>
                       {%- endif -%}
 
                       {%- if item.unit_price_measurement -%}
                         <span class="visually-hidden">{{ 'products.general.unit_price' | t }}</span>
                         <span class="cart__unit-price">
                           {%- capture unit_price_separator -%}
-                            <span aria-hidden="true">/</span><span class="visually-hidden">&nbsp;{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
+                            <span aria-hidden="true">/</span>
+                            <span class="visually-hidden">&nbsp;{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
                           {%- endcapture -%}
 
                           {%- capture unit_price_base_unit -%}
@@ -211,8 +206,11 @@
                             {{ item.unit_price_measurement.reference_unit }}
                           {%- endcapture -%}
 
-                        <span data-unit-price><span class="money">{{ item.unit_price | money }}</span></span>{{- unit_price_separator -}}{{- unit_price_base_unit -}}
-                      </span>
+                          <span data-unit-price>
+                            <span class="money">{{ item.unit_price | money }}</span>
+                          </span>
+                          {{- unit_price_separator -}}{{- unit_price_base_unit -}}
+                        </span>
                       {%- endif -%}
                     </div>
                   </div>
@@ -228,21 +226,22 @@
 
       {%- render "dbtfy-gift-wrap", position: "cart_drawer" -%}
 
-      <div class="drawer__inner-section">
+        <div class="drawer__inner-section">
         {%- if cart.cart_level_discount_applications != blank -%}
           {%- for discount_application in cart.cart_level_discount_applications -%}
-          <div class="grid grid-small">
-            <div class="grid__item six-twelfths">
-              <p class="order-discount">
-                <span class="{{ settings.icon }}" aria-hidden="true">local_offer</span>
-                <span class="visually-hidden">{{ 'customer.order.discount' | t }}:</span>
-                {{- discount_application.title -}}
-              </p>
+            <div class="grid grid-small">
+              <div class="grid__item six-twelfths">
+                <p class="order-discount">
+                  <span class="{{ settings.icon }}" aria-hidden="true">local_offer</span>
+                  <span class="visually-hidden">{{ 'customer.order.discount' | t }}:</span>
+                  {{- discount_application.title -}}
+                </p>
+              </div>
+              <div class="grid__item six-twelfths text-right">
+                <p class="order-discount">-<span class="money">{{ discount_application.total_allocated_amount | money }}</span>
+                </p>
+              </div>
             </div>
-            <div class="grid__item six-twelfths text-right">
-              <p class="order-discount">-<span class="money">{{ discount_application.total_allocated_amount | money }}</span></p>
-            </div>
-          </div>
           {%- endfor -%}
         {%- endif -%}
 
@@ -252,7 +251,9 @@
               <p class="cart__subtotal text-money-cart text-md spacer-bottom-none text-ellipsis">{{ 'cart.general.subtotal' | t }}</p>
             </div>
             <div class="grid__item cart__subtotal-price flex-auto text-right">
-              <p class="cart__subtotal text-money-cart text-md spacer-bottom-none" data-cart-total><span class="money">{{ cart.total_price | money }}</span></p>
+              <p class="cart__subtotal text-money-cart text-md spacer-bottom-none" data-cart-total>
+                <span class="money">{{ cart.total_price | money }}</span>
+              </p>
             </div>
           </div>
 
@@ -262,7 +263,7 @@
         <!-- Custom currency message -->
         {%- assign currency_message = 'cart.general.custom_currency_html' | t: shopCurrency: shop.currency -%}
 
-        {%- if content_for_header contains 'debutify' and settings.dbtfy_custom_currencies and currency_message != blank -%}
+        {%- if settings.dbtfy_custom_currencies and currency_message != blank -%}
           {%- if settings.currency_message -%}
             <div class="Cart_currencyinfo spacer-top spacer-bottom">
               <div class="card card-body text-left">
@@ -283,23 +284,32 @@
 
       {%- render "dbtfy-order-feedback", position: "cart_drawer" -%}
 
-
       {%- if settings.textbox_cart_notification != blank -%}
-      <div class="textbox_custom_text text-center">
-        {%- if settings.textbox_custom_drawer_icon != blank -%}<div class="icon"><span class="custom_icon {{ settings.icon }} icon-width">
-          {{ settings.textbox_custom_drawer_icon}} </span></div>{%- endif-%}
-        <p class="small"> {{settings.textbox_cart_notification}}</p>
-      </div>
-     {%- endif -%}
-
+        <div class="textbox_custom_text text-center">
+          {%- if settings.textbox_custom_drawer_icon != blank -%}
+            <div class="icon">
+              <span class="custom_icon {{ settings.icon }} icon-width">
+                {{ settings.textbox_custom_drawer_icon }}
+              </span>
+            </div>
+          {%- endif -%}
+          <p class="small">
+            {{ settings.textbox_cart_notification }}</p>
+        </div>
+      {%- endif -%}
 
       {%- if settings.cart_notes_enable -%}
         <div class="drawer__inner-section">
           <label for="CartSpecialInstructions">
-            <span class="{{ settings.icon }} icon-width" aria-hidden="true">info</span> {{ 'cart.general.note' | t }}
+            <span class="{{ settings.icon }} icon-width" aria-hidden="true">info</span>
+            {{ 'cart.general.note' | t }}
           </label>
 
-          <textarea rows="3" name="note" class="input-full" id="CartSpecialInstructions">{{ cart.note }}</textarea>
+          <textarea
+            rows="3"
+            name="note"
+            class="input-full"
+            id="CartSpecialInstructions">{{ cart.note }}</textarea>
         </div>
       {%- endif -%}
     {%- endif -%}
@@ -307,8 +317,7 @@
 
   <div class="drawer__footer">
     {%- if cart.item_count == 0 -%}
-      <a href="{{ settings.browsing_link }}"
-        class="btn btn--primary full">{{ 'cart.general.continue_browsing_html' | t }}</a>
+      <a href="{{ settings.browsing_link }}"class="btn btn--primary full">{{ 'cart.general.continue_browsing_html' | t }}</a>
     {%- else -%}
       {%- capture taxes_shipping_checkout -%}
         {%- if shop.taxes_included and shop.shipping_policy.body != blank -%}
@@ -323,16 +332,16 @@
       {%- endcapture -%}
 
       {%- if taxes_shipping_checkout != blank -%}
-      <p class="text-center text-small spacer-bottom-sm rte">
-        {{ taxes_shipping_checkout }}
-      </p>
+        <p class="text-center text-small spacer-bottom-sm rte">
+          {{ taxes_shipping_checkout }}
+        </p>
       {%- endif -%}
 
       {%- if settings.tracking_app == "route" -%}
         <div class="route-div"></div>
       {%- endif -%}
 
-      {%- if content_for_header contains 'debutify' and settings.dbtfy_minimum_order -%}
+      {%- if settings.dbtfy_minimum_order -%}
         {%- render "dbtfy-minimum-order", cart_type: "drawer" -%}
       {%- else -%}
         {%- render "checkout-button", type: "drawer" -%}

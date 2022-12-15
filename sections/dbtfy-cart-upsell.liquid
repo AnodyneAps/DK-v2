@@ -1,6 +1,5 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_cart_upsell -%}
-  <div
-    class="cu-wrapper"
+{%- if settings.dbtfy_cart_upsell -%}
+  <div class="cu-wrapper"
     data-section-id="{{ section.id }}"
     hidden>
 
@@ -95,81 +94,56 @@
                         {%- endif -%}
                       </a>
                     </div>
+                    <div class="cu-flex-direction">
+                      <div class="cu-product-select">
+                        <select class="cu-select select--small full" name="id">
 
-                    <div class="cu-product-select">
-                      <select class="cu-select select--small full" name="id">
+                          {% for variant in product_offer.variants %}
+                            {%- if variant.available -%}
+                              <option {% if variant == product_offer.selected_or_first_available_variant %}selected="selected"{% endif %}value="{{ variant.id }}"{% if product_offer.has_only_default_variant %}data-variant-title="{{ product_offer.title | escape }}"{% else %}data-variant-title="{{ variant.title | escape }}"{% endif %}{% if variant.inventory_management == "shopify" %}{% if variant.inventory_quantity > 0 %}data-variant-quantity="{{ variant.inventory_quantity }}"{% else %}{% if variant.inventory_policy == "continue" %}data-variant-quantity="99999"{% endif %}{% endif %}{% else %}data-variant-quantity="99999"{% endif %}data-variant-price="{{ variant.price }}"{% if variant.image.src %}data-variant-img="{{ variant.image | img_url: "80x80", crop: "center" }}"{% endif %} data-variant-url="{{ variant.url }}">
+                                {% if product_offer.has_only_default_variant %}
+                                  {{ product_offer.title }}
+                                {% else %}
+                                  {{ variant.title | escape }}{% endif %}
+                                - {{ variant.price | money }}
+                              </option>
+                            {%- else -%}
+                              <option disabled="disabled">
+                                {{ variant.title | escape }} - {{ "products.product.sold_out" | t }}
+                              </option>
+                            {%- endif -%}
+                          {% endfor %}
+                        </select>
 
-                        {% for variant in product_offer.variants %}
-                          {%- if variant.available -%}
-                            <option
-                              {% if variant == product_offer.selected_or_first_available_variant %}selected="selected"{% endif %}
-                              value="{{ variant.id }}"
-                              {% if product_offer.has_only_default_variant %}
-                              data-variant-title="{{ product_offer.title | escape }}"
-                              {% else %}
-                              data-variant-title="{{ variant.title | escape }}"
-                              {% endif %}
-                              {% if variant.inventory_management == "shopify" %}
-                              {% if variant.inventory_quantity > 0 %}
-                              data-variant-quantity="{{ variant.inventory_quantity }}"
-                              {% else %}
-                              {% if variant.inventory_policy == "continue" %}
-                              data-variant-quantity="99999"
-                              {% endif %}
-                              {% endif %}
-                              {% else %}
-                              data-variant-quantity="99999"
-                              {% endif %}
-                              data-variant-price="{{ variant.price }}"
-                              {% if variant.image.src %}data-variant-img="{{ variant.image | img_url: "80x80", crop: "center" }}"{% endif %}
-                              data-variant-url="{{ variant.url }}">
-                              {% if product_offer.has_only_default_variant %}
-                                {{ product_offer.title }}
-                              {% else %}
-                                {{ variant.title | escape }}{% endif %}
-                              - {{ variant.price | money }}
-                            </option>
-                          {%- else -%}
-                            <option disabled="disabled">
-                              {{ variant.title | escape }} - {{ "products.product.sold_out" | t }}
-                            </option>
-                          {%- endif -%}
-                        {% endfor %}
-                      </select>
+                        <div class="cu-quantity display-none">
+                          <input
+                            type="number"
+                            class="qty-input"
+                            name="quantity"
+                            id="Quantity-{{ product_offer.id }}-{{ forloop.index }}"
+                            value="1"
+                            min="1"
+                            hidden="hidden">
+                        </div>
+                      </div>
 
-                      <div class="cu-quantity display-none">
-                        <input
-                          type="number"
-                          class="qty-input"
-                          name="quantity"
-                          id="Quantity-{{ product_offer.id }}-{{ forloop.index }}"
-                          value="1"
-                          min="1"
-                          hidden="hidden">
+                      <div class="cu-product-button">
+                        <button id="CartSpecificUpsellButton-{{ product_offer.handle }}"type="submit"name="add"class="{% if cart_upsell_replace_item == "replace" %}cu-replace-offer{% endif %} btn {{ section.settings.dbtfy_cart_upsell_button_style }} btn--small full cu-addtocart-btn text-ellipsis"tabindex="0"{% if cart_upsell_replace_item == "replace" %}data-href="{{ product_offer.url }}"{% endif %}>
+
+                          <span class="btn__text">
+                            {%- if btn_title != blank -%}
+                              {{ btn_title }}
+                            {%- else -%}
+                              {% if cart_upsell_replace_item == "replace" %}
+                                {{ "products.product.replace" | t }}
+                              {% else %}
+                                {{ "products.product.add_to_cart" | t }}
+                              {%- endif -%}
+                            {%- endif -%}
+                          </span>
+                        </button>
                       </div>
                     </div>
-                  </div>
-                  <div class="cu-product-button">
-                    <button
-                      id="CartSpecificUpsellButton-{{ product_offer.handle }}"
-                      type="submit"
-                      name="add"
-                      class="{% if cart_upsell_replace_item == "replace" %}cu-replace-offer{% endif %} btn {{ section.settings.dbtfy_cart_upsell_button_style }} btn--small full cu-addtocart-btn text-ellipsis"
-                      tabindex="0"
-                      {% if cart_upsell_replace_item == "replace" %}data-href="{{ product_offer.url }}"{% endif %}>
-
-                      <span class="btn__text">
-                        {%- if btn_title != blank -%}
-                          {{ btn_title }}
-                        {%- else -%}
-                          {% if cart_upsell_replace_item == "replace" %}
-                            {{ "products.product.replace" | t }}
-                          {% else %}
-                            {{ "products.product.add_to_cart" | t }}
-                          {%- endif -%}
-                        {%- endif -%}
-                      </span>
-                    </button>
                   </div>
                 </form>
               </div>
@@ -246,17 +220,7 @@
 
                       {% for variant in product_offer.variants %}
                         {%- if variant.available -%}
-                          <option
-                            {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
-                            value="{{ variant.id }}"
-                            {% if product_offer.has_only_default_variant %}
-                            data-variant-title="{{ product_offer.title | escape }}"
-                            {% else %}
-                            data-variant-title="{{ variant.title | escape }}"
-                            {% endif %}
-                            data-variant-price="{{ variant.price }}"
-                            {% if variant.image.src %}data-variant-img="{{ variant.image | img_url: "80x80", crop: "center" }}"{% endif %}
-                            data-variant-url="{{ variant.url }}">
+                          <option {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}value="{{ variant.id }}"{% if product_offer.has_only_default_variant %}data-variant-title="{{ product_offer.title | escape }}"{% else %}data-variant-title="{{ variant.title | escape }}"{% endif %}data-variant-price="{{ variant.price }}"{% if variant.image.src %}data-variant-img="{{ variant.image | img_url: "80x80", crop: "center" }}"{% endif %}data-variant-url="{{ variant.url }}">
                             {% if product_offer.has_only_default_variant %}
                               {{ product_offer.title }}
                             {% else %}
@@ -280,13 +244,7 @@
                   </div>
 
                   <div class="cu-product-button">
-                    <button
-                      id="CartGeneralUpsellButton-{{ product_offer.handle }}"
-                      type="submit"
-                      name="add"
-                      data-general-id="{{ product_offer.id }}"
-                      class="btn {{ section.settings.dbtfy_cart_upsell_button_style }} btn--small full text-ellipsis cu-addtocart-btn"
-                      tabindex="0">
+                    <button id="CartGeneralUpsellButton-{{ product_offer.handle }}"type="submit"name="add"data-general-id="{{ product_offer.id }}"class="btn {{ section.settings.dbtfy_cart_upsell_button_style }} btn--small full text-ellipsis cu-addtocart-btn"tabindex="0">
 
                       <span class="btn__text">
                         {%- if btn_title != blank -%}

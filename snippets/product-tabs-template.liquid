@@ -155,7 +155,11 @@
 {%- capture product_price -%}
   <div class="price-container-wrapper">
     <div class="price-container text-money text-large spacer-bottom flex align-center{% if current_variant.unit_price_measurement %} price-container--unit-available{% endif %}" data-price-container>
-      <span id="ProductPrice" class="product-single__price{% if on_sale %} on-sale text-sale{% endif %}" itemprop="price" content="{{ price | divided_by: 100.00 }}"
+      <span
+        id="ProductPrice"
+        class="product-single__price{% if on_sale %} on-sale text-sale{% endif %}"
+        itemprop="price"
+        content="{{ price | divided_by: 100.00 }}"
         {% if on_sale %}
         aria-label="{{ 'products.general.sale_price' | t }}"
         {% else %}
@@ -164,7 +168,10 @@
         <span class="money">{{ price | money }}</span>
       </span>
 
-      <span id="ComparePrice" class="product-single__price--compare-at text-muted text-strike{% unless on_sale %} hide{% endunless %}" aria-label="{{ 'products.general.regular_price' | t }}">
+      <span
+        id="ComparePrice"
+        class="product-single__price--compare-at text-muted text-strike{% unless on_sale %} hide{% endunless %}"
+        aria-label="{{ 'products.general.regular_price' | t }}">
         <span class="money">{{ compare_at_price | money }}</span>
       </span>
 
@@ -205,7 +212,11 @@
 <meta itemprop="image" content="{{ product.featured_media | img_url: 'grande' }}">
 <meta itemprop="productID" content="{{ product.id }}">
 
-<div class="product-single" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}" data-product-collections="{{ product_collections }}">
+<div
+  class="product-single"
+  data-product-handle="{{ product.handle }}"
+  data-product-id="{{ product.id }}"
+  data-product-collections="{{ product_collections }}">
   <div class="box">
     <div class="wrapper">
       {%- if section.settings.blackdays_banner != blank -%}
@@ -224,8 +235,14 @@
         <div id="ProductMedia-{{ section.id }}" class="grid__item {{ product_image_width }} text-center">
           {%- if product.media.size > 0 -%}
             <!-- media group (main media + thumbnails) -->
-            <div id="ProductMediaGroup-{{ section.id }}" class="product-single__media-group-wrapper" data-product-single-media-group-wrapper>
-              <div class="grid grid-small {% if product.media.size > 1 %}grid-spacer {% endif %}product-single__media-group{% unless stacked %} product-single__media-group--single-xr{% endunless %}{% if carousel %} slick{% endif %}" data-product-single-media-group {% if carousel_fade_effect %}data-carousel-fade-effect{% endif %}>
+            <div
+              id="ProductMediaGroup-{{ section.id }}"
+              class="product-single__media-group-wrapper"
+              data-product-single-media-group-wrapper>
+              <div
+                class="grid grid-small {% if product.media.size > 1 %}grid-spacer {% endif %}product-single__media-group{% unless stacked %} product-single__media-group--single-xr{% endunless %}{% if carousel %} slick{% endif %}"
+                data-product-single-media-group
+                {% if carousel_fade_effect %}data-carousel-fade-effect{% endif %}>
 
                 {%- liquid
                   assign height = 850
@@ -256,7 +273,10 @@
                     endcapture
                   -%}
 
-                  <div class="grid__item product-single__media-flex-wrapper{% if stacked %} product-stacked_media_flex{% endif %}" data-slick-media-label="{{ thumbnail_alt }}" data-product-single-media-flex-wrapper>
+                  <div
+                    class="grid__item product-single__media-flex-wrapper{% if stacked %} product-stacked_media_flex{% endif %}"
+                    data-slick-media-label="{{ thumbnail_alt }}"
+                    data-product-single-media-flex-wrapper>
                     <div class="product-single__media-flex">
                       {%- liquid
                         render 'media' with media, enable_image_zoom_on_icon_click: enable_image_zoom_on_icon_click, full_screen_image: full_screen_image, stacked: stacked, featured: featured, width: width, height: height, id: id, video_looping: section.settings.enable_video_looping, image_index: forloop.index0
@@ -317,8 +337,16 @@
                       assign media_aspect_ratio = media.aspect_ratio | default: media.preview_image.aspect_ratio
                     -%}
 
-                      <a class="product--wrapper product-single__thumbnail media-wrapper image-link {% if media == featured_media %} active-thumb{% endif %}" data-product-thumbnail data-media-id="{{ media.id }}" style="padding-top: {{ 1 | divided_by: media_aspect_ratio | times: 100 }}%;">
-                        <img class="product--image product-single__thumb media lazyload" {%- render 'lazysizes', img: media, img_type: 'responsive' -%} alt="{{ thumbnail_alt }}" data-media-id="{{ media.id }}">
+                      <a
+                        class="product--wrapper product-single__thumbnail media-wrapper image-link {% if media == featured_media %} active-thumb{% endif %}"
+                        data-product-thumbnail
+                        data-media-id="{{ media.id }}"
+                        style="padding-top: {{ 1 | divided_by: media_aspect_ratio | times: 100 }}%;">
+                        <img
+                          class="product--image product-single__thumb media lazyload"
+                          {%- render 'lazysizes', img: media, img_type: 'responsive' -%}
+                          alt="{{ thumbnail_alt }}"
+                          data-media-id="{{ media.id }}">
 
                         {%- if media.media_type == 'video' or media.media_type == 'external_video' or media.media_type == 'model' -%}
                           <div data-media-type="{{ media.media_type }}" class="product-single__thumbnail-badge">
@@ -398,7 +426,11 @@
               <div class="dbtfy-product-sales-countdown-box main-product-block" {% if product.selected_variant.available == false %}{% endif %}></div>
             {%- endunless -%}
 
-            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="product-single__meta-info">
+            <div
+              itemprop="offers"
+              itemscope
+              itemtype="http://schema.org/Offer"
+              class="product-single__meta-info">
               {%- liquid
                 assign product_description = product.description | strip_html | replace: "[split_description]", "" | newline_to_br | split: '<br />'
                 assign filtered_description = ''
@@ -471,18 +503,18 @@
                 -%}
                 {%- comment -%}Product direct custom metafield insert start{%- endcomment -%}
                 {% if product.metafields.product_custom.thumbnail_color_links != blank %}
-                  {{product.metafields.product_custom.thumbnail_color_links}}
+                  {{ product.metafields.product_custom.thumbnail_color_links }}
                 {% endif %}
 
                 {%- if product.metafields.custom.top_description != blank -%}
                   <div class="product__top__description">
-                    {{product.metafields.custom.top_description}}
+                    {{ product.metafields.custom.top_description }}
                   </div>
                 {%- endif -%}
 
                 {%- comment -%}Product direct  custom metafield insert start{%- endcomment -%}
                 {%- if product.metafields.choose_size.choose_product_size_chart != blank -%}
-                  {{pages[product.metafields.choose_size.choose_product_size_chart].content}}
+                  {{ pages[product.metafields.choose_size.choose_product_size_chart].content }}
                 {%- endif -%}
 
                 <div class="dbtfy-size-chart-box"></div>
@@ -509,8 +541,15 @@
                         assign first_option_value = current_variant.options[forloop.index0] | escape
                       -%}
 
-                          <div class="grid__item radio-wrapper product-form__item" {%- if is_color_option -%} hidden{%- endif -%}>
-                          <label class="single-option-radio__label" for="ProductSelect-option-{{ forloop.index0 }}" data-option-name="{{ option.name | escape }}">
+                          <div
+                          class="grid__item radio-wrapper product-form__item"
+                          {%- if is_color_option -%}
+                          hidden
+                          {%- endif -%}>
+                          <label
+                            class="single-option-radio__label"
+                            for="ProductSelect-option-{{ forloop.index0 }}"
+                            data-option-name="{{ option.name | escape }}">
                             {{ option.name | escape }}:
                             <span class="variant-label-option-value">{{ first_option_value | escape }}</span>
                           </label>
@@ -531,16 +570,36 @@
                                   endunless
                                 endif
                               -%}
-                                <input type="radio" {% if option.selected_value == value -%} checked="checked"{% endif %}
-                                  value="{{ value | escape }}" data-index="option{{ option_index }}" name="option{{ option.position }}" class="single-option-selector__radio js-single-option-selector" id="ProductSelect-option-{{ section.id }}-{{ option.name | handleize }}-{{ value | escape }}">
+                                <input
+                                  type="radio"
+                                  {% if option.selected_value == value -%}
+                                  checked="checked"
+                                  {% endif %}
+                                  value="{{ value | escape }}"
+                                  data-index="option{{ option_index }}"
+                                  name="option{{ option.position }}"
+                                  class="single-option-selector__radio js-single-option-selector"
+                                  id="ProductSelect-option-{{ section.id }}-{{ option.name | handleize }}-{{ value | escape }}">
 
-                                <label for="ProductSelect-option-{{ section.id }}-{{ option.name | handleize }}-{{ value | escape }}" {% unless variant_label_state %} class="option__notavailable"{% endunless %}>{{ value | escape }}</label>
+                                <label
+                                  for="ProductSelect-option-{{ section.id }}-{{ option.name | handleize }}-{{ value | escape }}"
+                                  {% unless variant_label_state %}
+                                  class="option__notavailable"
+                                  {% endunless %}>{{ value | escape }}</label>
                               {%- endfor -%}
                             </fieldset>
                           {%- else -%}
-                            <select name="option{{ option.position }}" class="single-option-list-type single-option-selector__radio single-option-selector-{{ section.id }} product-form__input select--small js-single-option-selector" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
+                            <select
+                              name="option{{ option.position }}"
+                              class="single-option-list-type single-option-selector__radio single-option-selector-{{ section.id }} product-form__input select--small js-single-option-selector"
+                              id="SingleOptionSelector-{{ forloop.index0 }}"
+                              data-index="option{{ forloop.index }}">
                               {%- for value in option.values -%}
-                                <option value="{{ value | escape }}" {% if option.selected_value == value %} selected="selected"{% endif %}>{{ value | escape }}</option>
+                                <option
+                                  value="{{ value | escape }}"
+                                  {% if option.selected_value == value %}
+                                  selected="selected"
+                                  {% endif %}>{{ value | escape }}</option>
                               {%- endfor -%}
                             </select>
                           {%- endif -%}
@@ -549,7 +608,11 @@
                     </div>
                   {%- endunless -%}
 
-                  <select name="id" id="MainProductSelect-{{ product.id }}" class="product-single__variants no-js product-form__item" data-section-id="{{ section.id }}">
+                  <select
+                    name="id"
+                    id="MainProductSelect-{{ product.id }}"
+                    class="product-single__variants no-js product-form__item"
+                    data-section-id="{{ section.id }}">
 
                     {% for variant in product.variants %}
                       {%- liquid
@@ -570,9 +633,18 @@
                         endif
                       -%}
 
-                      <option {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
+                      <option
+                        {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
                         {% unless variant.available %}disabled="disabled"{% endunless %}
-                        data-sku="{{ variant.sku }}" data-image="{{variant.image | img_url}}" data-inventory-policy="{{ variant.inventory_policy }}" data-inventory-quantity="{{ product_qty }}" data-product-qty="{{ product_qty }}" data-option-1="{{ variant.option1 }}" data-option-2="{{ variant.option2 }}" data-option-3="{{ variant.option3 }}" value="{{ variant.id }}">
+                        data-sku="{{ variant.sku }}"
+                        data-image="{{variant.image | img_url}}"
+                        data-inventory-policy="{{ variant.inventory_policy }}"
+                        data-inventory-quantity="{{ product_qty }}"
+                        data-product-qty="{{ product_qty }}"
+                        data-option-1="{{ variant.option1 }}"
+                        data-option-2="{{ variant.option2 }}"
+                        data-option-3="{{ variant.option3 }}"
+                        value="{{ variant.id }}">
                         {%- if variant.available -%}
                           {{ variant.title }} - {{ variant.price | money_with_currency }}
                         {%- else -%}
@@ -595,7 +667,10 @@
                       {%- assign quantity_id = 'product-' | append: product.id -%}
 
                       {%- if section.settings.quantity_enabled or settings.dbtfy_quantity_breaks -%}
-                        <label class="inline-label" for="{{ quantity_id }}" {% if section.settings.quantity_enabled == false and settings.dbtfy_quantity_breaks %}hidden {% endif %}>{{ 'products.product.quantity' | t }}</label>
+                        <label
+                          class="inline-label"
+                          for="{{ quantity_id }}"
+                          {% if section.settings.quantity_enabled == false and settings.dbtfy_quantity_breaks %}hidden{% endif %}>{{ 'products.product.quantity' | t }}</label>
                       {%- endif -%}
 
                       {%- render "dbtfy-inventory-quantity", product: product -%}
@@ -611,11 +686,18 @@
                       {%- endif -%}
                     </div>
                   {%- endif -%}
-                  {% if show_quantity_discounts  %}
-                    {{pages[product.metafields.qbs.quantity_discounts_to_product].content}}
+                  {% if show_quantity_discounts %}
+                    {{ pages[product.metafields.qbs.quantity_discounts_to_product].content }}
                   {% endif %}
                   <div class="product-single__add-to-cart">
-                    <button type="submit" name="add" id="AddToCart--custom-tabs__template" class="btn btn--secondary btn--add-to-cart full" {% unless current_variant.available %} disabled="disabled"{% endunless %}>
+                    <button
+                      type="submit"
+                      name="add"
+                      id="AddToCart--custom-tabs__template"
+                      class="btn btn--secondary btn--add-to-cart full"
+                      {% unless current_variant.available %}
+                      disabled="disabled"
+                      {% endunless %}>
                       <span class="btn__text">
                         <span class="{{ settings.icon }} button-cart-icon">{{ settings.icon_cart }}</span>
                         <span class="btn__add-to-cart-text">
@@ -630,7 +712,10 @@
                       </span>
                     </button>
                     <!-- <button type="button" class="btn btn__cloud">Add to cloud</button> -->
-                    <button id="ov-onskeskyen-generated-wish-button" class="pill" type="button">Tilføj til Ønskeskyen</button>
+                    <button
+                      id="ov-onskeskyen-generated-wish-button"
+                      class="pill"
+                      type="button">Tilføj til Ønskeskyen</button>
 
 
                     {%- if settings.enable_payment_button -%}
@@ -645,7 +730,7 @@
             {% if section.settings.show_product_counter %}
               <div class="product-counter-container">
                 {%- if section.settings.product_counter_text != blank -%}
-                  {{section.settings.product_counter_text}}
+                  {{ section.settings.product_counter_text }}
                 {%- endif -%}
                 <div id="product__counter"></div>
               </div>
@@ -655,7 +740,7 @@
               <div class="animated-truck">
                 <div class="text">
                   {% if section.settings.animation_banner_text != blank %}
-                    {{section.settings.animation_banner_text}}
+                    {{ section.settings.animation_banner_text }}
                   {% endif %}
                 </div>
                 <div class="mountain"></div>
@@ -674,7 +759,7 @@
               <div class="discount__notification-container">
                 {% if section.settings.discount_notification_text != blank %}
                   <a href="{% if section.settings.discount_notification_link != blank%}{{ section.settings.discount_notification_link}}{% endif %} " class="discount_notification_link">
-                    {{section.settings.discount_notification_text}}
+                    {{ section.settings.discount_notification_text }}
                   </a>
                 {% endif %}
               </div>
@@ -751,7 +836,11 @@
 
             {%- if section.settings.show_full_details -%}
               <div class="spacer-top">
-                <a class="product-single__full-details text-link" {% unless emptyState %} href="{{ product.url }}"{% endunless %}>
+                <a
+                  class="product-single__full-details text-link"
+                  {% unless emptyState %}
+                  href="{{ product.url }}"
+                  {% endunless %}>
                   {{ 'products.product.full_details' | t }}
                   <span class="{{ settings.icon }}" aria-hidden="true">arrow_forward</span>
                 </a>
@@ -796,31 +885,31 @@
                   <div id="tab-1" class="tab-item tab-active">
                     {{ 'products.tabs.tab-description' | t }}
                   </div>
-                  {%-if show_registeredMedicalDevice -%}
+                  {%- if show_registeredMedicalDevice -%}
                     <div id="tab-2" class="tab-item">
                       {{ 'products.tabs.tab-medical' | t }}
                     </div>
-                  {%-endif-%}
-                  {%-if show_useAndCare-%}
+                  {%- endif -%}
+                  {%- if show_useAndCare -%}
                     <div id="tab-3" class="tab-item">
                       {{ 'products.tabs.tab-use' | t }}
                     </div>
-                  {%-endif-%}
-                  {%-if show_userManual-%}
+                  {%- endif -%}
+                  {%- if show_userManual -%}
                     <div id="tab-4" class="tab-item">
                       {{ 'products.tabs.tab-manual' | t }}
                     </div>
-                  {%-endif-%}
-                  {%-if show_material -%}
+                  {%- endif -%}
+                  {%- if show_material -%}
                     <div id="tab-5" class="tab-item">
                       {{ 'products.tabs.tab-material' | t }}
                     </div>
-                  {%-endif-%}
-                  {%-if show_deliveryAndReturns-%}
+                  {%- endif -%}
+                  {%- if show_deliveryAndReturns -%}
                     <div id="tab-6" class="tab-item">
                       {{ 'products.tabs.tab-delivery' | t }}
                     </div>
-                  {%-endif-%}
+                  {%- endif -%}
                 </div>
                 <div class="tabs__content">
                   <div id="tab-1-content" class="content-body show-active">
@@ -839,29 +928,29 @@
                   -%}
                   </div>
 
-                  {%-if show_registeredMedicalDevice -%}
+                  {%- if show_registeredMedicalDevice -%}
                     <div id="tab-2-content" class="content-body">
-                      {{product.metafields.tabs.tab_registered_medical_device}}
+                      {{ product.metafields.tabs.tab_registered_medical_device }}
                     </div>
                   {%- endif -%}
-                  {%-if show_useAndCare -%}
+                  {%- if show_useAndCare -%}
                     <div id="tab-3-content" class="content-body">
-                      {{product.metafields.tabs.tab_use_and_care}}
+                      {{ product.metafields.tabs.tab_use_and_care }}
                     </div>
                   {%- endif -%}
-                  {%-if show_userManual -%}
+                  {%- if show_userManual -%}
                     <div id="tab-4-content" class="content-body">
                       {{ product.metafields.tabs.tab_user_manual }}
                     </div>
                   {%- endif -%}
-                  {%-if show_material-%}
+                  {%- if show_material -%}
                     <div id="tab-5-content" class="content-body">
-                      {{product.metafields.tabs.tab_material}}
+                      {{ product.metafields.tabs.tab_material }}
                     </div>
                   {%- endif -%}
-                  {%-if show_deliveryAndReturns-%}
+                  {%- if show_deliveryAndReturns -%}
                     <div id="tab-6-content" class="content-body">
-                      {{product.metafields.tabs.tab_delivery_and_return}}
+                      {{ product.metafields.tabs.tab_delivery_and_return }}
                     </div>
                   {%- endif -%}
                 </div>
@@ -887,42 +976,46 @@
 {%- render "dbtfy-addtocart-animation" -%}
 
 {%- unless emptyState -%}
-  <script type="application/json" id="ProductJson-{{ section.id }}" class="mainProductJson">
+  <script
+    type="application/json"
+    id="ProductJson-{{ section.id }}"
+    class="mainProductJson">
     {
-      "available": {{ product.available | json }},
-      "collections": {{ product.collections | json }},
-      "compare_at_price": {{ product.compare_at_price | json }},
-      "compare_at_price_max": {{ product.compare_at_price_max | json }},
-      "compare_at_price_min": {{ product.compare_at_price_min | json }},
-      "compare_at_price_varies": {{ product.compare_at_price_varies | json }},
-      "content": {{ product.content | json }},
-      "created_at": {{ product.created_at | json }},
-      "description": {{ product.description | json }},
-      "featured_image": {{ product.featured_image | json }},
-      "first_available_variant_compare_at_price": {{ product.selected_or_first_available_variant.compare_at_price | json }},
-      "handle": {{ product.handle | json }},
-      "id": {{ product.id | json }},
-      "images": {{ product.images | json }},
-      "media": {{ product.media | json }},
-      "options": {{ product.options | json }},
-      "options_with_values": {
-        {% for product_option in product.options_with_values %}
-          "option   {{ product_option.position }}" : {{ product_option.values | json }}
-          {% unless forloop.last %},{% endunless %}{% endfor %}
-      },
-      "price": {{ product.price | json }},
-      "price_max": {{ product.price_max | json }},
-      "price_min": {{ product.price_min | json }},
-      "price_varies": {{ product.price_varies | json }},
-      "published_at": {{ product.published_at | json }},
-      "requires_selling_plan": {{ product.requires_selling_plan | json }},
-      "selling_plan_groups": {{ product.selling_plan_groups | json }},
-      "tags": {{ product.tags | json }},
-      "title": {{ product.title | json }},
-      "type": {{ product.type | json }},
-      "variants": {{ product.variants | json }},
-      "vendor": {{ product.vendor | json }},
-      "has_only_default_variant": {{ product.has_only_default_variant | json }}
+    "available": {{ product.available | json }},
+    "collections": {{ product.collections | json }},
+    "compare_at_price": {{ product.compare_at_price | json }},
+    "compare_at_price_max": {{ product.compare_at_price_max | json }},
+    "compare_at_price_min": {{ product.compare_at_price_min | json }},
+    "compare_at_price_varies": {{ product.compare_at_price_varies | json }},
+    "content": {{ product.content | json }},
+    "created_at": {{ product.created_at | json }},
+    "description": {{ product.description | json }},
+    "featured_image": {{ product.featured_image | json }},
+    "first_available_variant_compare_at_price": {{ product.selected_or_first_available_variant.compare_at_price | json }},
+    "handle": {{ product.handle | json }},
+    "id": {{ product.id | json }},
+    "images": {{ product.images | json }},
+    "media": {{ product.media | json }},
+    "options": {{ product.options | json }},
+    "options_with_values": {
+    {% for product_option in product.options_with_values %}
+      "option {{ product_option.position }}" : {{ product_option.values | json }}
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    },
+    "price": {{ product.price | json }},
+    "price_max": {{ product.price_max | json }},
+    "price_min": {{ product.price_min | json }},
+    "price_varies": {{ product.price_varies | json }},
+    "published_at": {{ product.published_at | json }},
+    "requires_selling_plan": {{ product.requires_selling_plan | json }},
+    "selling_plan_groups": {{ product.selling_plan_groups | json }},
+    "tags": {{ product.tags | json }},
+    "title": {{ product.title | json }},
+    "type": {{ product.type | json }},
+    "variants": {{ product.variants | json }},
+    "vendor": {{ product.vendor | json }},
+    "has_only_default_variant": {{ product.has_only_default_variant | json }}
     }
   </script>
 
@@ -946,7 +1039,7 @@
           }, 6000);
         } else {
           event.preventDefault()
-          $("#not_select_id").html("<p id='not_select-m'>    {{ 'products.sizes.choose-size-message' | t }}</p>");
+          $("#not_select_id").html("<p id='not_select-m'>     {{ 'products.sizes.choose-size-message' | t }} </p>");
           $('.variant-label-option-value').html("");
           setTimeout(function() {
             $("#not_select-m").hide();

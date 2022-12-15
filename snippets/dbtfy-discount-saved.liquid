@@ -1,25 +1,24 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_discount_saved -%}
-<div class="dbtfy dbtfy-discount_saved">
-  <div id="DiscountSaved">
-    {%- for variant in product.variants -%}
-      {%- capture discount_saved -%}
-        {%- if settings.sale_type == "amount" -%}
-        <span class="money">{{ variant.compare_at_price | minus: variant.price | money }} </span>
-        {%- elsif settings.sale_type == "percentage" -%}
-          {{ variant.compare_at_price | minus: variant.price | times: 100 | divided_by: variant.compare_at_price }}%
-        {%- endif -%}
-      {%- endcapture -%}
+{%- if settings.dbtfy_discount_saved -%}
+  <div class="dbtfy dbtfy-discount_saved">
+    <div id="DiscountSaved">
+      {%- for variant in product.variants -%}
+        {%- capture discount_saved -%}
+          {%- if settings.sale_type == "amount" -%}
+            <span class="money">{{ variant.compare_at_price | minus: variant.price | money }}</span>
+          {%- elsif settings.sale_type == "percentage" -%}
+            {{ variant.compare_at_price | minus: variant.price | times: 100 | divided_by: variant.compare_at_price }}%
+          {%- endif -%}
+        {%- endcapture -%}
 
-      {%- if variant.compare_at_price > variant.price -%}
-      <span class="badge badge__first number-discount_saved discount_saved-{{ variant.id }} hide">
-        {% comment %} <span class="{{ settings.icon }}">local_offer</span> {% endcomment %}
-        <span class="badge__first-text">{{ "products.general.save_html" | t }}</span>
-        <span class="badge__first-porcents"> - {{ "products.general.saved_amount_nums" | t: saved_amount: discount_saved }} </span>
-    
-        
-        </span>
-      {%- endif -%}
-    {%- endfor -%}
+        {%- if variant.compare_at_price > variant.price -%}
+          <span class="badge badge__first number-discount_saved discount_saved-{{ variant.id }} hide">
+            <span class="badge__first-text">{{ "products.general.save_html" | t }}</span>
+            <span class="badge__first-porcents">
+              - {{ "products.general.saved_amount_nums" | t: saved_amount: discount_saved }}
+            </span>
+          </span>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
   </div>
-</div>
 {%- endif -%}

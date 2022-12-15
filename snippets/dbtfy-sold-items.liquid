@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_sold_items -%}
+{%- if settings.dbtfy_sold_items -%}
   {%- liquid
     assign position = settings.dbtfy_sold_items_position
     assign prefix_text = 'add-ons.sold_items.prefix_text' | t

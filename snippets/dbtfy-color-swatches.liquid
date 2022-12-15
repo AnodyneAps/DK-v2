@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_color_swatches and product.available and product.variants.size >= 1 -%}
+{%- if settings.dbtfy_color_swatches and product.available and product.variants.size >= 1 -%}
   {%- liquid
     assign swatch_option_list = settings.dbtfy_color_swatches_color | split: ","
     assign swatch_color_grid = settings.dbtfy_color_swatches_grid

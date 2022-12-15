@@ -5,12 +5,6 @@
 {%- endif -%}
 
 <script>
-  {%- if content_for_header contains "debutify" -%}
-  window.debutify = true;
-  {%- else -%}
-  window.debutify = false;
-  {%- endif -%}
-
   window.theme = window.theme || {};
 
   theme.routes = {
@@ -58,6 +52,7 @@
     animationDuration: 600,
     animationSlow: 1000,
     transitionSpeed: 300,
+    addonsLink: {{ "dbtfy-addons.min.js" | asset_url | json }},
     fastClickPluginLink: {{ "FastClick.js" | asset_url | json }},
     jQueryUIPluginLink: {{ "jquery-ui.min.js" | asset_url | json }},
     jQueryUIAutocompletePluginLink: {{ "jquery.ui.autocomplete.scroll.min.js" | asset_url | json }},

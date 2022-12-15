@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_collection_filters -%}
+{%- if settings.dbtfy_collection_filters -%}
   {%- liquid
     assign current_collection = collection
     assign current_tags = current_tags | handleize

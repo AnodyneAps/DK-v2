@@ -22,7 +22,7 @@
 
         <div class="grid">
           <div class="grid__item large--eight-twelfths push--large--two-twelfths">
-            {%- if content_for_header contains 'debutify' and settings.dbtfy_smart_search -%}
+            {%- if settings.dbtfy_smart_search -%}
               <predictive-search>
                 {%- render 'search-bar', form_tag: true -%}
                 {%- render "dbtfy-smart-search", type: "page" -%}
@@ -45,7 +45,7 @@
               {%- if item.object_type == 'product' -%}
                 {%- assign product = item -%}
 
-                {%- if content_for_header contains 'debutify' and settings.dbtfy_gift_wrap -%}
+                {%- if settings.dbtfy_gift_wrap -%}
                   {%- unless product.id == gift_wrap_product_id -%}
                     {%- render 'product-grid-item' with product as product, grid_item_width: grid_item_width, current: current -%}
                   {%- endunless -%}

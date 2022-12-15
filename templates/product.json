@@ -2,39 +2,48 @@
   "sections": {
     "main": {
       "type": "product-template",
-      "settings": {}
+      "settings": {
+      }
     },
     "upsell-bundles": {
       "type": "dbtfy-upsell-bundles",
-      "settings": {}
+      "settings": {
+      }
     },
     "pricing-table": {
       "type": "dbtfy-pricing-table",
-      "settings": {}
+      "settings": {
+      }
     },
     "product-recommendations": {
       "type": "product-recommendations",
-      "settings": {}
+      "settings": {
+      }
     },
     "review-widget": {
       "type": "product-review-widget",
-      "settings": {}
+      "settings": {
+      }
     },
     "faq-section": {
       "type": "dbtfy-faq-section",
-      "settings": {}
+      "settings": {
+      }
     },
     "related-products": {
       "type": "related-products",
-      "settings": {}
+      "settings": {
+      }
     },
     "back-to-collection": {
       "type": "product-back-to-collection",
-      "settings": {}
+      "settings": {
+      }
     },
     "quotes": {
       "type": "quotes",
-      "settings": {}
+      "settings": {
+      }
     }
   },
   "order": [

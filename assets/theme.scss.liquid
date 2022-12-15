@@ -3,7 +3,7 @@
 
 Theme Name: Debutify
 Theme Author: Debutify
-Theme Version: 4.10.0
+Theme Version: 4.10.2
 Theme URI: https://debutify.com
 Theme Documentation: https://help.debutify.com
 Terms of use: https://debutify.com/terms-of-use
@@ -156,7 +156,6 @@ _App_style
   _shopify_digital_downloads
 */
 {% endcomment %}
-
 
 /*============================================================================
   _Font_face
@@ -2969,7 +2968,9 @@ textarea {
     display: inline-block !important;
   }
 }
-
+.cart_savings-wrapper-text .money {
+color: $cAccent !important;
+}
 /*================ _Fieldset ================*/
 fieldset {
   margin: 0;
@@ -7325,6 +7326,10 @@ cite {
   @include display-flexbox();
   @include align-items(center);
   @include justify-content(center);
+  height: 100%;
+  position: absolute;
+  z-index: 22;
+  background: #f7f7f7;
 
   .ajaxcart--is-loaded & {
     display: none;
@@ -7973,6 +7978,7 @@ body {
 .text-small {font-size: $baseFontSize-sm}
 .text-md {font-size: $baseFontSize-md; font-weight: 600 !important}
 .text-large {font-size: $baseFontSize-lg; font-weight: 600 !important}
+.cart-price-text{font-size: $baseFontSize-md; font-weight: 600 !important}
 .text-link {@include linkStyle}
 .text-lead {@include leadFontStack}
 .text-accent {@include accentFontStack}
@@ -8562,18 +8568,20 @@ body {
       background-color: $colorDefault;
     }
   }
+    .cu-flex-direction{
+        width: 100%;
+    .cu-product-select {
+        margin-right: $spacer-sm;
+        @include flex(auto);
+    }
 
-  .cu-product-select {
-    margin-right: $spacer-sm;
-    width: 120px;
-    @include flex(auto);
-  }
+    .cu-product-button {
+        max-width: 82px;
+        font-size:0.8rem;
+        margin-top:6px;
+    }
+}
 
-  .cu-product-button {
-    max-width: 82px;
-    font-size:0.8rem;
-    margin-top:6px;
-  }
 }
 {%- endif -%}
 /* end-dbtfy-cart-upsell */

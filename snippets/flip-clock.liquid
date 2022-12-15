@@ -1,7 +1,7 @@
 <div id="flipFlop" class="flip-container">
   <span class="flip-outer-text">
     {%- if section.settings.bottom_counter_text != blank -%}
-      {{section.settings.bottom_counter_text -}}{%- endif -%}
+      {{ section.settings.bottom_counter_text -}}{%- endif -%}
   </span>
   <div class="flip-container-inner">
 
@@ -21,7 +21,7 @@
       </div>
       <div class="flip-group-title">{{ 'products.counter.hours' | t }}</div>
       {% comment %}
-        <div class="dots">:</div>
+      <div class="dots">:</div>
       {% endcomment %}
     </div>
 

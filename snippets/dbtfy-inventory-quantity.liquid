@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_inventory_quantity -%}
+{%- if settings.dbtfy_inventory_quantity -%}
   {%- liquid
     assign icons = settings.settings.dbtfy_inventory_quantity_icons
     assign threshold_qty = settings.dbtfy_inventory_quantity_threshold

@@ -527,17 +527,6 @@
       "next": "Next (Right arrow key)",
       "prev": "Previous (Left arrow key)",
       "close": "Close (Esc)"
-    },
-    "tabs": {
-      "tab-description": " Description ",
-      "tab-medical": " Technology ",
-      "tab-use": " Use ",
-      "tab-manual": " User manual ",
-      "tab-material": " Material ",
-      "tab-delivery": " Delivery & return "
-    },
-    "sizes": {
-      "choose-size-message": "Please select your size first."
     }
   },
   "gift_cards": {

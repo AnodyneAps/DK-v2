@@ -2,7 +2,8 @@
   "sections": {
     "main": {
       "type": "featured-image",
-      "settings": {}
+      "settings": {
+      }
     }
   },
   "order": [

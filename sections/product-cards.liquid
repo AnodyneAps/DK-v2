@@ -1,84 +1,85 @@
-
 {%- if section.blocks.size > 0 and section.settings.show_product_card -%}
-<div class="wrapper">
+  <div class="wrapper">
 
-<div id="section-{{ section.id }}" class="product-cards">
-	<div class="grid">
-  <!-- Blocks -->
-  {%- for block in section.blocks -%}
+    <div id="section-{{ section.id }}" class="product-cards">
+      <div class="grid">
+        <!-- Blocks -->
+        {%- for block in section.blocks -%}
 
-    {%- assign valid_row = false -%}
+          {%- assign valid_row = false -%}
 
-    {%- if block.settings.type_row != blank -%}
-      {%- assign type_list = block.settings.type_row | split: "," -%}
-      {%- for type in type_list -%}
-        {%- if product.type contains type -%}
-          {%- assign valid_row = true -%}
-        {%- endif -%}
-      {%- endfor -%}
-    {%- endif -%}
-
-    {%- if block.settings.tag_row != blank -%}
-      {%- assign tag_list = block.settings.tag_row | split: "," -%}
-      {%- for tag in tag_list -%}
-        {%- if product.tags contains tag -%}
-          {%- assign valid_row = true -%}
-        {%- endif -%}
-      {%- endfor -%}
-    {%- endif -%}
-
-    {%- if block.settings.product_row != blank -%}
-      {%- assign product_filter = block.settings.product_row -%}
-      {%- if product.handle == product_filter -%}
-        {%- assign valid_row = true -%}
-      {%- endif -%}
-    {%- endif -%}
-
-    {%- if block.settings.collection_row != blank -%}
-      {%- for collection in product.collections -%}
-        {%- if collection.handle == block.settings.collection_row -%}
-          {%- assign valid_row = true -%}
-          {%- break -%}
-        {%- endif -%}
-      {%- endfor -%}
-    {%- endif -%}
-
-    {%- if block.settings.type_row == blank and block.settings.tag_row == blank and block.settings.product_row == blank and block.settings.collection_row == blank -%}
-      {%- assign valid_row = true -%}
-    {%- endif -%}
-
-    {%- if valid_row %}
-          <div class="grid__item grid-card flex large--three-twelfths medium--six-twelfths small--six-twelfth">
-            <div class="card-contain card-row-{{ block.settings.card__alignement }}">
-              {%- if block.settings.card__icon != blank -%}
-                <div class="cards-wrapper">
-                  <img class="card-icon lazyload" src="{{block.settings.card__icon | img_url: '75x75'}}"
-									alt="{{ block.settings.title }}">
-                </div>
-              {%- else -%}
-                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- if block.settings.type_row != blank -%}
+            {%- assign type_list = block.settings.type_row | split: "," -%}
+            {%- for type in type_list -%}
+              {%- if product.type contains type -%}
+                {%- assign valid_row = true -%}
               {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
 
-							<div class="card__content {{ block.settings.text_alignment }}">
-								{%- unless block.settings.title == blank -%}
-									<h2 class="h3 card__content--title">{{ block.settings.title | escape }}</h2>
-								{%- endunless -%}
-								{%- unless block.settings.text == blank -%}
-									<div class="card__content--text">{{ block.settings.text }}</div>
-								{%- endunless -%}
-							</div>
+          {%- if block.settings.tag_row != blank -%}
+            {%- assign tag_list = block.settings.tag_row | split: "," -%}
+            {%- for tag in tag_list -%}
+              {%- if product.tags contains tag -%}
+                {%- assign valid_row = true -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+
+          {%- if block.settings.product_row != blank -%}
+            {%- assign product_filter = block.settings.product_row -%}
+            {%- if product.handle == product_filter -%}
+              {%- assign valid_row = true -%}
+            {%- endif -%}
+          {%- endif -%}
+
+          {%- if block.settings.collection_row != blank -%}
+            {%- for collection in product.collections -%}
+              {%- if collection.handle == block.settings.collection_row -%}
+                {%- assign valid_row = true -%}
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+
+          {%- if block.settings.type_row == blank and block.settings.tag_row == blank and block.settings.product_row == blank and block.settings.collection_row == blank -%}
+            {%- assign valid_row = true -%}
+          {%- endif -%}
+
+          {%- if valid_row %}
+            <div class="grid__item grid-card flex large--three-twelfths medium--six-twelfths small--six-twelfth">
+              <div class="card-contain card-row-{{ block.settings.card__alignement }}">
+                {%- if block.settings.card__icon != blank -%}
+                  <div class="cards-wrapper">
+                    <img
+                      class="card-icon lazyload"
+                      src="{{block.settings.card__icon | img_url: '75x75'}}"
+                      alt="{{ block.settings.title }}">
+                  </div>
+                {%- else -%}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {%- endif -%}
+
+                <div class="card__content {{ block.settings.text_alignment }}">
+                  {%- unless block.settings.title == blank -%}
+                    <h2 class="h3 card__content--title">{{ block.settings.title | escape }}</h2>
+                  {%- endunless -%}
+                  {%- unless block.settings.text == blank -%}
+                    <div class="card__content--text">{{ block.settings.text }}</div>
+                  {%- endunless -%}
+                </div>
+              </div>
             </div>
-          </div>
-    {%- endif -%}
-  {%- endfor -%}
-		</div>
-	</div>
-</div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
 {%- endif -%}
 {% schema %}
   {
     "name": "Product Cards",
-	  "class": "product-row-section",
+    "class": "product-row-section",
     "settings": [
       {
         "type": "checkbox",
@@ -87,8 +88,8 @@
         "default": true
       }
     ],
-    "blocks" : [
-	    {
+    "blocks": [
+      {
         "type": "row",
         "name": "Row",
         "settings": [
@@ -118,14 +119,12 @@
               {
                 "value": "left",
                 "label": "Left"
-              },
-              {
+              }, {
                 "value": "center",
                 "label": "center"
               }
             ]
-          },
-          {
+          }, {
             "type": "select",
             "id": "text_alignment",
             "label": "Text alignment",
@@ -134,35 +133,29 @@
               {
                 "value": "",
                 "label": "Left"
-              },
-              {
+              }, {
                 "value": "text-center",
                 "label": "Center"
               }
             ]
-          },
-          {
+          }, {
             "type": "header",
             "content": "Visibility settings"
-          },
-          {
+          }, {
             "type": "text",
             "id": "type_row",
             "label": "Product type",
-		      	"info": "Comma-separated"
-          },
-          {
+            "info": "Comma-separated"
+          }, {
             "type": "text",
             "id": "tag_row",
             "label": "Product tag",
             "info": "Comma-separated"
-          },
-          {
+          }, {
             "type": "product",
             "id": "product_row",
             "label": "Product"
-          },
-          {
+          }, {
             "type": "collection",
             "id": "collection_row",
             "label": "Collection"

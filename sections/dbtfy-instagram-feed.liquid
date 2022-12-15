@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_instagram_feed -%}
+{%- if settings.dbtfy_instagram_feed -%}
   {%- liquid
     assign limit = section.settings.dbtfy_instagram_feed_desktop_grid | times: section.settings.dbtfy_instagram_feed_rows
 

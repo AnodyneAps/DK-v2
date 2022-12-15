@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_cart_reminder -%}
+{%- if settings.dbtfy_cart_reminder -%}
   {%- if template.name != "cart" and cart.item_count > 0 -%}
     {%- liquid
       assign button_style = settings.cart_message_button_style

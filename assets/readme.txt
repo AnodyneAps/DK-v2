@@ -1,6 +1,6 @@
 Theme Name: Debutify
 Theme Author: Debutify
-Theme Version: 4.10.0
+Theme Version: 4.10.2
 Theme URI: https://debutify.com
 Theme Documentation: https://help.debutify.com
 Terms of use: https://debutify.com/terms-of-use

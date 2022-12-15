@@ -2,11 +2,13 @@
   "sections": {
     "main": {
       "type": "article-template",
-      "settings": {}
+      "settings": {
+      }
     },
     "back-to-blog": {
       "type": "article-back-to-blog",
-      "settings": {}
+      "settings": {
+      }
     }
   },
   "order": [

@@ -1065,7 +1065,7 @@
       }
     },
     "add-ons": {
-      "name": "✅ Debutify Alat tambah (57)",
+      "name": "✅ Debutify Alat tambah (56)",
       "settings": {
         "header__1": {
           "content": "Debutify Add-ons memerlukan [pelan berbayar](https:\/\/theme.debutify.com\/plans)"
@@ -2833,6 +2833,70 @@
     }
   },
   "sections": {
+    "account_settings": {
+      "name": "Account settings",
+      "settings": {
+        "information": {
+          "content": "Please see the links below for your account information and support channels."
+        },
+        "billing_plans": {
+          "content": "[Billing\/Plans](https:\/\/theme.debutify.com\/billings)"
+        },
+        "billing_plans_info": {
+          "content": "See your current plan and change your plan anytime."
+        },
+        "account": {
+          "content": "[Account](https:\/\/theme.debutify.com\/billings)"
+        },
+        "account_info": {
+          "content": "See your account information and settings."
+        },
+        "login": {
+          "content": "[Login](https:\/\/debutify.com\/signin)"
+        },
+        "login_info": {
+          "content": "Log into your Debutify account."
+        },
+        "articles": {
+          "content": "[Articles](https:\/\/help.debutify.com)"
+        },
+        "articles_info": {
+          "content": "View our support articles and video guides."
+        },
+        "contact_us": {
+          "content": "[Contact us](https:\/\/debutify.com\/contact)"
+        },
+        "contact_us_info": {
+          "content": "Contact our support team for assistance."
+        },
+        "faq": {
+          "content": "[FAQ](https:\/\/debutify.com\/faq)"
+        },
+        "faq_info": {
+          "content": "See our frequently asked questions from customers."
+        },
+        "feedback": {
+          "content": "[Feedback](https:\/\/feedback.debutify.com)"
+        },
+        "feedback_info": {
+          "content": "See our customers feedback and submit your own."
+        }
+      },
+      "blocks": {
+        "message": {
+          "name": "Message",
+          "settings": {
+            "block_name": {
+              "label": "Block name",
+              "info": "Used for internal identification"
+            },
+            "text": {
+              "label": "Text"
+            }
+          }
+        }
+      }
+    },
     "announcement": {
       "name": "Pengumuman",
       "settings": {

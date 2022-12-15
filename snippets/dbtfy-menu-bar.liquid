@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_menu_bar -%}
+{%- if settings.dbtfy_menu_bar -%}
   {%- liquid
     assign menu = settings.dbtfy_menu_bar_link_list
     assign show_mobile_menu = settings.dbtfy_menu_bar_mobile

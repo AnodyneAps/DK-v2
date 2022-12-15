@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_recently_viewed -%}
+{%- if settings.dbtfy_recently_viewed -%}
   {%- liquid
     assign heading = 'add-ons.recently_viewed.heading' | t
     assign products_limit = settings.dbtfy_recently_viewed_products_limit

@@ -15,7 +15,7 @@
       assign products_to_show_count = 0
 
       for product in predictive_search.resources.products
-        if content_for_header contains 'debutify' and settings.dbtfy_gift_wrap
+        if settings.dbtfy_gift_wrap
           unless product.id == gift_wrap_product_id
             assign products_to_show_count = products_to_show_count | plus: 1
           endunless

@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_cookie_box -%}
+{%- if settings.dbtfy_cookie_box -%}
   {%- liquid
     assign use_drawer_colors = settings.dbtfy_cookie_box_inverted
     assign text = 'add-ons.cookie_box.text_html' | t

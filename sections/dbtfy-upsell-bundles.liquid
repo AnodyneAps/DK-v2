@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_upsell_bundles -%}
+{%- if settings.dbtfy_upsell_bundles -%}
   {%- liquid
     assign limit = section.settings.dbtfy_upsell_bundles_limit
     assign valid_bundle = false
@@ -126,7 +126,7 @@
                             assign product_type = product.type | downcase
 
                             if product_type != "insurance"
-                              if content_for_header contains 'debutify' and settings.dbtfy_gift_wrap
+                              if settings.dbtfy_gift_wrap
                                 unless product.id == gift_wrap_product_id
                                   assign products_added = products_added | plus: 1
                                   render "dbtfy-upsell-bundles-grid" with product as product, type: "image", grid_item_width: grid_item_width, index: forloop.index

@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_sticky_addtocart and template.name == "product" -%}
+{%- if settings.dbtfy_sticky_addtocart and template.name == "product" -%}
   {%- liquid
     if settings.dbtfy_sticky_addtocart_mobile
       assign mobile_display = true

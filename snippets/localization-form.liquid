@@ -9,7 +9,7 @@
     assign currency_selector = true
   endif
 
-  if content_for_header contains 'debutify' and settings.dbtfy_custom_currencies and settings.show_currency_selector
+  if settings.dbtfy_custom_currencies and settings.show_currency_selector
     assign currency_selector = true
     assign enabled_currencies = settings.supported_currencies | split: ' ' | join: ','
   else
@@ -51,7 +51,7 @@
           </select>
         {%- endif -%}
 
-        {%- if content_for_header contains 'debutify' and settings.dbtfy_custom_currencies and settings.show_currency_selector -%}
+        {%- if settings.dbtfy_custom_currencies and settings.show_currency_selector -%}
           {%- render 'dbtfy-custom-currencies' -%}
         {%- elsif currency_selector -%}
           <label for="currency-list-{{ section.id }}">{{ 'general.currency.dropdown_label' | t }}</label>

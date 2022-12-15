@@ -1,4 +1,4 @@
-{%- if content_for_header contains "debutify" and settings.dbtfy_product_tabs and section.blocks.size > 0 -%}
+{%- if settings.dbtfy_product_tabs and section.blocks.size > 0 -%}
   {%- liquid
     assign display_type = section.settings.dbtfy_product_tabs_display_type
     assign product_tabs_position = settings.dbtfy_product_tabs_position

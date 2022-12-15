@@ -1,4 +1,4 @@
-{%- if content_for_header contains "debutify" and settings.dbtfy_quantity_breaks and section.blocks.size > 0 -%}
+{%- if settings.dbtfy_quantity_breaks and section.blocks.size > 0 -%}
   {%- assign single_break_text = section.settings.dbtfy_quantity_breaks_single_text -%}
   {%- assign more_discount_before_quantity_text = section.settings.dbtfy_quantity_breaks_more_discount_text_before -%}
   {%- assign more_discount_after_quantity_text = section.settings.dbtfy_quantity_breaks_more_discount_text_after -%}

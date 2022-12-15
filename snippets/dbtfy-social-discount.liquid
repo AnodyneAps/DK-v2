@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_social_discount -%}
+{%- if settings.dbtfy_social_discount -%}
   {%- liquid
     assign button_icon = settings.dbtfy_social_discount_icon
     assign popup_width = settings.dbtfy_social_discount_width

@@ -2,7 +2,8 @@
   "sections": {
     "main": {
       "type": "page-full-width",
-      "settings": {}
+      "settings": {
+      }
     }
   },
   "order": [

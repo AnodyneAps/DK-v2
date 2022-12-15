@@ -1,8 +1,5 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_agree_to_terms -%}
+{%- if settings.dbtfy_agree_to_terms -%}
   {%- liquid
-    if settings.agree_to_terms_text != blank 
-    assign label_rich = settings.agree_to_terms_text
-    endif
     assign label = 'add-ons.agree_to_terms.label' | t
     assign warning_text = 'add-ons.agree_to_terms.warning_text' | t
     assign order_title = 'add-ons.agree_to_terms.order_title' | t
@@ -19,7 +16,7 @@
                value="{{ yes_label }}">
 
         <label for="agree-terms">
-          {{ label_rich }}
+          {{ label }}
         </label>
       </div>
     {%- endif -%}

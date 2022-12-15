@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_size_chart -%}
+{%- if settings.dbtfy_size_chart -%}
   <div class="dbtfy dbtfy-size_chart" data-section-id="{{ section.id }}">
     {%- for block in section.blocks -%}
       <div class="sc-container sc-{{ block.id }}"

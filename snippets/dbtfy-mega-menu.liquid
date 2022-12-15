@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_mega_menu and section.blocks.size > 0 -%}
+{%- if settings.dbtfy_mega_menu and section.blocks.size > 0 -%}
   <!-- Blocks -->
   {%- for block in section.blocks -%}
     {%- liquid
@@ -142,7 +142,7 @@
                             render 'product-grid-item' with product as product, grid_item_width: grid_width, current: current
                           endcapture
 
-                          if content_for_header contains 'debutify' and settings.dbtfy_gift_wrap
+                          if settings.dbtfy_gift_wrap
                             unless product.id == gift_wrap_product_id
                               echo product_item
                             endunless
@@ -270,7 +270,7 @@
                   render "product-grid-item" with product as product, grid_item_width: grid_item_width, current: current
                 endcapture
 
-                if content_for_header contains 'debutify' and settings.dbtfy_gift_wrap
+                if settings.dbtfy_gift_wrap
                   unless product.id == gift_wrap_product_id
                     echo product_item
                   endunless

@@ -3,29 +3,26 @@
 {%- endif -%}
 
 {% schema %}
-{
-  "name": "t:sections.collection_image.name",
-  "class": "hero-section",
-  "settings": [
   {
-    "type": "header",
-    "content": "Trustpilot stars banner"
-  },
-  {
-    "type": "text",
-    "id": "stars_text",
-    "label": "Add text to collection"
-  },
-  {
-    "type": "image_picker",
-    "id": "collection_stars",
-    "label": "Add a png picture in 800x42px"
-  },
-  {
-    "type": "text",
-    "id": "stars_url",
-    "label": "Add external link to collection eks. https://www.trustpilot.com/"
+    "name": "t:sections.collection_image.name",
+    "class": "hero-section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Trustpilot stars banner"
+      }, {
+        "type": "text",
+        "id": "stars_text",
+        "label": "Add text to collection"
+      }, {
+        "type": "image_picker",
+        "id": "collection_stars",
+        "label": "Add a png picture in 800x42px"
+      }, {
+        "type": "text",
+        "id": "stars_url",
+        "label": "Add external link to collection eks. https://www.trustpilot.com/"
+      }
+    ]
   }
-  ]
-}
 {% endschema %}

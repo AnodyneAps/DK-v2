@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_infinite_scroll -%}
+{%- if settings.dbtfy_infinite_scroll -%}
     {%- assign scroll_options = settings.dbtfy_infinite_scroll_options -%}
 
     <div class="dbtfy dbtfy-infinite_scroll" data-endless-type="{{ scroll_options }}">

@@ -16,7 +16,7 @@
       </div>
     </div>
 
-    {%- if content_for_header contains 'debutify' and settings.dbtfy_order_tracking -%}
+    {%- if settings.dbtfy_order_tracking -%}
       {%- liquid
         assign order_tracking_input_placeholder = 'add-ons.order_tracking.input_placeholder' | t
         assign order_tracking_button_text = 'add-ons.order_tracking.button_text' | t

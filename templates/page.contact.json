@@ -2,7 +2,8 @@
   "sections": {
     "main": {
       "type": "contact-content",
-      "settings": {}
+      "settings": {
+      }
     }
   },
   "order": [

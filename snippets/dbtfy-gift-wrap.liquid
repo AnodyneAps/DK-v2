@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_gift_wrap -%}
+{%- if settings.dbtfy_gift_wrap -%}
   {%- liquid
     assign gift_wrap_product = settings.dbtfy_gift_wrap_product
     assign display_gift_wrap_price = settings.dbtfy_gift_wrap_display_price

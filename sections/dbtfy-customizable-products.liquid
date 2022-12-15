@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_customizable_products -%}
+{%- if settings.dbtfy_customizable_products -%}
   {%- if section.blocks.size >= 1 -%}
     <div class="dbtfy-customizable_products" hidden>
       {%- for block in section.blocks -%}

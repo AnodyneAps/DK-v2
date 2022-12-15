@@ -4028,23 +4028,38 @@ theme.customScript = function() {
 
 //_DEBUTIFY
 theme.debutify = function() {
-  if (!window.debutify) {
-    document.body.classList.add("dbtfy-collection_addtocart-destroy");
-    document.body.classList.add("dbtfy-collection-filters-destroy");
-    document.body.classList.add("dbtfy-color_swatches-destroy");
-    document.body.classList.add("dbtfy-cookie_box-destroy");
-    document.body.classList.add("dbtfy-delivery_date-destroy");
-    document.body.classList.add("dbtfy-faq_page-destroy");
-    document.body.classList.add("dbtfy-mega_menu-destroy");
-    document.body.classList.add("dbtfy-newsletter_popup-destroy");
-    document.body.classList.add("dbtfy-product_image_crop-destroy");
-    document.body.classList.add("dbtfy-quantity_breaks-destroy");
-    document.body.classList.add("dbtfy-quick_compare-destroy");
-    document.body.classList.add("dbtfy-quick_view-destroy");
-    document.body.classList.add("dbtfy-sticky_addtocart-destroy");
-    document.body.classList.add("dbtfy-upsell_popup-destroy");
-    document.body.classList.add("dbtfy-wish_list-destroy");
-  }
+  let addonsLoaded = false;
+
+  document.addEventListener("dbtfy:loaded", function(event) {
+    if (addonsLoaded) {
+      return;
+    }
+
+    addonsLoaded = true;
+
+    window.enabledAddons = event.detail.enabledAddons;
+
+    theme.loadScript(theme.variables.addonsLink);
+  });
+
+  document.body.classList.add("dbtfy-collection_addtocart-destroy");
+  document.body.classList.add("dbtfy-collection_filters-destroy");
+  document.body.classList.add("dbtfy-color_swatches-destroy");
+  document.body.classList.add("dbtfy-cookie_box-destroy");
+  document.body.classList.add("dbtfy-delivery_date-destroy");
+  document.body.classList.add("dbtfy-delivery_time-destroy");
+  document.body.classList.add("dbtfy-faq_page-destroy");
+  document.body.classList.add("dbtfy-instagram_feed-destroy");
+  document.body.classList.add("dbtfy-mega_menu-destroy");
+  document.body.classList.add("dbtfy-newsletter_popup-destroy");
+  document.body.classList.add("dbtfy-product_image_crop-destroy");
+  document.body.classList.add("dbtfy-quantity_breaks-destroy");
+  document.body.classList.add("dbtfy-quick_compare-destroy");
+  document.body.classList.add("dbtfy-quick_view-destroy");
+  document.body.classList.add("dbtfy-sticky_addtocart-destroy");
+  document.body.classList.add("dbtfy-trust_badge-destroy");
+  document.body.classList.add("dbtfy-upsell_popup-destroy");
+  document.body.classList.add("dbtfy-wish_list-destroy");
 };
 
 //_TABS

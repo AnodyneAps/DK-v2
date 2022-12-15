@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_product_bullet_points and section.blocks.size > 0 -%}
+{%- if settings.dbtfy_product_bullet_points and section.blocks.size > 0 -%}
   <div class="dbtfy dbtfy-product_bullet_points hide"
        data-position="{{ section.settings.dbtfy_bullet_points_position }}"
        data-alignment="{{ section.settings.dbtfy_bullet_points_alignment }}"

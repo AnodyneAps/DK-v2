@@ -30,12 +30,27 @@
    endif
 -%}
 
-<div itemscope itemtype="http://schema.org/Product" id="section-{{ section.id }}" data-picker-type="{{ picker_type }}" data-section-id="{{ section.id }}" data-product-id="{{ product.id }}" data-product-handle="{{ product.handle }}" data-section-type="product-template" data-thumbs-location="{{ thumbs_location }}" data-product-first-available-variant="{{ first_available_variant }}" data-image-zoom-type="{{ image_display_type }}" data-enable-history-state="{{ enable_history_state }}" data-stacked-layout="{{ stacked_layout }}" data-product-selector="{{ product_selector }}" data-enable-arrows="{{ enable_arrows }}" {%- if first_3d_model -%}data-has-model="true"{%- endif -%}>
+<div
+  itemscope
+  itemtype="http://schema.org/Product"
+  id="section-{{ section.id }}"
+  data-picker-type="{{ picker_type }}"
+  data-section-id="{{ section.id }}"
+  data-product-id="{{ product.id }}"
+  data-product-handle="{{ product.handle }}"
+  data-section-type="product-template"
+  data-thumbs-location="{{ thumbs_location }}"
+  data-product-first-available-variant="{{ first_available_variant }}"
+  data-image-zoom-type="{{ image_display_type }}"
+  data-enable-history-state="{{ enable_history_state }}"
+  data-stacked-layout="{{ stacked_layout }}"
+  data-product-selector="{{ product_selector }}"
+  data-enable-arrows="{{ enable_arrows }}"
+  {%- if first_3d_model -%}data-has-model="true"{%- endif -%}>
   {%- render 'product-tabs-template' with product as product
     , enable_image_zoom_on_icon_click: enable_image_zoom_on_icon_click
     , full_screen_image: full_screen_image
-    title_position_mobile: title_position_mobile
-    -%}
+    title_position_mobile: title_position_mobile -%}
 </div>
 
 {% schema %}

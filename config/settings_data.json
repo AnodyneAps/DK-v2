@@ -6,6 +6,7 @@
     "height_header_mobile": 70,
     "icon": "material-icons-outlined",
     "grid_product_truncate": false,
+    "enable_history_state": false,
     "collection_grid_card": false,
     "collection_grid_products_count": false,
     "collection_grid_animation": true,
@@ -91,13 +92,13 @@
     "dbtfy_cart_discount": false,
     "dbtfy_cart_favicon": false,
     "dbtfy_delivery_time": false,
-    "dbtfy_discount_saved": true,
+    "dbtfy_discount_saved": false,
     "dbtfy_inactive_tab_message": false,
     "dbtfy_inventory_quantity": false,
     "dbtfy_sales_countdown": false,
     "dbtfy_skip_cart": false,
     "dbtfy_sticky_addtocart": false,
-    "dbtfy_back_in_stock": true,
+    "dbtfy_back_in_stock": false,
     "dbtfy_instagram_feed": false,
     "dbtfy_newsletter_popup": false,
     "dbtfy_order_feedback": false,
@@ -110,7 +111,7 @@
     "dbtfy_delivery_date": false,
     "dbtfy_mega_menu": true,
     "dbtfy_order_tracking": false,
-    "dbtfy_product_tabs": true,
+    "dbtfy_product_tabs": false,
     "dbtfy_quick_compare": false,
     "dbtfy_quick_view": false,
     "dbtfy_recently_viewed": false,
@@ -120,7 +121,7 @@
     "dbtfy_cookie_box": false,
     "dbtfy_shop_protect": false,
     "dbtfy_addtocart_animation_type": "shakeX",
-    "dbtfy_addtocart_animation_interval": 10,
+    "dbtfy_addtocart_animation_interval": 13,
     "dbtfy_back_in_stock_btn_animation": true,
     "dbtfy_infinite_scroll_options": "scroll",
     "dbtfy_inventory_quantity_threshold": 20,
@@ -680,18 +681,6 @@
           "dbtfy_bullet_points_position": "under-addtocart-button",
           "dbtfy_bullet_points_alignment": "left",
           "dbtfy_bullet_points_display_type": "inline"
-        }
-      },
-      "dbtfy-sales-countdown": {
-        "type": "dbtfy-sales-countdown",
-        "settings": {
-          "dbtfy_sales_countdown_icons": "local_fire_department",
-          "dbtfy_sales_countdown_prefix": "Sale ends in",
-          "dbtfy_sales_countdown_suffix": "",
-          "dbtfy_sales_countdown_d": "d",
-          "dbtfy_sales_countdown_h": "h",
-          "dbtfy_sales_countdown_m": "m",
-          "dbtfy_sales_countdown_s": "s"
         }
       },
       "dbtfy-delivery-time": {
@@ -1255,6 +1244,11 @@
         "type": "dbtfy-product-swatches",
         "settings": {
           "dbtfy_product_swatches_show_in_grid": true
+        }
+      },
+      "dbtfy-account-settings": {
+        "type": "dbtfy-account-settings",
+        "settings": {
         }
       }
     },

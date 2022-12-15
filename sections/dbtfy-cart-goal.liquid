@@ -1,4 +1,4 @@
-{%- if content_for_header contains 'debutify' and settings.dbtfy_cart_goal -%}
+{%- if settings.dbtfy_cart_goal -%}
   {%- assign goal = section.settings.dbtfy_cart_goal_amount -%}
   {%- assign goal_amount = goal | times: 1 -%}
   {%- assign cart_total = cart.total_price | divided_by: 100.0 -%}
