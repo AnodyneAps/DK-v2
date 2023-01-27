@@ -727,6 +727,11 @@
                 {% render "dbtfy-back-in-stock", product: product, current_variant: current_variant %}
               {%- endif -%}
             </div>
+            <!--Trustpilot widget start -->
+            {% if section.settings.show_trustpilot_widget %}
+              {%- render "trustpilot_widget" -%}
+            {% endif %}
+            <!--Trustpilot widget ends -->
             {% if section.settings.show_product_counter %}
               <div class="product-counter-container">
                 {%- if section.settings.product_counter_text != blank -%}
@@ -766,7 +771,6 @@
             {% endif %}
             <!-- Discount notification text end -->
             {%- render "dbtfy-trust-badge", position: "product_page" -%}
-
 
             {%- if settings.dbtfy_product_tabs -%}
               {%- if product_tabs_position == "under_addtocart" -%}
@@ -1039,7 +1043,7 @@
           }, 6000);
         } else {
           event.preventDefault()
-          $("#not_select_id").html("<p id='not_select-m'>     {{ 'products.sizes.choose-size-message' | t }} </p>");
+          $("#not_select_id").html("<p id='not_select-m'>      {{ 'products.sizes.choose-size-message' | t }} </p>");
           $('.variant-label-option-value').html("");
           setTimeout(function() {
             $("#not_select-m").hide();

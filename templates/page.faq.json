@@ -353,7 +353,7 @@
         "text_alignment": "text-left",
         "text_alignment_mobile": "text-left",
         "dbtfy_faq_bannerbox": true,
-        "dbtfy_faq_banner_icon": "live_help",
+        "dbtfy_faq_banner_icon": "",
         "dbtfy_faq_banner_text": "Fandt du ikke svar på dit spørgsmål?",
         "dbtfy_faq_banner_subtitle": "Så husk at vores kundeservice sidder klar til at hjælpe dig både før, under og efter dit køb.",
         "dbtfy_faq_btn": "Kontakt os",

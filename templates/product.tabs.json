@@ -30,6 +30,7 @@
         "text_alignment_mobile": "small--text-center",
         "product_counter_text": "<p>Vi pakker din ordre om:<\/p>",
         "show_product_counter": true,
+        "show_trustpilot_widget": true,
         "show_animation_banner": true,
         "animation_banner_text": "<p>Fri fragt ved køb over 399 kr.<\/p>",
         "show_discount_notification": false,
@@ -121,6 +122,86 @@
       "type": "product-back-to-collection",
       "settings": {
       }
+    },
+    "f5dcb32f-f3bd-4ca6-803b-1fb080de2597": {
+      "type": "dbtfy-faq-section",
+      "blocks": {
+        "template--16169104638101__f5dcb32f-f3bd-4ca6-803b-1fb080de2597-16748175047800866e-0": {
+          "type": "category_block",
+          "settings": {
+            "title": "",
+            "dbtfy_faq_category": "",
+            "dbtfy_faq_icons": ""
+          }
+        },
+        "template--16169104638101__f5dcb32f-f3bd-4ca6-803b-1fb080de2597-16748175047800866e-1": {
+          "type": "text_block",
+          "settings": {
+            "title": "",
+            "dbtfy_faq_page_open_1": false,
+            "dbtfy_faq_page_icon_1": "",
+            "question_1": "Hvilken størrelse skal jeg vælge?",
+            "text_1": "<p>At have den rigtige størrelse er afgørende for at opleve fordelene ved vores produkter. Se venligst størrelsesguiden for det specifikke produkt. Hvis du er i tvivl, så tøv ikke med at kontakte os – vi hjælper gerne med at vurdere hvilken størrelse, du skal vælge.<\/p>",
+            "dbtfy_faq_page_open_2": false,
+            "dbtfy_faq_page_icon_2": "",
+            "question_2": "Hvad er forskellen på Posture Shirts med og uden lynlås?",
+            "text_2": "<p>Der er ikke nogen forskel på funktionen på de to modeller. Men hvis du har svært ved at få stramtsiddende tøj over hovedet, så kan det være en god idé at vælge modellen med lynlås. Posture Shirten med lynlås lukkes foran med en kombination af hægter og en gennemgående lynlås, hvilket gør den nem at få af og på.<\/p>",
+            "dbtfy_faq_page_open_3": false,
+            "dbtfy_faq_page_icon_3": "",
+            "question_3": "Hvad er forskellen på en Posture Shirt og en Skulderstøtte?",
+            "text_3": "<p>Begge produkter hjælper til at forbedre din kropsholdning, men de arbejder med muskulaturen på forskellige måder. En <strong>Posture Shirt™<\/strong> aktiverer og stimulerer din muskulatur i takt med, at den øger kropsholdningsbevidstheden, så din krop gradvist selv indtager en bedre holdning. <\/p><p>En <strong>skulderstøtte<\/strong> stabiliserer og aflaster, men kun i den periode, du har den på.<\/p><p>Overordnet set anbefaler vi, at du vælger en Posture Shirt™, hvis du ønsker et produkt med høj komfort, som giver dig støtte hele dagen. En skulderstøtte kan med fordel vælges, hvis du kun ønsker støtte i kortere perioder i løbet af dagen.<\/p>",
+            "dbtfy_faq_page_open_4": false,
+            "dbtfy_faq_page_icon_4": "",
+            "question_4": "Hvornår får I en udsolgt vare på lager igen?",
+            "text_4": "<p>Vi bestræber os på at have alle varer og størrelser på lager. I tilfælde af, at en vare er udsolgt, kan du ofte registrere din mail i feltet på siden. Så sender vi dig en mail, så snart produktet\/størrelsen er på lager igen. <\/p>",
+            "dbtfy_faq_page_open_5": false,
+            "dbtfy_faq_page_icon_5": "",
+            "question_5": "Hvad betyder jeres 30-dages prøveperiode?",
+            "text_5": "<p>Hos Anodyne® er det vores mål, at du bliver glad for dit køb. Det indebærer blandt andet, at du har en 30-dages prøveperiode. Det betyder, at du inden for 30 dage frit kan teste og afprøve dit produkt. Brug tøjet i din hverdag, på arbejde, til sport eller i andre sammenhænge og lad dette afgøre, om du er tilfreds med dit produkt. Du må gerne vaske tøjet med parfumeri vaskemiddel i denne periode.<\/p><p>Skulle du mod forventning ikke være tilfreds, skal du blot følge trinnene i vores <a href=\"https:\/\/www.anodyne.dk\/pages\/returportal\" title=\"Returportal\">ombytnings- & returportal<\/a>. <\/p>",
+            "dbtfy_faq_page_open_6": false,
+            "dbtfy_faq_page_icon_6": "",
+            "question_6": "",
+            "text_6": "",
+            "dbtfy_faq_page_open_7": false,
+            "dbtfy_faq_page_icon_7": "",
+            "question_7": "",
+            "text_7": "",
+            "dbtfy_faq_page_open_8": false,
+            "dbtfy_faq_page_icon_8": "",
+            "question_8": "",
+            "text_8": "",
+            "dbtfy_faq_page_open_9": false,
+            "dbtfy_faq_page_icon_9": "",
+            "question_9": "",
+            "text_9": "",
+            "dbtfy_faq_page_open_10": false,
+            "dbtfy_faq_page_icon_10": "",
+            "question_10": "",
+            "text_10": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16169104638101__f5dcb32f-f3bd-4ca6-803b-1fb080de2597-16748175047800866e-0",
+        "template--16169104638101__f5dcb32f-f3bd-4ca6-803b-1fb080de2597-16748175047800866e-1"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "title": "Kan vi hjælpe?",
+        "subtitle": "",
+        "section_style": "section-border",
+        "dbtfy_faq_searchbox": false,
+        "dbtfy_faq_search_placeholder": "Search questions...",
+        "text_alignment": "text-left",
+        "text_alignment_mobile": "text-left",
+        "dbtfy_faq_bannerbox": true,
+        "dbtfy_faq_banner_icon": "",
+        "dbtfy_faq_banner_text": "Fandt du ikke svar på dit spørgsmål?",
+        "dbtfy_faq_banner_subtitle": "Så husk at vores kundeservice sidder klar til at hjælpe dig både før, under og efter dit køb.",
+        "dbtfy_faq_btn": "KONTAKT OS",
+        "dbtfy_faq_link": "shopify:\/\/pages\/kontakt"
+      }
     }
   },
   "order": [
@@ -131,6 +212,7 @@
     "product-recommendations",
     "review-widget",
     "related-products",
-    "back-to-collection"
+    "back-to-collection",
+    "f5dcb32f-f3bd-4ca6-803b-1fb080de2597"
   ]
 }

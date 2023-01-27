@@ -6,7 +6,6 @@
   <div class="{%- if section.settings.padding_section -%}box{%- endif -%}">
     <div class="wrapper{{ section.settings.wrapper_size }}">
       {%- if section.blocks.size > 0 -%}
-
         {%- for block in section.blocks -%}
           <div class="profile__item">
             {% if block.settings.title != blank %}
