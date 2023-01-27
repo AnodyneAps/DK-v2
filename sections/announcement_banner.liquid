@@ -1,0 +1,338 @@
+<div
+  id="announcement"
+  data-section-id="{{ section.id }}"
+  data-section-type="announcement-section"
+  data-template="{{ template.name }}"
+  class="announcement-banner__bg">
+
+  <div class="wrapper">
+    <div class="grid grid-small flex-nowrap align-center announcement-grid whitespace-nowrap fadeIn">
+      {% comment %}
+      Announcement right side messages
+      {% endcomment %}
+      <div class="grid__item three-twelfths flex announcement-item announcement-left-one overflow-hidden small--hide align-center hidden-pocket">
+        <span class="material-icons-outlined" aria-hidden="true">{{ section.settings.icon_select-first }}</span>
+        <p>
+          {% if section.settings.message-first != blank %}
+            {{ section.settings.message-first }}
+          {% endif %}
+        </p>
+      </div>
+
+      <div class="grid__item three-twelfths flex announcement-item announcement-left-two overflow-hidden small--hide align-center hidden-pocket">
+        <span class="material-icons-outlined" aria-hidden="true">{{ section.settings.icon_select-second }}</span>
+        <p>
+          {% if section.settings.message-second != blank %}
+            {{ section.settings.message-second }}
+          {% endif %}
+        </p>
+      </div>
+
+      <div class="grid__item large-six-twelfths medium--six-twelfths announcement-item announcement-message overflow-hidden text-center {% if section.blocks.size > 1 %} slick slick-announcement {% endif %}hidden-lap-and-up" data-autoplayspeed="{{ section.settings.announcement_autoplayspeed | times: 1000 }} ">
+
+        {%- for block in section.blocks -%}
+          {%- assign announcement_text = block.settings.announcement_text -%}
+
+          {%- unless announcement_text == blank -%}
+            <div class="announcement-message-item announcement-{{ block.id }} rte{% if small_text_on_mobile %} text-small-mobile{% endif %}" {{ block.shopify_attributes }}>
+              <span class="material-icons-outlined" aria-hidden="true">{{ block.settings.icon_select }}</span>
+              {{ announcement_text }}
+            </div>
+          {%- endunless -%}
+        {%- endfor -%}
+      </div>
+      {% comment %}
+      Announcement right side messages
+      {% endcomment %}
+      <div class="grid__item three-twelfths flex justify-end announcement-item announcement-right-one overflow-hidden small--hide align-center hidden-pocket">
+        <span class="material-icons-outlined" aria-hidden="true">{{ section.settings.icon_select-third }}</span>
+        <p>
+          {% if section.settings.message-third != blank %}
+            {{ section.settings.message-third }}
+          {% endif %}
+        </p>
+      </div>
+      <div class="grid__item three-twelfths flex justify-end announcement-item announcement-right-two overflow-hidden small--hide align-center hidden-pocket">
+        <span class="material-icons-outlined" aria-hidden="true">{{ section.settings.icon_select-fourth }}</span>
+        <p>
+          {% if section.settings.message-fourth != blank %}
+            {{ section.settings.message-fourth }}
+          {% endif %}
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Announcement banner",
+    "class": "announcement-banner-section",
+    "max_blocks": 4,
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_announcement",
+        "label": "Show announcement banner",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Banner messages only laptop and up",
+        "info": "Add short message for laptop and up screens"
+      },
+      {
+        "type": "select",
+        "id": "icon_select-first",
+        "label": "First message icon",
+        "default": "favorite_border",
+        "options": [
+          {
+            "value": "check_circle_outline",
+            "label": "Check circle"
+          },
+          {
+            "value": "star",
+            "label": "Star"
+          },
+          {
+            "value": "local_shipping",
+            "label": "Truck"
+          },
+          {
+            "value": "assignment_return",
+            "label": "Return"
+          }, {
+            "value": "favorite_border",
+            "label": "Favorite"
+          }, {
+            "value": "sentiment_very_satisfied",
+            "label": "Satisfied"
+          }, {
+            "value": "thumb_up",
+            "label": "Thumb up"
+          }, {
+            "value": "email",
+            "label": "Email"
+          }, {
+            "value": "phone",
+            "label": "Phone"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "message-first",
+        "label": "Add first message desktop",
+        "default": "Write a short message"
+      }, {
+        "type": "select",
+        "id": "icon_select-second",
+        "label": "Second message icon",
+        "default": "favorite_border",
+        "options": [
+          {
+            "value": "check_circle_outline",
+            "label": "Check circle"
+          },
+          {
+            "value": "star",
+            "label": "Star"
+          },
+          {
+            "value": "local_shipping",
+            "label": "Truck"
+          },
+          {
+            "value": "assignment_return",
+            "label": "Return"
+          }, {
+            "value": "favorite_border",
+            "label": "Favorite"
+          }, {
+            "value": "sentiment_very_satisfied",
+            "label": "Satisfied"
+          }, {
+            "value": "thumb_up",
+            "label": "Thumb up"
+          }, {
+            "value": "email",
+            "label": "Email"
+          }, {
+            "value": "phone",
+            "label": "Phone"
+          }
+        ]
+      }, {
+        "type": "text",
+        "id": "message-second",
+        "label": "Add second message desktop",
+        "default": "Write a short message"
+      }, {
+        "type": "select",
+        "id": "icon_select-third",
+        "label": "Third message icon",
+        "default": "favorite_border",
+        "options": [
+          {
+            "value": "check_circle_outline",
+            "label": "Check circle"
+          },
+          {
+            "value": "star",
+            "label": "Star"
+          },
+          {
+            "value": "local_shipping",
+            "label": "Truck"
+          },
+          {
+            "value": "assignment_return",
+            "label": "Return"
+          }, {
+            "value": "favorite_border",
+            "label": "Favorite"
+          }, {
+            "value": "sentiment_very_satisfied",
+            "label": "Satisfied"
+          }, {
+            "value": "thumb_up",
+            "label": "Thumb up"
+          }, {
+            "value": "email",
+            "label": "Email"
+          }, {
+            "value": "phone",
+            "label": "Phone"
+          }
+        ]
+      }, {
+        "type": "text",
+        "id": "message-third",
+        "label": "Add third message desktop",
+        "default": "Write a short message"
+      }, {
+        "type": "select",
+        "id": "icon_select-fourth",
+        "label": "Fourth message icon",
+        "default": "favorite_border",
+        "options": [
+          {
+            "value": "check_circle_outline",
+            "label": "Check circle"
+          },
+          {
+            "value": "star",
+            "label": "Star"
+          },
+          {
+            "value": "local_shipping",
+            "label": "Truck"
+          },
+          {
+            "value": "assignment_return",
+            "label": "Return"
+          }, {
+            "value": "favorite_border",
+            "label": "Favorite"
+          }, {
+            "value": "sentiment_very_satisfied",
+            "label": "Satisfied"
+          }, {
+            "value": "thumb_up",
+            "label": "Thumb up"
+          }, {
+            "value": "email",
+            "label": "Email"
+          }, {
+            "value": "phone",
+            "label": "Phone"
+          }
+        ]
+      }, {
+        "type": "text",
+        "id": "message-fourth",
+        "label": "Add fourth message desktop",
+        "default": "Write a short message"
+      }, {
+        "type": "header",
+        "content": "Carousel options only mobile",
+        "info": "Add more than one message to enable carousel on mobil"
+      }, {
+        "type": "range",
+        "id": "announcement_autoplayspeed",
+        "label": "Rotation speed",
+        "min": 3,
+        "max": 10,
+        "step": 1,
+        "unit": "s",
+        "default": 5
+      }
+    ],
+    "blocks": [
+      {
+        "type": "message",
+        "name": "message",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Block name",
+            "info": "Used for internal identification"
+          }, {
+            "type": "select",
+            "id": "icon_select",
+            "label": "Announcement icon",
+            "default": "favorite_border",
+            "options": [
+              {
+                "value": "check_circle_outline",
+                "label": "Check circle"
+              },
+              {
+                "value": "star",
+                "label": "Star"
+              },
+              {
+                "value": "local_shipping",
+                "label": "Truck"
+              },
+              {
+                "value": "assignment_return",
+                "label": "Return"
+              }, {
+                "value": "favorite_border",
+                "label": "Favorite"
+              }, {
+                "value": "sentiment_very_satisfied",
+                "label": "Satisfied"
+              }, {
+                "value": "thumb_up",
+                "label": "Thumb up"
+              }, {
+                "value": "email",
+                "label": "Email"
+              }, {
+                "value": "phone",
+                "label": "Phone"
+              }
+            ]
+          }, {
+            "type": "richtext",
+            "id": "announcement_text",
+            "label": "Announcement banner message text",
+            "default": "<p>Free shipping worldwide | 30-Day free returns</p>"
+          }
+        ]
+      }
+    ],
+    "default": {
+      "blocks": [
+        {
+          "type": "message"
+        }
+      ]
+    }
+  }
+{% endschema %}

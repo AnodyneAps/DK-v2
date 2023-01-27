@@ -30,7 +30,7 @@
     "browsing_link": "shopify:\/\/collections\/alle-produkte",
     "zindex_drawer": "999",
     "cart_message_enable": false,
-    "textbox_cart_notification": "<strong>Din garanti:<\/strong> Hos Anodyne® har du altid 30 dages fuld returret og 100% gratis ombytning.",
+    "textbox_cart_notification": "<strong>OBS: <\/strong> Har du husket at tjekke størrelsesguiden på dit produkt? Hvis ikke, så kan du stadig nå det.",
     "textbox_custom_drawer_icon": "",
     "cart_notes_enable": false,
     "color_announcement_bg": "#353535",
@@ -92,19 +92,19 @@
     "dbtfy_cart_discount": false,
     "dbtfy_cart_favicon": false,
     "dbtfy_delivery_time": false,
-    "dbtfy_discount_saved": false,
+    "dbtfy_discount_saved": true,
     "dbtfy_inactive_tab_message": false,
     "dbtfy_inventory_quantity": false,
     "dbtfy_sales_countdown": false,
     "dbtfy_skip_cart": false,
     "dbtfy_sticky_addtocart": false,
-    "dbtfy_back_in_stock": false,
+    "dbtfy_back_in_stock": true,
     "dbtfy_instagram_feed": false,
     "dbtfy_newsletter_popup": false,
     "dbtfy_order_feedback": false,
     "dbtfy_social_discount": false,
     "dbtfy_wish_list": false,
-    "dbtfy_collection_addtocart": false,
+    "dbtfy_collection_addtocart": true,
     "dbtfy_collection_filters": false,
     "dbtfy_color_swatches": false,
     "dbtfy_custom_currencies": false,
@@ -713,25 +713,27 @@
       "announcement": {
         "type": "announcement",
         "blocks": {
-          "announcement-0": {
-            "type": "message",
-            "settings": {
-              "title": "",
-              "announcement_text": "<p>Forlænget returret frem til 24. jan. 2023<\/p>"
-            }
-          },
           "c4676b39-a890-441a-b56f-27f60a8d0ad9": {
             "type": "message",
             "settings": {
               "title": "",
-              "announcement_text": "<p>Gratis ombytning<\/p>"
+              "announcement_text": "<p>Spar<strong> 30- 50%<\/strong> på alle demovarer ➡️ <a href=\"\/collections\/demosalg\" title=\"Demo- og restsalg\"><span style=\"text-decoration:underline\"><strong>KLIK HER<\/strong><\/span><\/a><span style=\"text-decoration:underline\"> <\/span><\/p>"
             }
           },
           "82893cc1-5e92-46bd-a94d-7204271ffa01": {
             "type": "message",
+            "disabled": true,
             "settings": {
               "title": "",
-              "announcement_text": "<p>Gratis fragt ved køb over 399 kr<\/p>"
+              "announcement_text": "<p><a href=\"\/collections\/demosalg\" title=\"Demo- og restsalg\"><strong>KLIK HER<\/strong><\/a><\/p>"
+            }
+          },
+          "announcement-0": {
+            "type": "message",
+            "disabled": true,
+            "settings": {
+              "title": "",
+              "announcement_text": "<p>Gratis ombytning<\/p>"
             }
           },
           "1845e2c6-d475-470e-81ff-6bb64b635172": {
@@ -752,9 +754,9 @@
           }
         },
         "block_order": [
-          "announcement-0",
           "c4676b39-a890-441a-b56f-27f60a8d0ad9",
           "82893cc1-5e92-46bd-a94d-7204271ffa01",
+          "announcement-0",
           "1845e2c6-d475-470e-81ff-6bb64b635172",
           "ed921cc9-429d-455b-86d4-1b6382ef61e7"
         ],
@@ -851,10 +853,10 @@
             "type": "text",
             "settings": {
               "title": "",
-              "image": "shopify:\/\/shop_images\/e-maerket.png",
+              "image": "shopify:\/\/shop_images\/Integrity.png",
               "guarantee_icon": "loyalty",
               "heading_text": "",
-              "text": "<p>Vi er en <a href=\"https:\/\/certifikat.emaerket.dk\/anodyne.dk\" target=\"_blank\" title=\"https:\/\/certifikat.emaerket.dk\/anodyne.dk\">E-mærket<\/a> webshop<\/p>",
+              "text": "<p>4.8 ud af 5 på Trustpilot<\/p>",
               "text_alignment": "text-center",
               "text_alignment_mobile": "text-center",
               "button_style": "btn-outline-primary",
@@ -1249,6 +1251,61 @@
       "dbtfy-account-settings": {
         "type": "dbtfy-account-settings",
         "settings": {
+        }
+      },
+      "announcement_banner": {
+        "type": "announcement_banner",
+        "blocks": {
+          "ec136e05-fb37-40f6-9ab0-12e0872f4488": {
+            "type": "message",
+            "settings": {
+              "title": "Hurtig 1-2 dages levering",
+              "icon_select": "local_shipping",
+              "announcement_text": "<p>Hurtig 1-2 dages levering<\/p>"
+            }
+          },
+          "announcement_banner-0": {
+            "type": "message",
+            "settings": {
+              "title": "Gratis ombytning",
+              "icon_select": "assignment_return",
+              "announcement_text": "<p>Gratis ombytning<\/p>"
+            }
+          },
+          "303fc2ce-b4f3-4718-b917-80449d5e51e2": {
+            "type": "message",
+            "settings": {
+              "title": "4.8 ud af 5 på Trustpilot",
+              "icon_select": "check_circle_outline",
+              "announcement_text": "<p>4.8 ud af 5 på Trustpilot<\/p>"
+            }
+          },
+          "9770cc0c-cb17-4b41-8051-7bfe2cf86fe8": {
+            "type": "message",
+            "settings": {
+              "title": "Gratis fragt over 399 kr.",
+              "icon_select": "thumb_up",
+              "announcement_text": "<p>Gratis fragt over 399 kr. <\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "ec136e05-fb37-40f6-9ab0-12e0872f4488",
+          "announcement_banner-0",
+          "303fc2ce-b4f3-4718-b917-80449d5e51e2",
+          "9770cc0c-cb17-4b41-8051-7bfe2cf86fe8"
+        ],
+        "settings": {
+          "show_announcement": true,
+          "icon_select-first": "local_shipping",
+          "message-first": "Hurtig 1-2 dages levering",
+          "icon_select-second": "assignment_return",
+          "message-second": "Gratis ombytning",
+          "icon_select-third": "check_circle_outline",
+          "message-third": "4.8 ud 5 på Trustpilot",
+          "icon_select-fourth": "thumb_up",
+          "message-fourth": "Gratis fragt over 399 kr.",
+          "announcement_autoplayspeed": 5
         }
       }
     },

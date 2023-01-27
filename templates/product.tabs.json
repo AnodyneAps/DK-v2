@@ -32,7 +32,7 @@
         "show_product_counter": true,
         "show_animation_banner": true,
         "animation_banner_text": "<p>Fri fragt ved køb over 399 kr.<\/p>",
-        "show_discount_notification": true,
+        "show_discount_notification": false,
         "discount_notification_text": "<p>Du kan roligt købe julegaver - returretten er forlænget frem til <strong>d. 24. januar 2023<\/strong><\/p>",
         "discount_notification_link": ""
       }

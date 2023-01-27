@@ -2747,6 +2747,19 @@ h6 {font-size: $headerSize6}
 .h5 {@extend h5}
 .h6 {@extend h6}
 
+// hide classes
+@media screen and (max-width: 769px) {
+  .hidden-pocket {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .hidden-lap-and-up {
+    display: none !important;
+  }
+}
+
 /*================ _Links ================*/
 a {
   color: $colorBodyText;
@@ -3460,11 +3473,12 @@ button {
   .list-product & {
     max-width: calc(100% - #{$gutter-sm});
   }
-  &.badge__first{
+  &.badge__first {
     color: lighten($cAccent, 10%);
     font-weight:600;
-    padding:5px 10px;
+    padding:6px 12px;
     background-color: $blackdays;
+    margin-left: 10px;
     .badge__first-text{
       color: $white;
     }
@@ -5947,6 +5961,44 @@ cite {
   }
 }
 
+.announcement-banner__bg{
+  padding-top:2px;
+  padding-bottom:2px;
+  background-color: darken($cLightGray, 3%);
+  .announcement-item {
+      span{
+        font-size:1.3rem;
+        color: $cAccent;
+        display: inline-block;
+        margin-right: 5px;    
+    }
+      p{
+        font-size: 0.978rem;
+        margin: 0;
+        letter-spacing: -1px;
+      }
+  }
+    .announcement-message-item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        span{
+          font-size:1.3rem;
+          color: $cAccent;
+          display: inline-block;
+          margin-top: 1px;
+          margin-right: 5px;    
+      }
+     p{
+        font-size: 0.978rem;
+        margin: 0;
+        letter-spacing: -1px;
+      }
+  }
+  .rte {
+    margin-bottom: 0;
+  }
+}
 .announcement-grid {
   height: $heightInputSmall;
 }

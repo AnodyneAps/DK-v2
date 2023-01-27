@@ -263,8 +263,7 @@
 
     {% render 'review-head' %}
 
-    {{ "fancybox.min.css" | asset_url | stylesheet_tag }}
-    <!--================================================================start of script tags and external scripts ============================-->
+    {{ "fancybox.min.css" | asset_url | stylesheet_tag }}<!--================================================================start of script tags and external scripts ============================-->
     <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-FZFPWTXDWN"> </script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -283,12 +282,12 @@
     <script id="sleeknoteScript" type="text/javascript">
       (function () {
       var sleeknoteScriptTag = document.createElement("script");
-                    sleeknoteScriptTag.type = "text/javascript";
-                    sleeknoteScriptTag.charset = "utf-8";
-                    sleeknoteScriptTag.src = ("//sleeknotecustomerscripts.sleeknote.com/8999.js");
-                    var s = document.getElementById("sleeknoteScript"); 
-                    s.parentNode.insertBefore(sleeknoteScriptTag, s); 
-                  })();
+                          sleeknoteScriptTag.type = "text/javascript";
+                          sleeknoteScriptTag.charset = "utf-8";
+                          sleeknoteScriptTag.src = ("//sleeknotecustomerscripts.sleeknote.com/8999.js");
+                          var s = document.getElementById("sleeknoteScript"); 
+                          s.parentNode.insertBefore(sleeknoteScriptTag, s); 
+                        })();
     </script>
     <!-- End of Sleeknote signup and lead generation tool - www.sleeknote.com -->
     <!-- magic scrips start  -->
@@ -308,8 +307,7 @@
       src="https://xn--nskeskyen-k8a.dk/onskeskyen-wish-button/external-wish-button.js"
       id="ov-onskeskyen-generate-wish-button-script"
       defer></script>
-    <link rel="stylesheet" href="https://oenskeinspiration.dk/knap/css/onskeskyen_wish_button.min.css">
-    <!-- onskeskyen-wish-button link end  -->
+    <link rel="stylesheet" href="https://oenskeinspiration.dk/knap/css/onskeskyen_wish_button.min.css"><!-- onskeskyen-wish-button link end  -->
     <!--================================================================start of script tags and external scripts ============================--><script defer src='https://cdn.debutify.com/scripts/production/YW5vZHluZS1kZW5tYXJrLm15c2hvcGlmeS5jb20=/debutify_script_tags.js'> </script>
   </head>
 
@@ -382,6 +380,7 @@
 
       {%- liquid
         section "announcement"
+        section "announcement_banner"
         section "header"
         render "dbtfy-menu-bar"
         render "dbtfy-quick-compare", type: "page"

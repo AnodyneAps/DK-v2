@@ -13,7 +13,7 @@
         "video_title": "",
         "svg_selector": "anodyne__vendor",
         "text_size": "medium",
-        "text_description": "<p>Få en bedre holdning med produkter fra Anodyne® - Vi har flere end 100.000 glade danske kunder<\/p>",
+        "text_description": "<p>Få en bedre holdning med produkter fra Anodyne® - Vi har flere end 125.000 glade danske kunder<\/p>",
         "text_description_size": "medium",
         "button_label": "Mænd",
         "button_link": "shopify:\/\/collections\/maend",
@@ -22,7 +22,7 @@
         "show_scrolldown": true,
         "show_emark": false,
         "bottom_counter_text": "Vi pakker din ordre om:",
-        "show_bottom_counter": true
+        "show_bottom_counter": false
       }
     },
     "1656942069989ae2c9": {
@@ -50,7 +50,7 @@
           "type": "service",
           "settings": {
             "title": "Danskernes foretrukne",
-            "description": "Flere end 100.000 glade, danske kunder kan ikke tage fejl... Vi har 4.9 ud af 5 på TrustPilot.",
+            "description": "Flere end 125.000 glade, danske kunder kan ikke tage fejl... Vi har 4.8 ud af 5 på TrustPilot.",
             "icon": "shopify:\/\/shop_images\/Smile2_200px.png",
             "uspLinkUrl": "https:\/\/www.anodyne.dk\/pages\/hvem-er-vi"
           }
@@ -120,9 +120,32 @@
         "button_label": "View all",
         "button_link": "shopify:\/\/collections",
         "button_style": "btn--primary",
-        "slider_featured_collections": false,
+        "slider_featured_collections": true,
         "arrows": false,
-        "dots": false
+        "dots": true
+      }
+    },
+    "1659512748326b5967": {
+      "type": "featured-products",
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "title": "Mest populære produkter",
+        "subtitle": "",
+        "section_style": "section-blank",
+        "home_featured_products": "posture-shirt",
+        "rows": "2",
+        "desktop_grid": "4",
+        "mobile_grid": "2",
+        "show_view_all": true,
+        "button_label": "Se alle produkter",
+        "button_link": "shopify:\/\/collections\/alle-produkter",
+        "button_style": "btn--primary",
+        "slider_related_products": true,
+        "arrows": true,
+        "dots": true,
+        "autoplay": true,
+        "autoplayspeed": 5
       }
     },
     "1657200190f72ca1c0": {
@@ -134,16 +157,16 @@
             "title": "Hvorfor vælge holdningskorrigerende tøj fra Anodyne?",
             "code": "<p>Med <a href=\"\/\"><span style=\"text-decoration:underline\">holdningskorrigerende tøj<\/span><\/a> fra Anodyne® kan du på en enkelt og ubesværet måde opnå en bedre kropsholdning og reducere smerter og spændinger i nakke, skuldre og ryg. Anodyne® <a href=\"\/collections\/alle-produkter\/\"><span style=\"text-decoration:underline\">holdningstøj til mænd og kvinder<\/span><\/a> hjælper dig til at øge din kropsholdningsbevidsthed og kan bruges både, når du sidder på kontoret, rejser, er aktiv på jobbet eller bruger det til træning. Anodyne® er europæisk producent og distributør af holdningskorrigerende tøj med teknologi udviklet af amerikanske AlignMed - verdens eneste producent af holdningskorrigerende tøj, der er registreret hos USA’s føderale fødevare- og lægemiddelmyndighed (FDA). Anodyne® holdningskorrigerende tøj er som det eneste i Europa både FDA-registreret og MDR\/CE-mærket som medicinsk udstyr (Klasse I), hvilket er din garanti for, at vores produkter lever op til de krav, der stilles for medicinsk udstyr. Vi sælger også en række forskellige <a href=\"\/collections\/rygstoette\"><span style=\"text-decoration:underline\">produkter til rygstøtte<\/span><\/a>, både i form af holdningsveste, <a href=\"\/collections\/skulderstoette\"><span style=\"text-decoration:underline\">skulderstøtter<\/span><\/a>, ergonomiske puder mm.<\/p>",
             "text_alignment": "text-center",
-            "status1_number": "+100.000",
+            "status1_number": "+125.000",
             "status1_label": "Glade danske kunder",
             "status1_link": "shopify:\/\/collections\/all",
-            "status2_number": "+500.000",
+            "status2_number": "+600.000",
             "status2_label": "Solgte produkter verden over",
             "status2_link": "shopify:\/\/collections\/all",
             "status3_number": "+8",
             "status3_label": "Års erfaring",
             "status3_link": "shopify:\/\/collections\/all",
-            "status4_number": "+80",
+            "status4_number": "+40",
             "status4_label": "Tilgængelige produkter",
             "status4_link": "shopify:\/\/collections\/all",
             "vendor_image_position": "center center",
@@ -220,29 +243,6 @@
         "autoplayspeed": 5
       }
     },
-    "1659512748326b5967": {
-      "type": "featured-products",
-      "settings": {
-        "show_on_desktop": true,
-        "show_on_mobile": true,
-        "title": "Mest populære produkter",
-        "subtitle": "",
-        "section_style": "section-blank",
-        "home_featured_products": "posture-shirt",
-        "rows": "2",
-        "desktop_grid": "4",
-        "mobile_grid": "2",
-        "show_view_all": true,
-        "button_label": "Se alle produkter",
-        "button_link": "shopify:\/\/collections\/alle-produkter",
-        "button_style": "btn--primary",
-        "slider_related_products": true,
-        "arrows": true,
-        "dots": true,
-        "autoplay": true,
-        "autoplayspeed": 5
-      }
-    },
     "16595128814470f681": {
       "type": "featured-icons",
       "blocks": {
@@ -307,7 +307,7 @@
         "full_width": false,
         "title": "Hvem er vi?",
         "subtitle": "Se vores præsentationsvideo",
-        "section_style": "section-default"
+        "section_style": "section-blank"
       }
     },
     "16595131862acfe816": {
@@ -370,9 +370,9 @@
     "1998a02f-6647-4103-b1fb-0756807b97c3",
     "1656942069989ae2c9",
     "1654180360d9664fc4",
+    "1659512748326b5967",
     "1657200190f72ca1c0",
     "1659512569f1cf3047",
-    "1659512748326b5967",
     "16595128814470f681",
     "16595130833070b2f1",
     "16595131862acfe816",

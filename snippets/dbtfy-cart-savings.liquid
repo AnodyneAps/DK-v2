@@ -1,4 +1,4 @@
-{%- if settings.dbtfy_cart_savings -%}
+
   {%- liquid
     assign total_compare_at_price = total_compare_at_price
     assign total_savings = total_compare_at_price | minus: cart.total_price
@@ -21,4 +21,3 @@
       </p>
     </div>
   </div>
-{%- endif -%}

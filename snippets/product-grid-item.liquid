@@ -1,7 +1,7 @@
 {%- liquid
   assign has_color_swatches = false
 
-  if settings.dbtfy_color_swatches
+  if content_for_header contains 'debutify' and settings.dbtfy_color_swatches
     if settings.dbtfy_color_swatches_grid != blank
       if product.available and product.variants.size > 1
         assign has_color_swatches = true
@@ -58,16 +58,26 @@
 -%}
 
 <div
-  class="grid__item grid-product flex {{ grid_item_width }}{% if sold_out %} is-sold-out{% endif %}{% if emptyState %} empty-state{% endif %} grid-view"
+  class="grid__item grid-product flex {{ grid_item_width }}{% if sold_out %} is-sold-out{% endif %}{% if emptyState %} empty-state{% endif %} grid-view {% if product.handle contains "backjoy-posture-mini-1" or product.handle contains "justerbart-knaebind" or product.handle contains "rabat25" %} collection___hide {% endif %}"
   data-product-card
   data-product-handle="{{ product.handle }}"
   data-product-id="{{ product.id }}"
   data-product-collections="{{ product_collections }}">
   <div class="card grid-product__wrapper{% if image_hover %} has-hover-image{% endif %}">
     <div class="grid-product__image-wrapper">
-      <a href="{{ product_link }}" class="grid-product__image-link">
-        {%- assign media = product.media.first -%}
 
+      <a href="{{ product_link }}" class="grid-product__image-link">
+
+        {%- assign media = product.media.first -%}
+        {%- comment -%}
+        for zipper product add zip image start
+        {%- endcomment -%}
+        {% if product_link contains 'zipper' %}
+          <span class="zipper__product"></span>
+        {% endif %}
+        {%- comment -%}
+        for zipper product add zip image end
+        {%- endcomment -%}
         {%- if emptyState -%}
           {{ 'product-' | append: current | placeholder_svg_tag: 'card-image placeholder-svg' }}
         {%- elsif media != blank -%}
@@ -75,12 +85,19 @@
             id="ProductImageWrapper-{{ media.id }}"
             class="product--wrapper card-image grid-product--wrapper media-wrapper"
             style="padding-top:{{ 1 | divided_by: media.preview_image.aspect_ratio | times: 100 }}%;">
-            <img class="product--image media lazyload ProductImage-{{ media.id }}"{% render 'lazysizes', img: media.preview_image, img_type: 'responsive' %}alt="{{ media.preview_image.alt }}"data-image>
+            <img
+              class="product--image media lazyload ProductImage-{{ media.id }}"
+              {% render 'lazysizes', img: media.preview_image, img_type: 'responsive' %}
+              alt="{{ media.preview_image.alt }}"
+              data-image>
           </div>
 
           {%- if image_hover -%}
             <div class="product--wrapper card-image grid-product--wrapper media-wrapper product-hover-image" style="padding-top:{{ 1 | divided_by: media_hover_image.aspect_ratio | times: 100 }}%;">
-              <img class="product--image media lazyload"{% render 'lazysizes', img: media_hover_image, img_type: 'responsive', add_on_crop: settings.dbtfy_product_image_crop %}alt="{{ media_hover_image.alt }}">
+              <img
+                class="product--image media lazyload"
+                {% render 'lazysizes', img: media_hover_image, img_type: 'responsive', add_on_crop: settings.dbtfy_product_image_crop %}
+                alt="{{ media_hover_image.alt }}">
             </div>
           {%- endif -%}
         {%- else -%}
@@ -109,31 +126,29 @@
             {%- endif -%}
           {%- endcapture -%}
 
-          {%- if settings.dbtfy_discount_saved -%}
-            <span class="badge triangle__badge grid-product__badge grid-product__badge-{{ settings.tag_placement }}">
-              {%- comment -%}
-              you can add a disount price amount with porcent tag{{ discount_price }}
-              {%- endcomment -%}
-              {% if section.settings.style__selector == 'black' %}
-                <span class="triangle_porcent">
-                  <strong class='black'>Black</strong>
-                  <strong class='days'>Days</strong>
-                </span>
-              {% elsif section.settings.style__selector == 'blackfriday' %}
-                <span class="triangle_porcent">
-                  <strong class='black'>Black</strong>
-                  <strong class='days'>Friday</strong>
-                </span>
-              {% elsif section.settings.style__selector == 'cyber' %}
-                <span class="triangle_porcent">
-                  <strong class='black'>Cyber</strong>
-                  <strong class='cyber-days'>Days</strong>
-                </span>
-              {% else %}
-                <span class="triangle_porcent_v2">%</span>
-              {% endif %}
-            </span>
-          {%- endif -%}
+          <span class="badge triangle__badge grid-product__badge grid-product__badge-{{ settings.tag_placement }}">
+            {%- comment -%}
+            you can add a disount price amount with porcent tag{{ discount_price }}
+            {%- endcomment -%}
+            {% if section.settings.style__selector == 'black' %}
+              <span class="triangle_porcent">
+                <strong class='black'>Black</strong>
+                <strong class='days'>Days</strong>
+              </span>
+            {% elsif section.settings.style__selector == 'blackfriday' %}
+              <span class="triangle_porcent">
+                <strong class='black'>Black</strong>
+                <strong class='days'>Friday</strong>
+              </span>
+            {% elsif section.settings.style__selector == 'cyber' %}
+              <span class="triangle_porcent">
+                <strong class='black'>Cyber</strong>
+                <strong class='cyber-days'>Days</strong>
+              </span>
+            {% else %}
+              <span class="triangle_porcent_v2">%</span>
+            {% endif %}
+          </span>
 
         {%- endif -%}
       {%- endunless -%}
@@ -147,12 +162,20 @@
           echo '</div>'
         endunless
       -%}
+      {%- if discount_price != blank %}
+        <span class="product__custom_label">{%- comment -%}{{product.metafields.product.product_custom_label}}{%- endcomment -%}
+          - {{ discount_price }}
+        </span>
+      {%- endif -%}
     </div>
-
     {%- liquid
       unless emptyState
         if product != blank
-          render "dbtfy-collection-addtocart" with product as product, sold_out: sold_out
+          if collection.handle contains 'kvinder' or collection.handle contains 'maend' or collection.handle contains 'posture-shirt' or collection.handle contains 'bedst-solgte' or collection.handle contains 'demosalg' or collection.handle contains 'rygstoette' or collection.handle contains 'andre-produkter' 
+             echo '<div class="invisible hide"></div>' 
+            else
+            render "dbtfy-collection-addtocart" with product as product, sold_out: sold_out
+          endif 
         endif
       endunless
     -%}
@@ -179,7 +202,13 @@
       <p class="grid-product__price-wrap">
         <span class="grid-product__price text-money">
           {%- if settings.dbtfy_color_swatches -%}
-            <span class="price-regular{% if on_sale %} on-sale text-sale{% endif %}" {% if on_sale %}aria-label="{{ 'products.general.sale_price' | t }}"{% else %}aria-label="{{ 'products.general.regular_price' | t }}"{% endif %}>
+            <span
+              class="price-regular{% if on_sale %} on-sale text-sale{% endif %}"
+              {% if on_sale %}
+              aria-label="{{ 'products.general.sale_price' | t }}"
+              {% else %}
+              aria-label="{{ 'products.general.regular_price' | t }}"
+              {% endif %}>
               {%- if product.price_varies and emptyState == false -%}
                 <span class="money">{{ product.price_min | money }}</span>
               {%- else -%}
@@ -196,7 +225,7 @@
             </span>
           {%- endif -%}
           &nbsp;
-          <span class="price-compare text-strike text-muted {% unless on_sale %}hide{% endunless %}"aria-label="{{ 'products.general.regular_price' | t }}">
+          <span class="price-compare text-strike text-muted {% unless on_sale %}hide{% endunless %}" aria-label="{{ 'products.general.regular_price' | t }}">
             {%- if on_sale -%}
               <span class="money">{{ compare_at_price | money }}</span>
             {%- else -%}
