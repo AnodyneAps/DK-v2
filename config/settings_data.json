@@ -1275,9 +1275,9 @@
           "303fc2ce-b4f3-4718-b917-80449d5e51e2": {
             "type": "message",
             "settings": {
-              "title": "4.8 ud af 5 på Trustpilot",
+              "title": "4.7 ud af 5 stjerner",
               "icon_select": "check_circle_outline",
-              "announcement_text": "<p>4.8 ud af 5 på Trustpilot<\/p>"
+              "announcement_text": "<p>4.7 ud af 5 stjerner<\/p>"
             }
           },
           "9770cc0c-cb17-4b41-8051-7bfe2cf86fe8": {
@@ -1302,7 +1302,7 @@
           "icon_select-second": "assignment_return",
           "message-second": "Altid gratis ombytning",
           "icon_select-third": "check_circle_outline",
-          "message-third": "4.8 ud af 5 på Trustpilot",
+          "message-third": "4.7 ud af 5 på Trustpilot",
           "icon_select-fourth": "thumb_up",
           "message-fourth": "Gratis fragt over 399 kr.",
           "announcement_autoplayspeed": 5
@@ -1321,6 +1321,12 @@
         "disabled": false,
         "settings": {
           "account_param": "9047146"
+        }
+      },
+      "5605512628948384502": {
+        "type": "shopify:\/\/apps\/bundles-upsell-pickystory\/blocks\/customer-info\/f54ff67e-3f69-4df2-845e-7476ce633252",
+        "disabled": false,
+        "settings": {
         }
       }
     }

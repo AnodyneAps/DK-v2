@@ -13,7 +13,7 @@
         "video_title": "",
         "svg_selector": "anodyne__vendor",
         "text_size": "medium",
-        "text_description": "<p>Få en bedre holdning med produkter fra Anodyne® - Vi har flere end 125.000 glade danske kunder<\/p>",
+        "text_description": "<p>Få en bedre holdning med produkter fra Anodyne® - Vi har flere end 150.000 glade danske kunder<\/p>",
         "text_description_size": "medium",
         "button_label": "Mænd",
         "button_link": "shopify:\/\/collections\/maend",
@@ -50,7 +50,7 @@
           "type": "service",
           "settings": {
             "title": "Danskernes foretrukne",
-            "description": "Flere end 125.000 glade, danske kunder kan ikke tage fejl... Vi har 4.8 ud af 5 på TrustPilot.",
+            "description": "Flere end 150.000 glade, danske kunder kan ikke tage fejl... Vi har 4.7 ud af 5 på TrustPilot.",
             "icon": "shopify:\/\/shop_images\/Smile2_200px.png",
             "uspLinkUrl": "https:\/\/www.anodyne.dk\/pages\/hvem-er-vi"
           }
@@ -157,7 +157,7 @@
             "title": "Hvorfor vælge holdningskorrigerende tøj fra Anodyne?",
             "code": "<p>Med <a href=\"\/\"><span style=\"text-decoration:underline\">holdningskorrigerende tøj<\/span><\/a> fra Anodyne® kan du på en enkelt og ubesværet måde opnå en bedre kropsholdning og reducere smerter og spændinger i nakke, skuldre og ryg. Anodyne® <a href=\"\/collections\/alle-produkter\/\"><span style=\"text-decoration:underline\">holdningstøj til mænd og kvinder<\/span><\/a> hjælper dig til at øge din kropsholdningsbevidsthed og kan bruges både, når du sidder på kontoret, rejser, er aktiv på jobbet eller bruger det til træning. Anodyne® er europæisk producent og distributør af holdningskorrigerende tøj med teknologi udviklet af amerikanske AlignMed - verdens eneste producent af holdningskorrigerende tøj, der er registreret hos USA’s føderale fødevare- og lægemiddelmyndighed (FDA). Anodyne® holdningskorrigerende tøj er som det eneste i Europa både FDA-registreret og MDR\/CE-mærket som medicinsk udstyr (Klasse I), hvilket er din garanti for, at vores produkter lever op til de krav, der stilles for medicinsk udstyr. Vi sælger også en række forskellige <a href=\"\/collections\/rygstoette\"><span style=\"text-decoration:underline\">produkter til rygstøtte<\/span><\/a>, både i form af holdningsveste, <a href=\"\/collections\/skulderstoette\"><span style=\"text-decoration:underline\">skulderstøtter<\/span><\/a>, ergonomiske puder mm.<\/p>",
             "text_alignment": "text-center",
-            "status1_number": "+125.000",
+            "status1_number": "+150.000",
             "status1_label": "Glade danske kunder",
             "status1_link": "shopify:\/\/collections\/all",
             "status2_number": "+600.000",

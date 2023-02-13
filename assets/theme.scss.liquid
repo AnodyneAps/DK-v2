@@ -6436,9 +6436,12 @@ cite {
   }
 }
 .textbox_custom_text {
-  margin:-20px 30px 30px 30px;
+  margin:0 30px 30px 30px;
   padding: $gutter-sm $gutter-xs;
   background-color: lighten($cAccent, 36%);
+  @include screenUp($postSmall){
+    margin:-20px 30px 30px 30px;
+  }
   .small {
     color: $cAccent;
     font-size: 0.85rem;
@@ -12213,7 +12216,10 @@ body:not(.dbtfy-wish_list-destroy) {
 .qb__quantity{
   position: relative;
   background-color: darken($white, 5%);
+  padding: 10px 10px 10px 30px;
+  @include screenUp($postSmall){
   padding: 20px 20px 20px 40px;
+  }
   &::before{
     content: " ";
     position: absolute;
@@ -12266,7 +12272,7 @@ body:not(.dbtfy-wish_list-destroy) {
         align-items: center;
         padding: 4px 0;
         gap:5px;
-        font-size:0.855rem;
+        font-size:0.815rem;
         @include screenUp($postSmall){
           gap:15px;
           font-size:0.9rem;
@@ -12543,3 +12549,5 @@ body:not(.dbtfy-wish_list-destroy) {
 }
 {% comment %} tidio chat replace  {% endcomment %}
 #tidio-chat-iframe {bottom: 50px !important}
+{% comment %} Retun portal overflow-y hidden  {% endcomment %}
+#ifrm body {overflow:hidden !important;}

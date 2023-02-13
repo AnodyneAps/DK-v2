@@ -2,7 +2,7 @@
 	<div class="wrapper">
 		{% assign main_title = section.settings.title %}
 		{%if main_title !=blank %}
-		<h1 class="h2 accordion__title-main">{{main_title}}</h1>
+		<h2 class="h2 accordion__title-main">{{main_title}}</h2>
 		{% endif%}
 		<ul class="accordion">
 			{%- for block in section.blocks -%}

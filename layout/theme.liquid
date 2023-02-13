@@ -215,24 +215,14 @@
         src: url('{{ settings.icon | append: ".woff2" | asset_url }}') format("woff2");
       }
     </style>
-
     <!-- Google Tag Manager -->
-    {%- if settings.google_tag_manager_id != blank -%}
-      <script>
-        (function(w, d, s, l, i) {
-          w[l] = w[l] || [];
-          w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-          var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer'
-              ? '&l=' + l
-              : '';
-          j.async = true;
-          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-          f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', {{ settings.google_tag_manager_id | json }});
-      </script>
-    {%- endif -%}
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-56RGTMF');</script>
+    <!-- End Google Tag Manager -->
+  
 
     <!-- Theme strings and settings -->
     {%- render "translations-js" -%}
@@ -315,7 +305,6 @@
 <!-- End TrustBox script -->
 
   </head>
-
   <body
     id="{{ page_title | handle }}"
     class="
@@ -326,6 +315,11 @@
     {% if settings.dbtfy_menu_bar %}menu_bar--present{% endif %}
     {% if customer %}customer-logged-in{% endif %}
     template-{{ request.page_type | handle }}">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56RGTMF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
     {{ "fancybox.min.js" | asset_url | script_tag }}
 
@@ -474,5 +468,15 @@
         });
       </script>
     {%- endif -%}
-  </body>
+    <!-- PickyStory code, do not modify. Safe to remove after the app is uninstalled -->
+  {% if content_for_header contains 'pickystory' %}
+    {% render 'pickystory-combos-prerender' %}
+  {% endif %}
+  <!-- PickyStory code end -->
+  <!-- PickyStory snippet "main_widget_script", do not modify. Safe to remove after the app is uninstalled -->
+  {% if content_for_header contains 'pickystory' %}
+    <script defer src="https://cdn.pickystory.com/widget/dist/latest/pickystory-widget.min.js"></script>
+  {% endif %}
+  <!-- PickyStory end snippet "main_widget_script" -->
+</body>
 </html>

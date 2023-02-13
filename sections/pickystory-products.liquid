@@ -1,0 +1,77 @@
+{% comment %}
+Render multiple products to JSON.
+The response is a <section> element containing a JSON string with an array of the requested
+products. The information provided is similar to Ajax Product API:
+  https://shopify.dev/api/ajax/reference/product
+Due to a restriction in Liquid, the list is limited to at most 20 products.
+If you choose to uninstall PickyStory, this section can be safely deleted.
+Get the app: https://go.pickystory.com/8nsjceym.
+Contact us for any questions: hello@pickystory.com.
+Copyright (C) 2023 Picky Story Ltd. - All Rights Reserved
+{% endcomment %}
+
+{% schema %}
+  {
+    "name": "PickyStory products",
+    "tag": "section",
+    "class": "pickystory-content-json",
+    "limit": 1,
+    "settings": []
+  }
+{% endschema %}
+
+{%- assign page_url = content_for_header | split:'"pageurl":"' | last | split:'"' | first | split: request.host | last | replace:'\/','/' | replace:'%20',' ' | replace:'%2C',',' | replace:'\u0026','&'  -%}
+
+[
+{%  if page_url contains "?" %}
+  {%- assign query_string = page_url | split:'?' | last -%}
+  {%- assign query_parts= query_string | split:'&' -%}
+
+  {%- for part in query_parts -%}
+    {%- assign key_and_value = part | split:'=' -%}
+    {%- if key_and_value.size > 1 -%}
+      {% if key_and_value[0] == 'picky-products' %}
+        {% assign product_handles = key_and_value[1] | split:',' %}
+        {% assign product_count = 0 %}
+        {% assign product_handles_size = product_handles | size %}
+        {%- for handle in product_handles -%}
+          {% comment %} Send only a subset of product fields {% endcomment %}
+          {% assign decoded_handle = handle | url_decode %}
+          {
+            "available": {{ all_products[decoded_handle].available | json }},
+            "collections": {{ all_products[decoded_handle].collections | json }},
+            "compareAtPrice": {{ all_products[decoded_handle].compare_at_price | json }},
+            "description": {{ all_products[decoded_handle].description | json }},
+            "featuredImage": {{ all_products[decoded_handle].featured_image | json }},
+            "featuredMedia": {{ all_products[decoded_handle].featured_media | json }},
+            "giftCard": {{ all_products[decoded_handle].gift_card | json }},
+            "handle": {{ all_products[decoded_handle].handle| json  }},
+            "hasOnlyDefaultVariant": {{ all_products[decoded_handle].has_only_default_variant | json }},
+            "id": {{ all_products[decoded_handle].id | json }},
+            "images": {{ all_products[decoded_handle].images | json }},
+            "media": {{ all_products[decoded_handle].media | json }},
+            "options": {{ all_products[decoded_handle].options_with_values | json }},
+            "price": {{ all_products[decoded_handle].price | json }},
+            "requiresSellingPlan": {{ all_products[decoded_handle].requires_selling_plan | json }},
+            "sellingPlanGroups": {{ all_products[decoded_handle].selling_plan_groups | json }},
+            "tags": {{ all_products[decoded_handle].tags | json }},
+            "title": {{ all_products[decoded_handle].title | json  }},
+            "type": {{ all_products[decoded_handle].type | json }},
+            "variants": {{ all_products[decoded_handle].variants | json }},
+            "vendor": {{ all_products[decoded_handle].vendor | json }}
+          }
+          {% assign product_count = product_count | plus: 1 %}
+          {% if product_count != product_handles_size %}
+            ,
+          {% endif %}
+          {% if product_count >= 20 %}
+            {% break %}
+          {% endif %}
+        {%- endfor -%}
+        {% comment %} Do not process our query param more than once {% endcomment %}
+        {% break %}
+      {% endif %}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+]
