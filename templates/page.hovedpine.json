@@ -1,0 +1,399 @@
+{
+  "sections": {
+    "7672051b-a4c4-40c8-889d-029cba45b256": {
+      "type": "featured-image-landing",
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/hovedpine.jpg",
+        "section_style": "section-blank",
+        "wrapper__height": 360,
+        "image_title": "",
+        "image_subtitle": "<p>HOVEDPINE<\/p>",
+        "image_btntext": "",
+        "image_link": "",
+        "show_on_image_scrolldown": false
+      }
+    },
+    "eb333a73-12ce-4e12-ac98-2fcd56d7a995": {
+      "type": "custom-html",
+      "blocks": {
+        "template--16216503287957__eb333a73-12ce-4e12-ac98-2fcd56d7a995-1676288465dbbd74d7-0": {
+          "type": "html",
+          "settings": {
+            "title": "",
+            "code": "<h1>Behandling af kronisk hovedpine og spændingshovedpine<\/h1><p>Konstant hovedpine og spændingshovedpine kan være enormt generende i dagligdagen. Holdningskorrigerende tøj fra Anodyne® kan medvirke til at reducere de gener, smerter og spændinger, der ofte er årsagen til hovedpine. Det viser en <a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0596\/7842\/5237\/files\/Posture-Shirt-Ko_rperhaltung-Auswertung-Anodyne-2019-german.pdf?v=1634903548\" target=\"_blank\" rel=\"noopener noreferrer\">undersøgelse<\/a> fra 2019 foretaget i samarbejde med Bern University of Applied Sciences, hvor 1039 brugere blandt andet blev spurgt ind til deres smerter og spændinger i hoved, nakke, ryg og skuldre før og efter, de begyndte at bruge holdningskorrigerende tøj fra Anodyne.* Som det ses nedenfor, så taler tallene for sig selv; hele 85% af de adspurgte med hovedpine føler, at de er blevet mere opmærksomme på deres kropsholdning, efter de begyndte at bruge Anodyne holdningstøj. 69% føler, at hyppigheden af deres hovedpine er blevet mindre. 77% føler, at intensiteten af deres hovedpine er reduceret. Samtidig giver langt størstedelen udtryk for, at de modtager færre behandlinger i form af fysioterapi, kiropraktik og massage. Nedenfor kan du se besvarelser fra de 266 respondenter, som har angivet, at de døjer med hovedpine.<\/p>\n<p><span style=\"font-size: 10px;\">*Brugerne har alle brugt en Alignme BH eller en Posture Shirt 2.0.<\/span><\/p>\n<p style=\"text-align: center;\"><span style=\"color: #ffffff;\"><a class=\"btn kh-btn sm\" href=\"\/collections\/posture-shirt\" style=\"color: #ffffff;\">Se vores udvalg<\/a><\/span><\/p>",
+            "column_width": 12,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16216503287957__eb333a73-12ce-4e12-ac98-2fcd56d7a995-1676288465dbbd74d7-0"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "padding_section": true,
+        "section_style": "section-blank",
+        "wrapper_size": ""
+      }
+    },
+    "2eda6601-7293-4756-bc2c-ac0487be0604": {
+      "type": "mission",
+      "blocks": {
+        "template--16216503287957__2eda6601-7293-4756-bc2c-ac0487be0604-1676291544871b4711-0": {
+          "type": "html",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/85.png",
+            "mission_title": "",
+            "mission_description": "<h2 style=\"font-size: 1.1rem;\">Hvordan vil du vurdere, at du i din dagligdag har været påvirket af din hovedpine, <u>før<\/u> du begyndte at bruge dit Anodyne® produkt?<\/h2><p>85% af de adspurgte brugere med hovedpine vurderer, at de i dagligdagen var meget eller i nogen grad påvirket af deres hovedpine, <u>før<\/u> de begyndte at bruge et Anodyne<span style=\"font-size: 12.0pt;\"><span style=\"font-family: 'Arial',sans-serif;\"><span style=\"color: #333333;\">®<\/span><\/span><\/span> produkt.<\/p>",
+            "column_width": 6,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center",
+            "btn_text": "",
+            "btn_url": ""
+          }
+        },
+        "589c6972-46fb-40e8-b4e8-629d1ea6aa7e": {
+          "type": "html",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/70.png",
+            "mission_title": "",
+            "mission_description": "<h2 style=\"font-size: 1.1rem;\">Hvor ofte var du påvirket af din hovedpine, <u>før<\/u> du begyndte at bruge dit Anodyne® produkt?<\/h2><p>70% af de adspurgte brugere med hovedpine var dagligt eller 3-4 gange om ugen påvirket af deres hovedpine, <u>før<\/u> de begyndte at bruge et Anodyne<span style=\"font-size: 12.0pt;\"><span style=\"font-family: 'Arial',sans-serif;\"><span style=\"color: #333333;\">®<\/span><\/span><\/span> produkt.<\/p>",
+            "column_width": 6,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center",
+            "btn_text": "",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16216503287957__2eda6601-7293-4756-bc2c-ac0487be0604-1676291544871b4711-0",
+        "589c6972-46fb-40e8-b4e8-629d1ea6aa7e"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "margin__bottom": 0,
+        "section_style": "section-blank",
+        "wrapper_size": ""
+      }
+    },
+    "ddb52e4a-03f9-4883-9e77-50c8ed0aa022": {
+      "type": "mission",
+      "blocks": {
+        "template--16216503287957__ddb52e4a-03f9-4883-9e77-50c8ed0aa022-1676291544871b4711-0": {
+          "type": "html",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/69.png",
+            "mission_title": "",
+            "mission_description": "<h2 style=\"font-size: 1.1rem;\">CHvor enig er du i følgende udsagn ”Jeg føler, at hyppigheden af min hovedpine er blevet mindre, <u>efter<\/u> jeg begyndte at bruge mit Anodyne® produkt.”<\/h2><p>69% af de adspurgte brugere med hovedpine er meget enige eller enige i følgende udsagn: <\/p>\n<p class=\"qoute\"><em>\"Jeg føler, at hyppigheden af min hovedpine er blevet mindre, <u>efter<\/u> jeg begyndte at bruge mit Anodyne® produkt.\"<\/em><\/p>",
+            "column_width": 6,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center",
+            "btn_text": "",
+            "btn_url": ""
+          }
+        },
+        "dd509b6e-30fa-48a7-bb88-16be3a1c6020": {
+          "type": "html",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/77.png",
+            "mission_title": "",
+            "mission_description": "<h2 style=\"font-size: 1.1rem;\">Hvor enig er du i følgende udsagn: ”Jeg føler, at intensiteten af min hovedpine er blevet reduceret, <u>efter<\/u> jeg begyndte at bruge mit Anodyne® produkt.”<\/h2><p>77% af de adspurgte brugere med hovedpine er meget enige eller enige i følgende udsagn:<\/p>\n<p class=\"qoute\"><em>\"Jeg føler, at intensiteten af min hovedpine er blevet reduceret, <u>efter<\/u> jeg begyndte at bruge mit Anodyne® produkt.\"<\/em><\/p>",
+            "column_width": 6,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center",
+            "btn_text": "",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16216503287957__ddb52e4a-03f9-4883-9e77-50c8ed0aa022-1676291544871b4711-0",
+        "dd509b6e-30fa-48a7-bb88-16be3a1c6020"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "margin__bottom": 0,
+        "section_style": "section-blank",
+        "wrapper_size": ""
+      }
+    },
+    "b89d1783-98d1-48f9-baa6-ca2b83ccd5dd": {
+      "type": "mission",
+      "blocks": {
+        "template--16216503287957__b89d1783-98d1-48f9-baa6-ca2b83ccd5dd-1676291544871b4711-0": {
+          "type": "html",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/51.png",
+            "mission_title": "",
+            "mission_description": "<h2 style=\"font-size: 1.1rem;\">Hvor ofte har du modtaget behandling (såsom fysioterapi, massage eller kiropraktik) for din hovedpine, <u>før<\/u> du begyndte at bruge dit Anodyne® produkt?<\/h2><p>51% af de adspurgte brugere med hovedpine modtog behandling for deres hovedpine på ugentlig eller månedlig basis, <u>før<\/u> de begyndte at bruge et Anodyne<strong><em>®<\/em><\/strong> produkt.<\/p>",
+            "column_width": 6,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center",
+            "btn_text": "",
+            "btn_url": ""
+          }
+        },
+        "308fde8b-bf0c-4abc-81c2-a0cebcd72498": {
+          "type": "html",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/28.png",
+            "mission_title": "",
+            "mission_description": "<h2 style=\"font-size: 1.1rem;\">Hvor ofte har du modtaget behandling (såsom fysioterapi, massage eller kiropraktik) for din hovedpine, <u>efter<\/u> du begyndte at bruge dit Anodyne® produkt?<\/h2><p>28% af de adspurgte brugere med hovedpine modtager ikke længere behandling for deres hovedpine, <u>efter<\/u> de er begyndt at bruge et Anodyne® produkt.<\/p>",
+            "column_width": 6,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center",
+            "btn_text": "",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16216503287957__b89d1783-98d1-48f9-baa6-ca2b83ccd5dd-1676291544871b4711-0",
+        "308fde8b-bf0c-4abc-81c2-a0cebcd72498"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "margin__bottom": 0,
+        "section_style": "section-blank",
+        "wrapper_size": ""
+      }
+    },
+    "87165735-a6a5-45a1-b1de-1ea3fc0bf530": {
+      "type": "mission",
+      "blocks": {
+        "template--16216503287957__87165735-a6a5-45a1-b1de-1ea3fc0bf530-1676291544871b4711-0": {
+          "type": "html",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sptegn.png",
+            "mission_title": "",
+            "mission_description": "<h2 style=\"font-size: 1.1rem;\">Under hvilke aktiviteter bruger du typisk dit Anodyne® produkt (du må gerne vælge flere)?<\/h2>\n<div class=\"yc-different\">\n<p><span>18%<\/span> bruger deres Anodyne produkt ved skrivebordsarbejde<\/p>\n<p><span>14% <\/span>bruger deres Anodyne produkt ved fysisk arbejde<\/p>\n<p><span>12%<\/span> bruger deres Anodyne produkt til sport\/træning<\/p>\n<p><span>26% <\/span>bruger deres Anodyne produkt derhjemme<\/p>\n<p><span>11%<\/span> bruger deres Anodyne produkt ved udendørs aktiviteter<\/p>\n<p><span>6%<\/span> bruger deres Anodyne produkt ved havearbejde<\/p>\n<\/div>",
+            "column_width": 6,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center",
+            "btn_text": "",
+            "btn_url": ""
+          }
+        },
+        "46f269c9-4850-42b2-8b02-1c6dfb84cede": {
+          "type": "html",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/85_c8e45402-b0f9-4d8b-96fb-0f989fef71e4.png",
+            "mission_title": "",
+            "mission_description": "<h2 style=\"font-size: 1.1rem;\">Vil du anbefale dine venner\/familie\/kolleger at bruge et Anodyne® produkt?<\/h2><p>85% af de adspurgte brugere med hovedpine vil anbefale venner\/familie\/kolleger at bruge et Anodyne® produkt.<\/p>",
+            "column_width": 6,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center",
+            "btn_text": "",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16216503287957__87165735-a6a5-45a1-b1de-1ea3fc0bf530-1676291544871b4711-0",
+        "46f269c9-4850-42b2-8b02-1c6dfb84cede"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "margin__bottom": 0,
+        "section_style": "section-blank",
+        "wrapper_size": ""
+      }
+    },
+    "7e256662-ccf0-4855-9eff-51c8ea7c05e5": {
+      "type": "mission",
+      "blocks": {
+        "template--16216503287957__7e256662-ccf0-4855-9eff-51c8ea7c05e5-1676291544871b4711-0": {
+          "type": "html",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/85_c8e45402-b0f9-4d8b-96fb-0f989fef71e4.png",
+            "mission_title": "",
+            "mission_description": "<h2 style=\"font-size: 1.1rem;\">Hvor enig er du i følgende udsagn: ”Jeg vurderer, at jeg havde en dårlig\/foroverbøjet kropsholdning, <u>før<\/u> jeg begyndte at bruge et Anodyne® produkt.”<\/h2><p>85% af de adspurgte brugere med hovedpine er meget enige eller enige i følgende udsagn: <\/p>\n<p class=\"qoute\"><em>\"Jeg vurderer, at jeg havde en dårlig\/foroverbøjet kropsholdning, <u>før<\/u> jeg begyndte at bruge et Anodyne® produkt.\"<\/em><\/p>",
+            "column_width": 6,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center",
+            "btn_text": "",
+            "btn_url": ""
+          }
+        },
+        "0f171233-e112-414f-bef9-8b1c02c08344": {
+          "type": "html",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/85_c8e45402-b0f9-4d8b-96fb-0f989fef71e4.png",
+            "mission_title": "",
+            "mission_description": "<h2 style=\"font-size: 1.1rem;\">Hvor enig er du i følgende udsagn: ”Jeg føler, at jeg er blevet mere opmærksom på min kropsholdning, <u>efter<\/u> jeg er begyndt at bruge mit Anodyne® produkt.”<\/h2><p>85% af de adspurgte brugere med hovedpine er meget enige eller enige i følgende udsagn: <\/p>\n<p class=\"qoute\"><em>\"Jeg føler, at jeg er blevet mere opmærksom på min kropsholdning, <u>efter<\/u> jeg er begyndt at bruge mit Anodyne® produkt.\"<\/em><\/p>",
+            "column_width": 6,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center",
+            "btn_text": "",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16216503287957__7e256662-ccf0-4855-9eff-51c8ea7c05e5-1676291544871b4711-0",
+        "0f171233-e112-414f-bef9-8b1c02c08344"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "margin__bottom": 0,
+        "section_style": "section-blank",
+        "wrapper_size": ""
+      }
+    },
+    "3d647f69-3d5c-4b42-9ec6-df13e6db24e6": {
+      "type": "mission",
+      "blocks": {
+        "template--16216503287957__3d647f69-3d5c-4b42-9ec6-df13e6db24e6-1676291544871b4711-0": {
+          "type": "html",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/87.png",
+            "mission_title": "",
+            "mission_description": "<h2 style=\"font-size: 1.1rem;\">Hvor enig er du i følgende udsagn: ”Brugen af mit Anodyne® produkt har haft en positiv effekt (fysisk) på min kropsholdning.\"<\/h2>\n<p>87% af de adspurgte brugere med hovedpine er meget enige eller enige i følgende udsagn: <\/p>\n<p class=\"qoute\"><em>\"Brugen af mit Anodyne® produkt har haft en positiv effekt på min kropsholdning.\"<\/em><\/p><a class=\"btn kh-btn sm\" href=\"\/collections\/posture-shirt\" style=\"color: #ffffff;\">Se vores udvalg<\/a><p><\/p>",
+            "column_width": 12,
+            "column_width_mobile": 12,
+            "text_alignment": "text-center",
+            "btn_text": "",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16216503287957__3d647f69-3d5c-4b42-9ec6-df13e6db24e6-1676291544871b4711-0"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "margin__bottom": 0,
+        "section_style": "section-blank",
+        "wrapper_size": ""
+      }
+    },
+    "19be2a22-ce20-413c-8d92-a7cd6c215466": {
+      "type": "featured-products",
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "title": "Posture shirts",
+        "subtitle": "",
+        "section_style": "section-blank",
+        "home_featured_products": "posture-shirt",
+        "rows": "2",
+        "desktop_grid": "4",
+        "mobile_grid": "2",
+        "show_view_all": false,
+        "button_label": "View all",
+        "button_link": "",
+        "button_style": "btn-outline-primary",
+        "slider_related_products": true,
+        "arrows": true,
+        "dots": true,
+        "autoplay": false,
+        "autoplayspeed": 5
+      }
+    },
+    "2144cb13-0020-44fb-b8ba-22e60a8004a1": {
+      "type": "featured-html",
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "image": "shopify:\/\/shop_images\/hovedpine-square.jpg",
+        "image_link": "",
+        "section_style": "section-default",
+        "text_size": "medium",
+        "image_alignement": "left",
+        "text_alignment": "",
+        "title": "Hvorfor får man hovedpine?",
+        "html_text": "<p>Der findes utallige årsager til hovedpine, men forkerte arbejdsstillinger, stillesiddende arbejde og dårlig holdning kan være medvirkende faktorer. Det skyldes, at hovedpine ofte er forårsaget af låsninger og spændinger i ryg og nakke, når vi ved en forkert arbejdsstilling eller dårlig holdning belaster muskulaturen og dermed modarbejder kroppens naturlige og sunde holdning. Symptomerne vil ofte tage til i løbet af dagen, fordi vi belaster de allerede udsatte områder, når vi for eksempel indtager forkerte arbejdsstillinger eller har en dårlig holdning.<sup>1<\/sup><\/p>",
+        "button_style": "btn--primary",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "76924dd1-52e4-4068-ac7a-157af9967773": {
+      "type": "custom-html",
+      "blocks": {
+        "template--16216503287957__76924dd1-52e4-4068-ac7a-157af9967773-1676295152dc900bc1-0": {
+          "type": "html",
+          "settings": {
+            "title": "",
+            "code": "<h2>Konstant hovedpine<\/h2><p>Konstant eller hyppig hovedpine kan være enormt generende og reducere livskvalitet. Hovedpine kan opfattes som kroppens advarselssignal om, at noget skal ændres. Sidder man for eksempel længe foran sin computer i samme stilling eller på anden vis belaster kroppen uhensigtsmæssigt og dermed får ømme muskler, kan det udløse hovedpine. Med hovedpine følger ofte anspændthed, da spændinger i musklerne er en del af kroppens forsvarsmekanisme mod smerter. For hovedpinepatienter fører det ofte til spændinger i nakke, skuldre og ryg. Mellem hovedpinerne har mange patienter derfor en lidt foroverbøjet kropsholdning, hvor skuldrene og hovedet er trukket frem. Kroppen er imidlertid ikke gearet til denne belastning, og konsekvenserne kan derfor komme til udtryk gennem endnu flere smerter.<sup>2<\/sup> Som undersøgelsen ovenfor viser, kan Anodyne holdningskorrigerende tøj være en god medspiller i kampen mod at komme hovedpinen til livs. Langt størstedelen af vores brugere ser en tydelig forbedring ved deres kropsholdning, efter de begyndte at bruge en holdningstrøje fra Anodyne. Samtidig føler 69%, at hyppigheden af deres hovedpine er langt mindre, efter de begyndte at bruge et Anodyne produkt.<\/p>",
+            "column_width": 6,
+            "column_width_mobile": 12,
+            "text_alignment": "text-justify"
+          }
+        },
+        "9ba1cf86-93de-46b5-b1cc-1f79d81afb3c": {
+          "type": "html",
+          "settings": {
+            "title": "",
+            "code": "<h2>Behandling af hovedpine<\/h2>\n<p>Den præcise årsag til hovedpine eller spændingshovedpine er ikke altid nem at afklare. Og det kan derfor være svært at vide, hvilken en behandlingsform man skal ty til, for hurtigst muligt at slippe af med det igen. Undersøgelsen ovenfor viser imidlertid, at holdningskorrektion har stor betydning for mange af dem, der lider af hovedpine. Holdningskorrektion er en afgørende faktor i arbejdet med at optimere sine arbejdsstillinger. Det er vigtigt at undgå ensidig belastende og uhensigtsmæssige arbejdsstillinger, der giver spændinger og smerter i hovedet.<sup>3<\/sup> Studier viser endvidere, at der som oftest skal mere end massage til at afhjælpe kronisk hovedpine, nemlig aktive øvelser og holdningskorrektion.<sup>4<\/sup> Det kan for eksempel være vigtigt at lære, hvordan man holder hovedet og skuldrene for at undgå ensidig belastning, der kan resultere i konstant hovedpine.<sup>5<\/sup> Det er netop denne øvelse en Andoyne holdningstrøje kan hjælpe dig med i din dagligdag. Brug den ved skrivebordsarbejde, til træning, derhjemme eller i fritiden. Den tætsiddende funktion gør den nem at have på under dit hverdagstøj.<\/p>",
+            "column_width": 6,
+            "column_width_mobile": 12,
+            "text_alignment": "text-justify"
+          }
+        }
+      },
+      "block_order": [
+        "template--16216503287957__76924dd1-52e4-4068-ac7a-157af9967773-1676295152dc900bc1-0",
+        "9ba1cf86-93de-46b5-b1cc-1f79d81afb3c"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "padding_section": true,
+        "section_style": "section-blank",
+        "wrapper_size": ""
+      }
+    },
+    "f9d6aff2-b3d0-465d-a465-e0a06f3f476d": {
+      "type": "custom-html",
+      "blocks": {
+        "template--16216503287957__f9d6aff2-b3d0-465d-a465-e0a06f3f476d-1676295152dc900bc1-0": {
+          "type": "html",
+          "settings": {
+            "title": "",
+            "code": "<h2>Hvordan behandles hovedpine med holdningskorrektion?<\/h2>\n<p>Da det ofte kan være svært at finde årsagen til hovedpine, er det samtidig også svært at vide, præcis hvilken behandlingsform der er mest effektiv. Men som tidligere nævnt, anbefales det, at du blandt andet arbejder med din kropsholdning, hvis du vil din hovedpine til livs. Dette bekræftes også af ovenstående undersøgelse, der viser, at hele 69% af de adspurgte, der er plaget af hovedpine, føler, at hyppigheden af deres hovedpiner er mindre, efter de begyndte at bruge holdningskorrigerende tøj fra Anodyne. Samtidig føler hele 77%, at intensiteten af deres hovedpine er recuderet. Vi anbefaler at Anodyne® holdningskorrigerende tøj bruges som et supplement til træning, bevægelse og eventuel behandling. Holdningskorrigerende tøj er ikke et værktøj, som skal erstatte en sund og aktiv livsstil.<\/p>\n<h2>Øvelser til at lindre hovedpine<\/h2>\n<p>I nogle tilfælde kan behandling af hovedpine med fordel være en kombination af holdningskorrektion og øvelser, der også kan afhjælpe spændingerne. Her er en række øvelser, der med fordel kan kombineres med holdningskorrektion i jagten på at komme hovedpinen til livs:<sup>6<\/sup><\/p>\n<p><strong>Rul med skuldrene<\/strong>: Træk skuldrene så højt op mod ørerne, som du kan. Træk dem nu så langt bagud som muligt. Hold dem tilbagetrukket, mens du sænker dem så langt ned som muligt. Slip til sidst spændingen, så skuldrene falder tilbage på plads. Skift retning. Gentag denne øvelse 3-5 gange, gerne flere gange dagligt.<\/p>\n<p><strong>Lang nakke: <\/strong>Du kan lave denne øvelse liggende, siddende eller stående. Træk hagen ind, mens du gør nakken lang (lav dobbelthage). Mærk hvordan det strækker ned langs nakken, helt ned til skuldrene. Gentag gerne øvelsen så mange gange, du orker.<\/p>\n<p><strong>Nakken til siden: <\/strong>Træk hagen ind, mens du lægger øret ned mod skuldrene. Hold dette stræk i 20-30 sek. Gentag øvelsen til modsatte side.<\/p>\n<p><strong>Kig til siden: <\/strong>Du kan lave denne øvelse liggende, siddende eller stående. Træk hagen ind, mens du gør nakken lang (lav dobbelthage). Drej hovedet så langt du kan til den ene side og hold stillingen lidt. Gentag til modsatte side. For at opnå mere stræk, kan du placere modsatte hånd på hovedet. Gentag denne øvelse 3-5 gange, gerne flere gange dagligt.<\/p>\n<h2>Betegnelser for hovedpine<\/h2>\n<p>Hovedpine, spændingshovedpine, konstant hovedpine, kronisk hovedpine, kronisk spændingshovedpine, konstant spændingshovedpine, hovedpine hver dag, vedvarende hovedpine, behandling af hovedpine, hovedpine lindring, hjælp mod hovedpine.<\/p>\n<div class=\"yc-headache-footnote\">\n<p><sup>​​​​​1 &amp; 3<\/sup><a href=\"https:\/\/www.sundhed.dk\/borger\/patienthaandbogen\/hjerne-og-nerver\/sygdomme\/hovedpine\/hovedpine-af-spaendingstype\/\" target=\"_blank\" rel=\"noopener noreferrer\">www.sundhed.dk<\/a><\/p>\n<p><sup>​​​​​2 &amp; 6<\/sup><a href=\"https:\/\/www.jegharhovedpine.dk\/spaendingshovedpine.php\" target=\"_blank\" rel=\"noopener noreferrer\">www.jegharhovedpine.dk<\/a><\/p>\n<p><sup>​​​​​4 &amp; 5<\/sup><a href=\"https:\/\/netdoktor.dk\/sygdomme\/fakta\/slip-af-med-spaendingshovedpine.htm\" target=\"_blank\" rel=\"noopener noreferrer\">www.netdoktor.dk<\/a><\/p>\n<\/div>",
+            "column_width": 12,
+            "column_width_mobile": 12,
+            "text_alignment": "text-left"
+          }
+        }
+      },
+      "block_order": [
+        "template--16216503287957__f9d6aff2-b3d0-465d-a465-e0a06f3f476d-1676295152dc900bc1-0"
+      ],
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "padding_section": true,
+        "section_style": "section-default",
+        "wrapper_size": ""
+      }
+    }
+  },
+  "order": [
+    "7672051b-a4c4-40c8-889d-029cba45b256",
+    "eb333a73-12ce-4e12-ac98-2fcd56d7a995",
+    "2eda6601-7293-4756-bc2c-ac0487be0604",
+    "ddb52e4a-03f9-4883-9e77-50c8ed0aa022",
+    "b89d1783-98d1-48f9-baa6-ca2b83ccd5dd",
+    "87165735-a6a5-45a1-b1de-1ea3fc0bf530",
+    "7e256662-ccf0-4855-9eff-51c8ea7c05e5",
+    "3d647f69-3d5c-4b42-9ec6-df13e6db24e6",
+    "19be2a22-ce20-413c-8d92-a7cd6c215466",
+    "2144cb13-0020-44fb-b8ba-22e60a8004a1",
+    "76924dd1-52e4-4068-ac7a-157af9967773",
+    "f9d6aff2-b3d0-465d-a465-e0a06f3f476d"
+  ]
+}
