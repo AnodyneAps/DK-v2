@@ -1,6 +1,6 @@
 {
   "current": {
-    "sticky_header": true,
+    "sticky_header": false,
     "sticky_announcement_bar": true,
     "height_header": 100,
     "height_header_mobile": 70,
@@ -30,7 +30,7 @@
     "browsing_link": "shopify:\/\/collections\/alle-produkte",
     "zindex_drawer": "999",
     "cart_message_enable": false,
-    "textbox_cart_notification": "<strong>OBS: <\/strong> Har du husket at tjekke størrelsesguiden på dit produkt? Hvis ikke, så kan du stadig nå det.",
+    "textbox_cart_notification": "<strong>UGENS DEAL: Køb for minimum 999 kr og få en gratis rygstøtte til en værdi af 299 kr<\/strong>",
     "textbox_custom_drawer_icon": "",
     "cart_notes_enable": false,
     "color_announcement_bg": "#353535",
@@ -68,6 +68,7 @@
     "color_transparent_nav_text": "#f7f7f7",
     "opacity_overlay": 16,
     "favicon": "shopify:\/\/shop_images\/Favicon.png",
+    "google_tag_manager_id": "GTM-56RGTMF",
     "share_facebook": false,
     "share_twitter": false,
     "share_pinterest": false,
@@ -762,7 +763,7 @@
         ],
         "settings": {
           "style__selector": "none",
-          "show_announcement": true,
+          "show_announcement": false,
           "small_announcement_text": false,
           "show_social": false,
           "email": true,
@@ -1275,9 +1276,9 @@
           "303fc2ce-b4f3-4718-b917-80449d5e51e2": {
             "type": "message",
             "settings": {
-              "title": "4.7 ud af 5 stjerner",
+              "title": "4.8 ud af 5 stjerner",
               "icon_select": "check_circle_outline",
-              "announcement_text": "<p>4.7 ud af 5 stjerner<\/p>"
+              "announcement_text": "<p>4.8 ud af 5 stjerner<\/p>"
             }
           },
           "9770cc0c-cb17-4b41-8051-7bfe2cf86fe8": {
@@ -1302,7 +1303,7 @@
           "icon_select-second": "assignment_return",
           "message-second": "Altid gratis ombytning",
           "icon_select-third": "check_circle_outline",
-          "message-third": "4.7 ud af 5 på Trustpilot",
+          "message-third": "4.8 ud af 5 på Trustpilot",
           "icon_select-fourth": "thumb_up",
           "message-fourth": "Gratis fragt over 399 kr.",
           "announcement_autoplayspeed": 5

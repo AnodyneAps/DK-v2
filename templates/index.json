@@ -13,13 +13,13 @@
         "video_title": "",
         "svg_selector": "anodyne__vendor",
         "text_size": "medium",
-        "text_description": "<p>Få en bedre holdning med produkter fra Anodyne® - Vi har flere end 150.000 glade danske kunder<\/p>",
+        "text_description": "<p>Spar op til 50% i vores store demo- og restsalg. Gælder kun så længe lager haves...<\/p>",
         "text_description_size": "medium",
-        "button_label": "Mænd",
-        "button_link": "shopify:\/\/collections\/maend",
-        "second_button_label": "Kvinder",
-        "second_button_link": "shopify:\/\/collections\/kvinder",
-        "show_scrolldown": true,
+        "button_label": "SE TILBUD",
+        "button_link": "shopify:\/\/collections\/demosalg",
+        "second_button_label": "",
+        "second_button_link": "",
+        "show_scrolldown": false,
         "show_emark": false,
         "bottom_counter_text": "Vi pakker din ordre om:",
         "show_bottom_counter": false
@@ -50,7 +50,7 @@
           "type": "service",
           "settings": {
             "title": "Danskernes foretrukne",
-            "description": "Flere end 150.000 glade, danske kunder kan ikke tage fejl... Vi har 4.7 ud af 5 på TrustPilot.",
+            "description": "Flere end 150.000 glade, danske kunder kan ikke tage fejl... Vi har 4.8 ud af 5 på TrustPilot.",
             "icon": "shopify:\/\/shop_images\/Smile2_200px.png",
             "uspLinkUrl": "https:\/\/www.anodyne.dk\/pages\/hvem-er-vi"
           }

@@ -684,11 +684,13 @@
                           <div class="qty-container"></div>
                         </div>
                       {%- endif -%}
+
+                 {% if show_quantity_discounts %}
+                      {{ pages[product.metafields.qbs.quantity_discounts_to_product].content }}
+                {% endif %}
                     </div>
                   {%- endif -%}
-                  {% if show_quantity_discounts %}
-                    {{ pages[product.metafields.qbs.quantity_discounts_to_product].content }}
-                  {% endif %}
+
                   <div class="product-single__add-to-cart">
                     <button
                       type="submit"

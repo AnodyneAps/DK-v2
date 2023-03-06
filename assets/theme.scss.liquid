@@ -5939,6 +5939,16 @@ cite {
     z-index: $zindexHeader + 1;
   }
 }
+
+
+.announcement-banner-section {
+  z-index: $zindexHeader + 1;
+
+  .sticky-announcement_bar & {
+    @include sticky;
+    z-index: $zindexHeader + 1;
+  }
+}
   /*bcdays*/
 .announcement__bg {
   background-color: $colorAnnouncement;
@@ -12216,6 +12226,7 @@ body:not(.dbtfy-wish_list-destroy) {
 .qb__quantity{
   position: relative;
   background-color: darken($white, 5%);
+  margin-top: 20px;
   padding: 10px 10px 10px 30px;
   @include screenUp($postSmall){
   padding: 20px 20px 20px 40px;
